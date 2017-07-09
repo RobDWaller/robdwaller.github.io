@@ -7,7 +7,7 @@ title: "Blog"
 <ul>
   {% for post in site.posts %}
     <li>
-      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+      <a href="{{ post.url }}">{{ post.title }}</a><br>
       <small>{{ post.date }}</small>
     </li>
   {% endfor %}
