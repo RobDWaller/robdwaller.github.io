@@ -1,10 +1,18 @@
 ---
 layout: default
 ---
-## Pages
+<h2>Pages</h2>
 
-## Blog
+<h2>Blog</h2>
+<h4>Recent Posts</h4>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<p>All posts</p>
+<h2>About Me</h2>
 
-## About Me
-
-## Contact Me
+<h2>Contact Me</h2>
