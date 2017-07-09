@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: blog.html
+title: "Blog"
+---
+<h2>{{ page.title}}</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+      <small>{{ post.date }}</small>
+    </li>
+  {% endfor %}
+</ul>
