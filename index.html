@@ -2,13 +2,16 @@
 layout: default
 ---
 <h2>Pages</h2>
-
-<h2>Blog</h2>
-<h4>Recent Posts</h4>
+<ul>
+  {% for page in site.pages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+<h2>Latest Blog Posts</h2>
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
       <small>{{ post.date }}</small>
     </li>
   {% endfor %}
@@ -17,3 +20,5 @@ layout: default
 <h2>About Me</h2>
 
 <h2>Contact Me</h2>
+<p>Twitter: <a href="https://twitter.com/RobDWaller" target="_blank">@RobDWaller</a><p>
+<p>Email: rdwaller1984@gmail.com</p>
