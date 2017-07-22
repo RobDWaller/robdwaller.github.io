@@ -3,12 +3,6 @@ layout: default
 title: "Home"
 permalink: index.html
 ---
-<h2>Pages</h2>
-<ul>
-  {% for page in site.html_pages %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
 <h2>Latest Blog Posts</h2>
 <ul>
   {% for post in site.posts limit:5 %}

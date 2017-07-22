@@ -1,0 +1,61 @@
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        width: 1060px;
+    }
+
+    section {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        background: black;
+        color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 48px;
+
+        h1 {
+            line-height: 48px;
+            font-size: 24px;
+            margin: 0px;
+        }
+
+        p, ul{
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            height: 48px;
+            width: 48px;
+        }
+
+        .hamburger__line {
+            width: 40px;
+            background: white;
+            height: 8px;
+            margin: 4px;
+            display: block;
+        }
+
+        .hamburger__line-first {
+            margin-top:8px;
+        }
+    }
+
+    section {
+        margin-top: 48px;
+        width: 100%;
+    }
+}

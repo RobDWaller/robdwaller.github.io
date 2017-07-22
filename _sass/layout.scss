@@ -1,0 +1,37 @@
+.wrapper {
+    width: 1280px;
+    margin: 0px auto;
+}
+
+header {
+    float: left;
+    margin-right: 40px;
+    width: 380px;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding:0px 20px;
+
+    .hamburger {
+        display: none;
+    }
+}
+
+section {
+    width: 860px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding:0px 20px;
+}
+
+footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    padding:0px 20px;
+}
