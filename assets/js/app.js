@@ -4,6 +4,8 @@ window.onload = function() {
 
        var menu = document.getElementById('menu');
        
+       alert(menu.classList.contains('menu--on'));
+       
        if (menu.classList.contains('menu--on')) {
            menu.classList.remove('menu--on');
        } else {
