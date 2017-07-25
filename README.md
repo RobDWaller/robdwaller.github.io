@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Rob Waller Blog and Profile Website
 
-You can use the [editor on GitHub](https://github.com/RobDWaller/robdwaller.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Provides blog posts on software development by Rob Waller. Along with CV and Profile information.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Site is powered by Jekyll and is hosted on GitHub Pages.
 
-### Markdown
+[robdwaller.github.io](http://robdwaller.github.io)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The site theme extends [Orderedlists'](https://github.com/orderedlist/minimal) GitHub Pages Minimal Theme.
 
-```markdown
-Syntax highlighted code block
+## License
 
-# Header 1
-## Header 2
-### Header 3
+MIT
 
-- Bulleted
-- List
+For site content please ask permission of author. Contact details below.
 
-1. Numbered
-2. List
+## Author
 
-**Bold** and _Italic_ and `Code` text
+[@RobDWaller](https://twitter.com/RobDWaller)
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RobDWaller/robdwaller.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+rdwaller1984@googlemail.com
