@@ -11,9 +11,9 @@
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <meta property="og:title" content="{{ page.title | site.title }}" />
-        <meta property="og:description" content="{{ page.description | site.description }}" />
+        <meta property="og:description" content="{{ page.description | default: site.description }}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:image" content="{{ page.image | site.image | site.github.owner_gravatar_url }}" />
+        <meta property="og:image" content="{{ page.image | default: site.github.owner_gravatar_url }}" />
     </head>
     <body>
         <div class="wrapper">
