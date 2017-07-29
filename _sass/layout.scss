@@ -15,6 +15,11 @@ header {
     .hamburger {
         display: none;
     }
+
+    img {
+        display: block;
+        max-width: 380px;
+    }
 }
 
 section {
