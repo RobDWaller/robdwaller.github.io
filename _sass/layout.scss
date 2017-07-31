@@ -18,7 +18,7 @@ header {
 
     img {
         display: block;
-        max-width: 360px;
+        max-width: 340px;
     }
 }
 
@@ -36,7 +36,8 @@ footer {
     display: block;
     overflow: hidden;
     text-align: center;
-    margin: 20px 0px;
+    margin: 30px 0px;
     box-sizing: border-box;
     padding:0px 20px;
+    float: left;
 }
