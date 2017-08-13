@@ -2,6 +2,7 @@
 layout: post
 title: "My First Post"
 published: true
+tags: [php, javascript, hello world]
 ---
 So I've setup GitHub Pages, or I'm in the process of setting it up.
 

@@ -3,6 +3,7 @@ layout: post
 title: Why The Right Code Tests are Important in Interviews
 published: true
 description: Very few people like code tests, particularly developers, and especially in interviews
+tags: [interviews, code, tests, hiring, developers]
 ---
 Very few people like tests, particularly developers, and especially in interviews. During my career I've hated doing code tests, I've avoided them like the plague, or at least as much as I can...
 

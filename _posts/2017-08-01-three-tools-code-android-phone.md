@@ -3,6 +3,7 @@ layout: post
 title: Three Tools to Begin Coding on Your Android Phone
 published: true
 description: I recently went on a weekend break to Prague and decided not to take my laptop with me.
+tags: [android, code, tools, git, ide, ssh, droidedit, juicessh, mgit]
 ---
 I recently went on a weekend break to Prague and decided not to take my laptop with me. It can be a hassle taking a laptop away with you, and the point of the break was to get away from work.
 
@@ -31,6 +32,6 @@ Is an SSH Client that will allow you to connect to a remote server. You will nee
 
 Is a Git management tool like SourceTree that will allow you to clone repos to your Android and manage them. I personally prefer using Git with a CLI but MGit has all the things you need, pull, push, checkout, etc...
 
-The only tool that I haven't looked into yet is an (S)FTP client for Android. I don't regard this an urgent need though. 
+The only tool that I haven't looked into yet is an (S)FTP client for Android. I don't regard this an urgent need though.
 
 Anyway, with the above tools you'll be able to get coding on your Android phone. I'm currently managing this GitHub Pages blog with it perfectly fine.
