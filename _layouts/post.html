@@ -4,4 +4,5 @@ layout: default
 <h2>{{ page.title }}</h2>
 <small>{{ page.date }}</small>
 <small><a href="/">Home</a> > <a href="/blog.html">Blogs</a> > {{ page.title }}</small>
+<small>Tags: {% for tag in page.tags %}{{tag}} {% endfor %}</small>
 {{ content }}

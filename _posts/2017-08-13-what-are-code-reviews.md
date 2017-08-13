@@ -1,14 +1,15 @@
 ---
 layout: post
-published: false
+published: true
 title: What Are Code Reviews?
 description: There is a great deal of fear and misunderstanding surrounding code reviews.
+tags: [code reviews, communication, development, teams]
 ---
 Code reviews, what are they? The answer to this question should be obvious. However there is a great deal of fear and misunderstanding surrounding code reviews. This fear and misunderstanding is also a little chicken and egg, both exist because of the other.
 
-Many developers and development teams still don't do regular code reviews, I've seen this throughout my career. This often means when developers, particularly junior ones, first experience code reviews they are terrified by the idea. "You're going to review my work?!! But it's not ready, I wasn't..." This reaction or view exists because developers often misunderstand the purpose of code reviews. And sometimes because code reviews are executed poorly. 
+Many developers and development teams still don't do regular code reviews, I've seen this throughout my career. This often means when developers, particularly junior ones, first experience code reviews they are terrified by the idea. "You're going to review my work?!! But it's not ready, I wasn't..." This reaction or view exists because developers often misunderstand the purpose of code reviews. And sometimes because code reviews are executed poorly.
 
-There are two misconceptions regarding code reviews that require clarification. The first is that code reviews exist to censure bad work, and may even result in developers losing their jobs*. 
+There are two misconceptions regarding code reviews that require clarification. The first is that code reviews exist to censure bad work, and may even result in developers losing their jobs*.
 
 This simply isn't the case, or it shouldn't be. If you're in a team where people are regularly critiqued or belittled during code reviews then you're doing it wrong, or maybe your managers are. People must not fear code reviews, they are meant to be a constructive process. All developers should embrace them.
 
