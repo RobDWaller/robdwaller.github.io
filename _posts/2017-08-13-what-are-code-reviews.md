@@ -51,3 +51,6 @@ As mentioned earlier code reviews don't and can't fix code. Combined though the 
 The final point to make is code reviews are for everyone. They should never involve seniors just reviewing juniors, everyone should be reviewing everyone. No one is above a junior reviewing their code. The simple logic to this is a junior may learn something by reviewing a senior's code. And most likely they'll be able to find faults in the senior's code too.
 
 If you and your team are not doing code reciews I strongly recomend you start.
+
+<small>* I have technically fired someone because of a code review, but I'd emphasise it was the last straw rather than the only factor.</small>
+<small>** I am one of those 'Visual Debt' ideologues... ;)</small>
