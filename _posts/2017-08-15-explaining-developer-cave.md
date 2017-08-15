@@ -2,8 +2,8 @@
 layout: post
 published: true
 title: Explaining The Developer Cave
-description: I decided to explain what the basic development
-roles are and I came up with the development cave
+description: 'I decided to explain what the basic development
+roles are and I came up with the development cave'
 tags: [development, code, dev ops, front end, back end, dba]
 image: https://robdwaller.github.io/assets/img/dev-cave.jpg
 ---
