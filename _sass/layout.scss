@@ -29,6 +29,11 @@ section {
     overflow: hidden;
     box-sizing: border-box;
     padding:0px 20px;
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
 }
 
 footer {
