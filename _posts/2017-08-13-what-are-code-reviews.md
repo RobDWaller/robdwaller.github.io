@@ -5,7 +5,7 @@ title: What Are Code Reviews?
 description: There is a great deal of fear and misunderstanding surrounding code reviews.
 tags: [code reviews, communication, development, teams]
 ---
-Code reviews, what are they? The answer to this question should be obvious. However there is a great deal of fear and misunderstanding surrounding code reviews.
+Code reviews, what are they? The answer to this question should be obvious. However there is a great deal of fear and misunderstanding surrounding code reviews. So I feel it is appropriate to clarify what they are and what they are not.
 
 Many developers and development teams still don't do regular code reviews. When I first joined the team I now run they weren't done at all. So it is not surprising to find developers who have never done them. Often when developers, particularly juniors, first experience code reviews they are terrified by the idea. "You're going to review my work?!! But it's not ready, I wasn't..." This reaction or view exists because developers often misunderstand the purpose of code reviews. And sometimes because code reviews are executed poorly.
 
