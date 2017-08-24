@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'AI and Machine Learning: Series Introduction'
+title: AI and Machine Learning Series Introduction
 published: true
 tags: ai, machine learning, tensorflow
 description: 'Artificial Intelligence and Machine Learning are two industry buzz words that we're hearing more and more of at the moment.'
