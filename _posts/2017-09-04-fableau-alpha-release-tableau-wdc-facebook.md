@@ -9,11 +9,11 @@ tags: [tableau, tableau wdc, facebook, facebook graph api, JavaScript]
 
 It has many built in data connectors for databases like MySQL, MS SQL and other data stores. However it has very few API integrations for social networks and other useful data sources. Tableau though offers a JavaScript SDK on which to build Web Data Connectors that integrate with APIs, such as the Facebook Graph API. I have used this SDK to build and release a comprehensive WDC integration between Tableau and Facebook at work.
 
-However I began learning about Tableau WDCs by writing a simple prototype tool and this is the basis of Fableau. Currently it will only allow you to pull singular snapshots of data for one off visualisations. It is though no less powerful than any other open source Facebook Web Data Connector currently available for Tableau, and it pulls page and post insight data back from Facebook. This is great for building Facebook campaign visualisations.
+However I began learning about Tableau WDCs by writing a simple prototype tool and this is the basis of Fableau. Currently it will only allow you to pull singular snapshots of data for one off visualisations in Tableau. This is due to the pure use of JavaScript and to comply with Facebooks security suggestions. It is though no less powerful than any other open source Facebook Web Data Connector currently available for Tableau. The WDC will pull page and post insight data back from Facebook, which is great for building Facebook campaign visualisations.
 
-In addition Fableau should provide a good guide on how to build WDCs for Tableau. I've attempted to use modern JavaScript concepts such as classes to separate out the various concerns. Also I made great use of JavaScript's data pipeline functions, such as `map()` and `reduce()`. This code is then compiled using a combination of Laravel Mix, Webpack and Babel. One note that should be considered in the build is that the Tableau client is not the most up to date, so Babel was used to polyfill certain things like [Promises]().
+In addition Fableau should provide a good guide on how to build WDCs for Tableau. I've attempted to use modern JavaScript concepts such as classes to separate out the various concerns. Also I made great use of JavaScript's data pipeline functions, such as `map()` and `reduce()`. This code is then compiled using a combination of Laravel Mix, Webpack and Babel. One note on the build is that the Tableau client is not the most up to date, so Babel was used to polyfill certain things like [Promises]().
 
-You can use Fableau to pull Facebook data by visiting the [Fableau.io](http://fableau.io) website I have set up. If you'd like to setup and use Fableau on your own server you will need NodeJs and NPM installed along with Yarn. And to compile simply run Yarn followed by Webpack. You will need to [set up your own Facebook app](https://developers.facebook.com/) and swap out the client id.
+You can use Fableau to pull Facebook data by visiting the [Fableau.io](http://fableau.io) website I have set up. Alternatively if you'd like to setup and use Fableau on your own server you will need NodeJs and NPM installed along with Yarn. And to compile simply run Yarn followed by Webpack. You will also need to [set up your own Facebook app](https://developers.facebook.com/) and swap out the client id.
 
 ```
 yarn
@@ -33,6 +33,6 @@ Obviously this is the Alpha release of this codebase, so it is by no means perfe
 - [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [JavaScript Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - [Laravel Mix](https://laravel.com/docs/5.4/mix)
-- [WebPack](https://webpack.js.org/)
+- [Webpack](https://webpack.js.org/)
 - [Yarn](https://yarnpkg.com/lang/en/)
 - [Babel](https://babeljs.io/)
