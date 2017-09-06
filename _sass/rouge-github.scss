@@ -1,9 +1,9 @@
 .highlight {
-  padding:5px 10px;
+  padding: 10px 20px;
   font-size: 1em;
   line-height: 1.5em;
   overflow: auto;
-  margin: 10px;
+  margin: 30px 0px;
 }
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
@@ -213,4 +213,10 @@
 }
 .highlight {
   background-color: #f8f8f8;
+}
+
+code.highlighter-rouge {
+    padding:5px;
+    font-family: monospace;
+    background-color: #f8f8f8;
 }
