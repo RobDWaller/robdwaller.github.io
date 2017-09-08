@@ -15,12 +15,18 @@ Across a period of roughly 300 years automation flourished, driven by invention.
 
 This is where we move on to two people not already mentioned but of great importance to the story of automation. They weren't inventors as such or maybe not true engineers or scientists like the others mentioned, they were though two of the great entrepreneurs and industrialists who helped drive automation forward. They are Richard Arkwright the father of the factory system and Henry Ford the father of the assembly line.
 
-Richard Arkwright was born in 1732 in Lancashire England and made his name and fortune in the cotton industry. In fact it would be fair to say he created the cotton industry. In 1769 Arkwright with the help of John Kay developed the spinning frame, which later became the water frame. The spinning frame automated the process of turning raw cotton into thread, which greatly reduced its production cost. Arkwright also worked on improving machines that turned cotton buds to cotton fibres, or carding machines. 
+Richard Arkwright was born in 1732 in Lancashire England and made his name and fortune in the cotton industry. In fact it would be fair to say he created the cotton industry. In 1769 Arkwright with the help of John Kay developed the spinning frame, which later became the water frame. The spinning frame automated the process of turning raw cotton into thread, which greatly reduced its production cost. Arkwright also worked on improving machines that turned cotton buds to cotton fibres, or carding machines.
 
 In 1771 he set up his first water powered factory in Cromford Derbyshire. As a result Arkwright was probably the first person to mechanise and automate the process of turning a raw material into a product, with little human human skill required.  
 
 Arkwright grew an empire, by the time he died in 1792 up to 30,000 people were employed in Factories using his patents and he left a fortune of £500,000.  
 
-Henry Ford was born 
+Henry Ford was born in Michigan, USA in 1863, in his early career he was an engineer and worked for the Edison Illuminating company. It was after this role that he began his journey towards founding the Ford Motor Company. It took four years, two business failures and a lot of help from investors before Henry Ford founded the Ford Motoring Company in 1903.
+
+Ford's great innovation came in 1908 when he released the Model T which was to be the first mass market car and triggered the automobile revolution of the 20th century. When sales began the Model T sold for $825 which was cheap for the time. Initially though production was slow by 1910 they had only produced 12,000 vehicles. However after moving to a new factory and innovating with the assembly line and use of machines Ford managed to reduce production time for the Model T from 12.5 hours to 1.5 hours. By 1925 production had hit 10,000 vehicles per day, and by 1927 when Model T production ceased over 15 million vehicles had been produced and the cost had fallen to $260. It wouldn't be until the 1970s that another car surpassed this production record.
+
+It should be noted that Henry Ford did not invent the automobile nor even the assembly line. He and his engineers though did refine and enhance both to such a level that they triggered a manufacturing and automation revolution that we enjoy the benefits of to this day.
+
+The story of the automation revolution is one of great interest, it is also far more intriguing and involves far more individuals, groups and 
 
 Previous posts in this series:
