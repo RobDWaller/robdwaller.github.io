@@ -27,6 +27,16 @@ Ford's great innovation came in 1908 when he released the Model T which was to b
 
 It should be noted that Henry Ford did not invent the automobile nor even the assembly line. He and his engineers though did refine and enhance both to such a level that they triggered a manufacturing and automation revolution that we enjoy the benefits of to this day.
 
-The story of the automation revolution is one of great interest, it is also far more intriguing and involves far more individuals, groups and 
+The story of the automation revolution is one of great interest, it is also far more complex, intriguing, and involves far more individuals, groups and companies, than I have been able cover in this short post. We are though left with a very important question to answer, how has this automation revolution affected us?
+
+Since the 1700s and the dawn of automation economic wealth has grown exponentionally. In the last x years alone y number of people have been pulled out of poverty. In the last 30 years China's economy has grown from to. 
+
+We should have all seen the chart below it tells the odd story of how humanity for a very made little to no economic progress and then in the 18th century things began to change dramatically. 
+
+There can be little doubt that automation has been a great benefit to humanity and has improved the lives of billions. This should make us hopeful for the future, automation could make this picture even rosier.
+
+However this path to economic prosperity hasn't been a smooth one, as the chart suggests. There are many questions regarding the impact of automation on employment and concerns it may put many people out of work. These concerns are so significant that Elon Musk has suggested we may need to introduce a universal basic income.
+
+However to assess the impact of automation in the future we should of course look at the history.
 
 Previous posts in this series:
