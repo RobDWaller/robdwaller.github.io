@@ -15,6 +15,12 @@ Across a period of roughly 300 years automation flourished, driven by invention.
 
 This is where we move on to two people not already mentioned but of great importance to the story of automation. They weren't inventors as such or maybe not true engineers or scientists like the others mentioned, they were though two of the great entrepreneurs and industrialists who helped drive automation forward. They are Richard Arkwright the father of the factory system and Henry Ford the father of the assembly line.
 
-Richard Arkwright was born in 1732 in Lancashire England and made his name and fortune in the cotton industry. In fact it would be fair to say he created the cotton industry. In 1769 Arkwright with the help of John Kay developed the spinning frame, which later became the water frame. The spinning frame automated the process of turning raw cotton into thread, which greatly reduced its production. Arkwright also worked on improving machines that turned cotton buds to cotton fibres, or carding machines. In 1771 he set up his first water powered factory in Cromford Derbyshire. As a result Arkwright was probably the first person to mechanise and automate the process of turning a raw material into a product, with little skilled human input.     
+Richard Arkwright was born in 1732 in Lancashire England and made his name and fortune in the cotton industry. In fact it would be fair to say he created the cotton industry. In 1769 Arkwright with the help of John Kay developed the spinning frame, which later became the water frame. The spinning frame automated the process of turning raw cotton into thread, which greatly reduced its production cost. Arkwright also worked on improving machines that turned cotton buds to cotton fibres, or carding machines. 
+
+In 1771 he set up his first water powered factory in Cromford Derbyshire. As a result Arkwright was probably the first person to mechanise and automate the process of turning a raw material into a product, with little human human skill required.  
+
+Arkwright grew an empire, by the time he died in 1792 up to 30,000 people were employed in Factories using his patents and he left a fortune of £500,000.  
+
+Henry Ford was born 
 
 Previous posts in this series:
