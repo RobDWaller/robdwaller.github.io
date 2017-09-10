@@ -29,14 +29,34 @@ It should be noted that Henry Ford did not invent the automobile nor even the as
 
 The story of the automation revolution is one of great interest, it is also far more complex, intriguing, and involves far more individuals, groups and companies, than I have been able cover in this short post. We are though left with a very important question to answer, how has this automation revolution affected us?
 
-Since the 1700s and the dawn of automation economic wealth has grown exponentionally. In the last x years alone y number of people have been pulled out of poverty. In the last 30 years China's economy has grown from to. 
+Since the 1700s and the dawn of automation economic wealth has grown exponentionally. In the last x years alone y number of people have been pulled out of poverty. In the last 30 years China's economy has grown from to.
 
-We should have all seen the chart below it tells the odd story of how humanity for a very made little to no economic progress and then in the 18th century things began to change dramatically. 
+We should have all seen the chart below it tells the odd story of how humanity for a very time made little to no economic progress and then in the 18th century things began to change dramatically.
+
+![GDP Growth over time](http://www.efficientfrontier.com/ef/404/4.GIF)
 
 There can be little doubt that automation has been a great benefit to humanity and has improved the lives of billions. This should make us hopeful for the future, automation could make this picture even rosier.
 
-However this path to economic prosperity hasn't been a smooth one, as the chart suggests. There are many questions regarding the impact of automation on employment and concerns it may put many people out of work. These concerns are so significant that Elon Musk has suggested we may need to introduce a universal basic income.
+However this path to economic prosperity hasn't been a smooth one, as the chart suggests. There are many questions regarding the impact of automation on employment and concerns it may put many people out of work. These concerns are so significant that Elon Musk has suggested we may need to [introduce a universal basic income]().
 
-However to assess the impact of automation in the future we should of course look at the history.
+One of the key concerns with automation is the impact it may have on employment, and therefore livelihoods. Historically there is no clear relationship between automation and unemployment. Currently in the UK unemployment stands at 4.4%, April to June 2017 and it is estimated that in 18th century unemployment stood around 10%. Over the last few hundred years unemployment has dipped below 4% figure and grown significantly higher than 10%. For the UK we have data that shows the unemployment rate since 1881, and what can be seen in the chart below is that unemployment has spiked at points.
 
-Previous posts in this series:
+![UK Unemployment since 1881](https://upload.wikimedia.org/wikipedia/commons/3/39/Unemployment_in_the_United_Kingdom_since_1881.svg)   
+
+Unemployment though has not lasted and become a permanent issue. The causes of these unemployment spikes are also complex and difficult to pin down. It is unlikely, or at least there is not a great deal of evidence to suggest, that automation is directly linked to unemployment.
+
+It is also unlikely that automation has had no impact on unemployment or employment. What history suggests is that automation is a disruptive process that changes employment trends, it changes what jobs people do.
+
+Richard Arkwright's factory drove a great deal of employment, but this was for unskilled labour. In the decades after Arkwright we saw the rise of movements such as the Luddites. These movements were not a reaction by the poorest members of society against the evils of the new factory system though. The Luddites were skilled workers who feared that the rise of automated factories manned by low skilled labour would threaten their livelihoods and place in the production process. They were right of course and their attempts to halt the process ultimately failed.
+
+As the Ford empire began to grow during the 1910s based on significant improvements in automation we saw different results. In 1914 Henry Ford introduced the $5 daily wage, this doubled the average wage for workers, and by 1926 Ford also introduced the 5 day week. While Ford was no saint when it came to dealing with his workers these were both significant improvements to worker conditions. They were based on a belief that to attract the best, most productive and skilled workers you had to treat them well and this would boost both production and wealth. It was a paternalistic outlook but it was correct.
+
+Tourism
+
+What history teaches us is that automation drives significant growth in wealth, it doesn't directly lead to unemployment, but it is though a disruptive force. It leads to changes in employment trends that will have a negative impact on some workers and industries. It is likely that the future of automation, driven by AI, will be very similar. It will lead to greater wealth, but it is likely to lead to unemployment in certain areas. It is likely lead to some skilled workers losing their jobs.
+
+
+
+### References
+
+### Previous posts in this series:
