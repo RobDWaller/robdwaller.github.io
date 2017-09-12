@@ -5,7 +5,7 @@ published: true
 description: "The roots of automation took hold in 18th century Britain and then expanded across Europe and America"
 tags: [AI, Machine Learning, History, Automation, Ford, Arkwright, Thomas Cook]
 ---
-It is impossible to have a complete discussion on the impact of AI and Machine Learning without first considering History. In the series introduction two points were raised about AI and Machine Learning. First that its current focus is advanced automation, and second that this automation will revolutionise our lives, our work and economy.
+It is impossible to have a complete discussion on the impact of AI and Machine Learning without first considering History. In the [series introduction](https://robdwaller.github.io/2017/08/24/ai-machine-learning-series-introduction.html) two points were raised about AI and Machine Learning. First that its current focus is advanced automation, and second that this automation will revolutionise our lives, our work and economy.
 
 History is a very useful tool for assessing what the future holds. Little is truly new in the human experience and the past offers examples of how humans responded to similar problems to the ones we face today. Automation is no different, it is not a new phenomena and has a long and interesting history.
 
@@ -13,7 +13,7 @@ The roots of automation took hold in 18th century Britain and then expanded acro
 
 In 1712 Thomas Newcomen developed the first commercial steam engine; by the end of the century inventors had begun to experiment with internal combustion engines; In 1821 Michael Faraday unveiled the first electromagnetic rotary motor; Fast forward a century and in 1943 Tommy Flowers had built the first digital, programmable computer; In 1969 the first message was sent across ARPANET; and by 1993 thanks to the work of Tim Berners Lee we had HTML and the birth of the Internet as we know it today.
 
-Across a period of roughly 300 years automation flourished, driven by invention. Of course the people referenced here are merely a selection of those involved in the great automation revolution. Also many of the inventions highlighted were not truly original discoveries, the steam engine for example may date back as far as the 1st century AD, and humans have played with computing tools as far back as the second century BC. However during the 1700s there was a confluence of invention that was put to commercial and industrial use in a way not previously experienced.
+Across a period of roughly 300 years automation flourished, driven by invention. Of course the people referenced here are merely a selection of those involved in the great automation revolution. Also many of the inventions highlighted were not truly original discoveries, the steam engine for example may date back as far as the 1st century AD, and humans have played with computation tools as far back as the second century BC. However during the 1700s there was a confluence of invention that was put to commercial and industrial use in a way not previously experienced.
 
 There are though two people not already mentioned but of great importance to the story of automation. They weren't inventors as such, or maybe not true engineers or scientists like the others mentioned, they were though two of the great entrepreneurs and industrialists who helped drive automation forward. They are [Richard Arkwright](https://en.wikipedia.org/wiki/Richard_Arkwright) the father of the factory system and [Henry Ford](https://en.wikipedia.org/wiki/Henry_Ford) the father of the assembly line.
 
@@ -27,7 +27,7 @@ Ford's great innovation came in 1908 when he released the [Model T](https://en.w
 
 It should be noted that Henry Ford did not invent the automobile nor even the assembly line. He and his engineers though did refine and enhance both to such a level that they triggered a manufacturing and automation revolution that we enjoy the benefits of to this day.
 
-The story of the automation revolution is one of great interest, it is also far more complex, intriguing, and involves far more individuals, groups and companies than I have been able cover in this short post. We are though left with a very important question to answer, how has this automation revolution affected us?
+The story of the automation revolution is one of great interest, it is also far more complex, intriguing, and involves far more individuals, groups and companies than I have been able cover in this short post. We are though left with a very important question to answer, how has this automation revolution effected us?
 
 Since the 1700s and the dawn of automation economic wealth has grown exponentially. Between 1990 and 2010 extreme poverty was [reduced by 1 billion](https://www.economist.com/news/leaders/21578665-nearly-1-billion-people-have-been-taken-out-extreme-poverty-20-years-world-should-aim) people and in the last 30 years China's economy has grown from $300 billion to $11 trillion.
 
@@ -43,7 +43,7 @@ One of the key concerns with automation is the impact it may have on employment,
 
 ![UK Unemployment since 1881](https://upload.wikimedia.org/wikipedia/commons/3/39/Unemployment_in_the_United_Kingdom_since_1881.svg)   
 
-Unemployment though has not lasted and become a permanent issue. The causes of these unemployment spikes are also complex and difficult to pin down. It is unlikely, or at least there is not a great deal of evidence to suggest, that automation is directly linked to unemployment.
+Unemployment though has not lasted and become a permanent issue. The causes of these unemployment spikes are also complex and difficult to pin down. It is unlikely, or at least there is not a great deal of evidence to suggest, that automation is directly linked to these unemployment spikes.
 
 It is also unlikely that automation has had no impact on unemployment or employment. What history suggests is that automation is a disruptive process that changes employment trends, it changes what jobs people do.
 
