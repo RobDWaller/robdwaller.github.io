@@ -3,7 +3,7 @@ layout: post
 title: "AI and Machine Learning: 1. A Brief History of Automation"
 published: true
 description: "The roots of automation took hold in 18th century Britain and then expanded across Europe and America"
-tags: AI, Machine Learning, History, Automation, Ford, Arkwright, Thomas Cook
+tags: [AI, Machine Learning, History, Automation, Ford, Arkwright, Thomas Cook]
 ---
 It is impossible to have a complete discussion on the impact of AI and Machine Learning without first considering History. In the series introduction two points were raised about AI and Machine Learning. First that its current focus is advanced automation, and second that this automation will revolutionise our lives, our work and economy.
 
