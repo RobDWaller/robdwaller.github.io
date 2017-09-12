@@ -39,13 +39,17 @@ There can be little doubt that automation has been a great benefit to humanity a
 
 However this path to economic prosperity hasn't been a smooth one as the chart suggests. There are many questions regarding the impact of automation on employment and concerns it may put many people out of work. These concerns are so significant that Elon Musk has suggested we may need to [introduce a universal basic income](http://uk.businessinsider.com/elon-musk-universal-basic-income-2017-2).
 
-One of the key concerns with automation is the impact it may have on employment, and therefore livelihoods. Historically there is no clear relationship between automation and unemployment. Currently in the UK [unemployment stands at 4.4%](https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment), April to June 2017, and it is estimated that in the 18th century unemployment stood around 10%. Over the last few hundred years unemployment has dipped below 4% and grown significantly higher than 10%. For the UK we have data that shows the unemployment rate since 1881, and what can be seen in the chart below is that unemployment has spiked at points.
+One of the key concerns with automation is the impact it may have on employment, and therefore livelihoods. Marx raised these concerns in the 1860s in his seminal work Capital.
+
+> "The instrument of labour, when it takes the form of a machine, immediately becomes a competitor of the workman himself."
+
+Historically there is no clear relationship between automation and unemployment though. Currently in the UK [unemployment stands at 4.4%](https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment), April to June 2017, and it is estimated that in the 18th century unemployment stood around 10%. Over the last few hundred years unemployment has dipped below 4% and grown significantly higher than 10%. For the UK we have data that shows the unemployment rate since 1881, and what can be seen in the chart below is that unemployment has spiked at points.
 
 ![UK Unemployment since 1881](https://upload.wikimedia.org/wikipedia/commons/3/39/Unemployment_in_the_United_Kingdom_since_1881.svg)   
 
 Unemployment though has not lasted and become a permanent issue. The causes of these unemployment spikes are also complex and difficult to pin down. It is unlikely, or at least there is not a great deal of evidence to suggest, that automation is directly linked to these unemployment spikes.
 
-It is also unlikely that automation has had no impact on unemployment or employment. What history suggests is that automation is a disruptive process that changes employment trends, it changes what jobs people do.
+It is also unlikely that automation has had no impact on unemployment or employment. What history suggests is that automation is a disruptive process that changes employment trends, it changes what jobs people do. It is part of the process that Joseph Schumpeter described as the "perenial gale of creative destruction."
 
 Richard Arkwright's factory drove a great deal of employment, but this was for unskilled labour. In the decades after Arkwright we saw the rise of movements such as the [Luddites](https://en.wikipedia.org/wiki/Luddite). These movements were not a reaction by the poorest members of society against the evils of the new factory system though. The Luddites were skilled workers who feared that the rise of automated factories manned by low skilled labour would threaten their livelihoods and place in the productive process. They were right of course and their attempts to halt this change ultimately failed.
 
