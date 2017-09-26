@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Developers Literally Can't Write Switch Statements: What Senior PHP
+title: "Juniors Literally Can't Write Switch Statements: What Senior PHP
 Developers Need to Focus On"
-description:
+description: 'While many junior PHP developers struggle to write and learn basic
+code many seniors spend their time arguing and bickering.'
 tags: [php, javascript, senior, juniors, code basics, learning]
 published: true
 ---
