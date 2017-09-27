@@ -8,8 +8,9 @@ tags: [php, javascript, senior, juniors, code basics, learning]
 published: true
 ---
 If you follow the PHP community on Twitter and other places you'll have noticed
-a lot of negativity floating around at recently. Lot's of arguing and bickering,
-[visual debt](https://laracasts.com/series/php-bits/episodes/1)* anyone..? [@Nealio82](https://twitter.com/nealio82) [wrote an interesting post](https://medium.com/@nealio82/the-global-php-community-continues-to-toxify-itself-and-we-need-to-halt-it-for-the-sake-of-our-eabecd21a365) on the topic, highlighting
+a lot of negativity floating around recently. Lot's of arguing and bickering,
+[visual debt](https://laracasts.com/series/php-bits/episodes/1)* anyone..?
+ [@Nealio82](https://twitter.com/nealio82) [wrote an interesting post](https://medium.com/@nealio82/the-global-php-community-continues-to-toxify-itself-and-we-need-to-halt-it-for-the-sake-of-our-eabecd21a365) on the topic, highlighting
 some of the problems...
 
 > The PHP community is broken. There are clear factions of die-hard fans within our wider ecosystem viciously guarding their own biases and making the same denigrating and sneering comments we already face from the much wider software community.
@@ -22,7 +23,7 @@ dependency injection, I suggest you read it all and I'm definitely not taking si
 
 It would seem there are a lot of senior PHP developers arguing with each other, and
 often about how many angels they can see dancing on the head of a pin.
-Fundamentally though know one knows where the line that separates when to
+Fundamentally know one knows where the line that separates when to
 use dependency injection and when not to is, or even if there is a line.
 
 For me many senior PHP developers seem to have the wrong focus,
