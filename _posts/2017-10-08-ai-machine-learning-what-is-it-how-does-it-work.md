@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'AI and Machine Learning: 2. What is it and How Does it Work?''
+title: 'AI and Machine Learning: 2. What is it and How Does it Work?'
 description: 'something'
 published: false
 tags: [ai, machine learning]
