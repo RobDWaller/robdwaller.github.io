@@ -22,8 +22,7 @@ dependency injection, I suggest you read it all and I'm definitely not taking si
 
 It would seem there are a lot of senior PHP developers arguing with each other, and
 often about how many angels they can see dancing on the head of a pin.
-Fundamentally though no one knows where the line that separates when to
-use dependency injection and when not to is, or even if there is a line.
+Fundamentally no one knows where the line that separates when to use dependency injection and when not to is, or even if there is a line.
 
 For me many senior PHP developers seem to have the wrong focus,
 there isn't enough perspective. Possibly there are too many ivory towers. While
