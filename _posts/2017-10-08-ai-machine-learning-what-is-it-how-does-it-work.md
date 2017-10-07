@@ -1,9 +1,9 @@
 ---
 layout: post
-title: AI and Machine Learning: 2. What is it and How Does it Work?
-description:
+title: 'AI and Machine Learning: 2. What is it and How Does it Work?''
+description: 'something'
 published: false
-tags: []
+tags: [ai, machine learning]
 ---
 As touched upon in the series introduction when we're discussing 'Artificial Intelligence' we're not really discussing Artificial Intelligence at all. What we're actually discussing is Machine Learning, which is a very different topic.
 
