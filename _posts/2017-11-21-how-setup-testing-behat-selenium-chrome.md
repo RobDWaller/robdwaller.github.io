@@ -5,6 +5,29 @@ published: false
 description: ""
 tags: [Testing, Behat, PHP, Selenium, Chrome, Linux]
 ---
+Often when developing web applications you'll want to setup some automated tests. There are of course lots of well documented ways to setup atomated unit, integration and functional tests using tools such as PHPUnit and Codeception.
+
+However, like me you may work in a team with a QA (Quality Assurance) and you may wish to empower them to configure some automated tests without having to write or understand too much code. 
+
+This is where Behat comes in handy. Behat is a PHP version of the well known testing tool Cucumber and it follows Behaviour Driven Development principles along with the Gherkin syntax. If you'd like to understand more on BDD and Behat I'd suggest you watch Ciaran McNulty's fantastic talk on the subject.
+
+In a nutshell Behat allows you to write and execute human readable tests. Here is an example of a Behat test...
+
+  
+
+This is pretty cool, right? It's even more readable than Codeception. There is of course a catch, which is that you need to write / code the underlying tests which Behat can then execute. These are known as 'step definitions' and are grouped into classes known as 'contexts'. 
+
+Under the hood Behat converts the human readable commands into a method name it executes in the context class and then checks whether it passes or fails. An example step definition looks like this...
+
+You can see how the method name tallies with the Behat test above. As a developer using Behat may seem like overkill, essentially writing tests twice seems pointless. 
+
+If you have a QA though it's a different matter. Your QA is responsible for testing your product. It therefore makes sense that they write some tests. In addition, they play an important role with the Project Manager to ensure the product matches the client brief. Behat and BDD principles empower a QA to define tests that will ensure your product works as expected and matches your brief.
+
+Also Behat has some cool features that allow QAs and developers to work well together. First off when the Behat tests are written and run for the first time Behat will output the method signatures for the step definitions that the developer needs to add to the relevant context.
+
+So in reality Behat is merely a nice human readable wrapper for unit and other tests. Many developers may see this as a nice to have rather than a necissity when testing a web app. Especially given you can implement readable BDD tests in code using Codeception.
+
+Before you throw Behat under the bus or juggernaut  
 
 Composer Setup
 ```
