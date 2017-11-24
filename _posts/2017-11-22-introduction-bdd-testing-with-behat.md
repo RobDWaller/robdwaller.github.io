@@ -26,9 +26,11 @@ Feature: Iterator class
         Then the iterator class count will be 1
 ```  
 
-This is pretty cool, right? It's even more readable than Codeception. There is of course a catch, which is that you need to write / code the underlying tests which Behat can then execute. These are known as 'step definitions' and are grouped into classes known as 'contexts'. Under the hood Behat converts the human readable commands into a method name it executes in the context class and then checks whether it passes or fails. An example step definition looks like this...
+This is pretty cool, right? It's even more readable than Codeception. There is of course a catch, which is that you need to write / code the underlying tests which Behat can then execute. These are known as 'step definitions' and are grouped into classes known as 'contexts'.
 
-```
+Under the hood Behat converts the human readable commands into a method name it executes in the context class and then checks whether it passes or fails. An example step definition looks like this...
+
+```php
 /**
  * @Given there is an iterator class with a count of :arg1
  */
@@ -38,16 +40,18 @@ public function thereIsAnIteratorClassWithACountOf($arg1)
 }
 ```
 
-You can see how the method name tallies with the Behat test above. As a developer using Behat may seem like overkill, essentially writing tests twice seems pointless. There are of course significant gains from the BDD process though.
+You can see how the method name `thereIsAnIteratorClassWithACountOf` tallies with the Behat test above `Given there is an iterator class with a count of 0`. As a developer using Behat may seem like overkill, essentially writing tests twice seems pointless. There are of course significant gains from the BDD process though.
 
-Also If you have a QA it's a different matter as your QA is responsible for testing your product. It therefore makes sense that they write some tests. In addition, they play an important role with the Project Manager to ensure the product matches the client brief. Behat and BDD principles empower a QA to define tests that will ensure your product works as expected and matches your brief.
+Also If you have a QA they are responsible for testing your product. It therefore makes sense that they write some tests. In addition, they play an important role, along with the Project Manager, ensuring the product matches the client brief. Behat and BDD principles empower a QA to define tests that will ensure your product works as expected and matches your brief.
 
-Also Behat has some cool features that allow QAs and developers to work well together. First off when the Behat tests are written and run for the first time Behat will output the method signatures that need to be implemented, as can be seen in this image.
+There are also some cool features built into Behat that allow QAs and developers to work well together. First off when Behat tests are written and run for the first time Behat will output the method signatures that need to be implemented, as can be seen in this image.
 
 ![Behat Auto Signatures Output](/assets/img/behat-methods.png)
 
-Behat therefore separates out the concerns of defining your product and the associated tests, and the implementation of the tests and code that passes these tests. Your QA and Project Manager can focus on the former and your developer can focus on the latter. This will have many benefits for your team and client relationship.
+Behat therefore separates out the concerns of defining your product specification and tests, and the implementation of the tests and code that pass these tests and specifications. Your QA and Project Manager can focus on the former and your developers can focus on the latter. This will have many benefits for your team and client relationship.
 
-In addition, Behat can be extended with libraries such as [Mink](https://packagist.org/packages/behat/mink) and tools such as [Selenium](http://www.seleniumhq.org/) so you can run functional tests on the front end of your application. This becomes even better because Mink comes with built in contexts. This means a QA can begin writing functional tests without any help of a developer and very little knowledge of code.
+In addition, Behat can be extended with libraries such as [Mink](https://packagist.org/packages/behat/mink) and tools such as [Selenium](http://www.seleniumhq.org/) so you can run functional tests on the User Interface. Mink also comes with built in contexts, this means a QA can begin writing functional tests without any help from a developer and very little knowledge of code.
 
-I'd advise everyone to begin looking into Behat, automated testing and BDD as it will empower you team to build better more reliable products that match your client needs. In the sister post to this I explain how to set Behat and Selenium to run automated functional tests.  
+Behat is a powerful and useful tool and I'd advise every development team to begin using it for automated tests and to implement BDD principles as it will empower your team to build better more reliable products that match your client needs.
+
+In the [sister post](http://rbrt.wllr.info/2017/11/22/how-setup-testing-behat-selenium-chrome.html) to this I explain how to setup Behat and Selenium to run automated functional tests using Chrome on a Linux environment.  
