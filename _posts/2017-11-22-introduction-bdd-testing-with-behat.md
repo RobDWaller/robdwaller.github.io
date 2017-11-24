@@ -5,9 +5,9 @@ published: true
 description: "Behat is a PHP version of the well known testing tool Cucumber and it follows Behaviour Driven Development principles along with the Gherkin syntax."
 tags: [Testing, Behat, PHP, BDD, Automation, Automated Testing, Linux]
 ---
-Often when developing web applications you'll want to setup some automated tests. There are of course lots of well documented ways to setup automated unit, integration and functional tests using tools such as PHPUnit and Codeception. However, like me you may work in a team with a QA (Quality Assurance) and you may wish to empower them to configure some automated tests without having to write or understand too much code.
+Often when developing web applications you'll want to setup some automated tests. There are of course lots of well documented ways to setup automated unit, integration and functional tests using tools such as [PHPUnit](https://phpunit.de/) and [Codeception](http://codeception.com/). However, like me you may work in a team with a QA (Quality Assurance) and you may wish to empower them to configure some automated tests without having to write or understand too much code.
 
-This is where Behat comes in handy. Behat is a PHP version of the well known testing tool [Cucumber](https://cucumber.io/docs#cucumber-implementations) and it follows Behaviour Driven Development principles along with the [Gherkin syntax](https://github.com/cucumber/cucumber/wiki/Gherkin). If you'd like to understand more on BDD and Behat I'd suggest you watch [Ciaran McNulty's fantastic talk]() on the subject.
+This is where [Behat](http://behat.org/en/latest/) comes in handy. Behat is a PHP version of the well known testing tool [Cucumber](https://cucumber.io/docs#cucumber-implementations) and it follows Behaviour Driven Development principles along with the [Gherkin syntax](https://github.com/cucumber/cucumber/wiki/Gherkin). If you'd like to understand more on BDD and Behat I'd suggest you watch [Ciaran McNulty's fantastic talk](https://www.youtube.com/watch?v=83GbyDpJDI4) on the subject.
 
 In a nutshell Behat allows you to write and execute human readable tests. Here is an example of a Behat test...
 
@@ -44,10 +44,10 @@ Also If you have a QA it's a different matter as your QA is responsible for test
 
 Also Behat has some cool features that allow QAs and developers to work well together. First off when the Behat tests are written and run for the first time Behat will output the method signatures that need to be implemented, as can be seen in this image.
 
-![Behat Auto Signatures Output]('/assets/behat-methods.png')
+![Behat Auto Signatures Output]('assets/behat-methods.png')
 
 Behat therefore separates out the concerns of defining your product and the associated tests, and the implementation of the tests and code that passes these tests. Your QA and Project Manager can focus on the former and your developer can focus on the latter. This will have many benefits for your team and client relationship.
 
-In addition, Behat can be extended with libraries such as [Mink]() and tools such as [Selenium]() so you can run functional tests on the front end of your application. This becomes even better because Mink comes with built in contexts. This means a QA can begin writing functional tests without any help of a developer and very little knowledge of code.
+In addition, Behat can be extended with libraries such as [Mink](https://packagist.org/packages/behat/mink) and tools such as [Selenium](http://www.seleniumhq.org/) so you can run functional tests on the front end of your application. This becomes even better because Mink comes with built in contexts. This means a QA can begin writing functional tests without any help of a developer and very little knowledge of code.
 
 I'd advise everyone to begin looking into Behat, automated testing and BDD as it will empower you team to build better more reliable products that match your client needs. In the sister post to this I explain how to set Behat and Selenium to run automated functional tests.  
