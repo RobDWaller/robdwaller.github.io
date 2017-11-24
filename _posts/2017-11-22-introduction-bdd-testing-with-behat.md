@@ -44,7 +44,7 @@ Also If you have a QA it's a different matter as your QA is responsible for test
 
 Also Behat has some cool features that allow QAs and developers to work well together. First off when the Behat tests are written and run for the first time Behat will output the method signatures that need to be implemented, as can be seen in this image.
 
-![Behat Auto Signatures Output](/assets/behat-methods.png)
+![Behat Auto Signatures Output](/assets/img/behat-methods.png)
 
 Behat therefore separates out the concerns of defining your product and the associated tests, and the implementation of the tests and code that passes these tests. Your QA and Project Manager can focus on the former and your developer can focus on the latter. This will have many benefits for your team and client relationship.
 
