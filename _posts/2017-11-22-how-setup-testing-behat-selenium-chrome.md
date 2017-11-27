@@ -32,7 +32,7 @@ Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/beh
 }
 ```
 
-Once we've run `composer install` and everything is in our vendor directory we can execute Behat. I like to use the `--verbose` flag because it allows you to see the full output from executing Behat. This is particularly useful when you're learning how to use Behat.
+Once we've run `composer install` and everything is in our vendor directory we can execute Behat. I like to use the `--verbose` flag because it allows you to see the full output when executing Behat. This is particularly useful when you're learning how to use Behat.
 
 ```
 vendor/bin/behat --verbose
@@ -44,27 +44,32 @@ Of course when we run Behat for the first time nothing useful will happen. We ha
 
 To run Selenium we need to install Java. You can check whether Java is installed by typing `java -version`. Most likely Java won't be installed or you'll need to update it to Java 8.
 
-On Ubuntu 14.04 you will need to add a Personal Package Archive that can download and install Java 8. We do this with the following commands. One note is always be careful with PPAs don't add them to a live server unless you have tested and validated them on a dev box first.
+On Ubuntu 14.04 you will need to add a Personal Package Archive that can download and install Java 8. We do this with the following commands. One note: always be careful with PPAs don't add them to a live server unless you have tested and validated them on a dev box first.
 
 ```
+# Add the PPA
 sudo add-apt-repository ppa:webupd8team/java
 
+# Update your local repository
 sudo apt-get update
 
+# Install Java 8
 sudo apt-get install -y oracle-java8-installer
 ```
 
-If you install Java successfully you can run `java -version` again and you should see something similar to `java version "1.8.0_151"`.
+If you install Java successfully you can run `java -version` again and you should see output similar to `java version "1.8.0_151"`.
 
 ### Download Selenium
 
 After we have Java setup we need to download the latest version of Selenium which is a Java executable. It does not need to be installed.
 
-If you're not clear on what Selenium is, it is basically a tool that allows you to automate the execution of actions within a browser. This can be done by opening an actual browser window or via a headless browser. You can of course find out more on the [Selenium Website]()
+If you're not clear on what Selenium is, it is basically a tool that allows you to automate a browser. This can be done by opening an actual browser window or via a headless browser. You can of course find out more on the [Selenium Website](http://www.seleniumhq.org/)
 
 ```
+# Make a Selenium directory
 sudo mkdir /usr/local/share/selenium
 
+# Download Selenium into your new selenium directory
 sudo wget http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar -P /usr/local/share/selenium
 ```
 
@@ -78,19 +83,22 @@ Once you've got Selenium running and seen what it can do I'd cancel it by typing
 
 ### Download Chrome Driver
 
-Right now Selenium does not have a browser to execute anything with, so we need to install one. In this case we're going to install Chrome. First we need to install a Chrome Driver that Selenium can interact with.
+Right now Selenium does not have a browser to execute anything with, so we need to install one. In this case we're going to install Chrome. First we need to install a Chrome driver that Selenium can interact with.
 
 So we download the Chrome driver and like Selenium it is just an executable.
 
 ```
+# Download the Chrome driver zip
 sudo wget https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P /usr/local/share
 
+# Unzip the Chrome driver zip
 sudo unzip /usr/local/share/chromedriver_linux64.zip -d /usr/local/share
 
+# Delete the now unneeded Chrome driver zip
 sudo rm /usr/local/share/chromedriver_linux64.zip
 ```
 
-Once the Chrome Driver is installed we can edit the way we run Selenium by telling it to use the Chrome Driver by adding the `-D` flag. You may also find it useful to use the `-debug` flag as it will help you deal with any problems you may have.
+Once the Chrome driver is installed we can edit the way we run Selenium by telling it to use the Chrome driver by adding the `-D` flag. You may also find it useful to use the `-debug` flag as it will help you deal with any problems you may have when running Selenium.
 
 ```
 java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar -debug
@@ -98,7 +106,7 @@ java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/s
 
 ### Install Chrome
 
-Finally before we can start writing some tests we need to install Chrome itself. We download Chrome as a Debian package rather than using Aptitude and install it manually. Finally we fix any broken dependencies and finally check Chrome is working as a headless browser.
+Finally before we can start writing some tests we need to install Chrome itself. We download Chrome as a Debian package rather than using Aptitude and install it manually. Finally we fix any broken dependencies and then check Chrome works as a headless browser.
 
 ```
 # Install some required dependencies
@@ -113,8 +121,10 @@ sudo dpkg -i ~/google-chrome*.deb
 # Tidy up installed packages and fix any broken dependencies
 sudo apt-get install -f
 
-# Check it's installed and works
+# Check it's installed
 which google-chrome
+
+# Check Chrome runs as a headless browser and dump output
 google-chrome --headless --dump-dom https://www.chromestatus.com/
 ```
 
@@ -124,7 +134,7 @@ We're done, we can now moving onto setting up Behat itself.
 
 First we config our `behat.yml` file. It's relatively straight forward, we set a base URL, we tell Behat to make use of Selenium and Chrome.
 
-Importantly in our Chrome config we have to tell it to execute in headless mode. Finally and most importantly we need to tell Behat which contexts to use. Contexts are PHP classes that turn our Behat tests into executable code. In this case we're calling in the Mink Context which includes a bunch of default functionality for testing the UI. You can find out more on contexts in my [Behat introductory post]().
+Importantly in our Chrome config we have to tell it to execute in headless mode. Finally and most importantly we need to tell Behat which contexts to use. Contexts are PHP classes that turn our Behat tests into executable code. In this case we're calling in the Mink Context which includes a bunch of default functionality for testing the UI. You can find out more on contexts in my [Behat introductory post](http://rbrt.wllr.info/2017/11/22/introduction-bdd-testing-with-behat.html).
 
 ```
 default:
@@ -144,9 +154,9 @@ default:
 
 ### Create a Behat Test
 
-Once we've configed Behat we need to write a test Behat, Mink, Selenium and Chrome can execute. Now I'm going to assume you have a web application such as WordPress ready to be tested. My test will check if you can login into WordPress. You wouldn't normally do this, but it's just an example.
+Once we've configed Behat we need to write a test that our new setup can execute. I'm going to assume you have a web application such as WordPress ready to be tested. My test will check if you can login into WordPress. You wouldn't normally do this, but it's just an example.
 
-The test script for Behat uses Gherkin syntax, I'm not going to explain this now, but you can read my other Behat post for more details.
+The test script for Behat uses Gherkin syntax, I'm not going to explain this now, but you can read my other [Behat post](http://rbrt.wllr.info/2017/11/22/introduction-bdd-testing-with-behat.html) for more details.
 
 ```
 Feature: WordPress Login
