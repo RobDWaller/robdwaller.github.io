@@ -5,7 +5,7 @@ published: true
 description: "This post aims to explain how to setup automated functional tests in Behat using Selenium and Chrome."
 tags: [Testing, Functional Tests, Automation, Automated Tests, Behat, PHP, Selenium, BDD, Chrome, Linux]
 ---
-This post aims to explain how to setup automated functional tests in [Behat](http://behat.org/en/latest/) using [Selenium](http://www.seleniumhq.org/) and Chrome. The benefit of setting this up is that these tests can be written with little to no coding experience required. They can be setup by a QA or a Project Manager for example.
+This post aims to explain how to setup automated functional UI tests in [Behat](http://behat.org/en/latest/) using [Selenium](http://www.seleniumhq.org/) and Chrome. The benefit of setting this up is that these tests can be written with little to no coding experience required. They can be setup by a QA or a Project Manager for example.
 
 If you don't know anything about Behat or BDD I would suggest you read my [introductory post](http://rbrt.wllr.info/2017/11/22/introduction-bdd-testing-with-behat.html) or watch [Ciaran McNulty's talk](https://www.youtube.com/watch?v=83GbyDpJDI4) on the subject.
 
@@ -19,7 +19,7 @@ When I setup Behat I was running the following system, you of course may be runn
 
 ### Composer Setup
 
-Behat is a PHP Library that can easily be pulled in via Composer and [Packagist](https://packagist.org/packages/behat/behat). To get Behat working with Selenium you require a number of libraries. This include the [Behat Mink](https://packagist.org/packages/behat/mink) extension and the [Mink Selenium driver](https://packagist.org/packages/behat/mink-selenium2-driver) that allow you to automate front end functional tests with a headless Chrome browser.
+Behat is a PHP Library that can easily be pulled in via Composer and [Packagist](https://packagist.org/packages/behat/behat). To get Behat working with Selenium you require a number of libraries. This includes the [Behat Mink](https://packagist.org/packages/behat/mink) extension and the [Mink Selenium driver](https://packagist.org/packages/behat/mink-selenium2-driver) that allow you to automate front end functional tests with a headless Chrome browser.
 
 Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/behat/mink-goutte-driver) headless browser in that it can execute JavaScript code. So to begin we need to config our `composer.json` as follows.
 
