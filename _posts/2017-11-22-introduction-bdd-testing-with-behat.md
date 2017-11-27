@@ -48,7 +48,7 @@ There are also some cool features built into Behat that allow QAs and developers
 
 ![Behat Auto Signatures Output](/assets/img/behat-methods.png)
 
-Behat therefore allows your QA, and possibly Project Manager, to focus on defining your tests and specifications, while your developers simply focus on writing code to pass the test and match the specifications. Working in this manner may impose some up front costs but it will reduce your bug and maintenance costs in the future as your product is better defined and tested. Overall this will benefit your team, your efficiency and your client relationship.
+Behat therefore allows your QA, and possibly Project Manager, to focus on defining your tests and specifications, while your developers focus on writing code to pass the test and match the specifications. Working in this manner may impose some up front costs but it will reduce your bug and maintenance costs in the future as your product is better defined and tested. Overall this will benefit your team, your efficiency and your client relationship.
 
 In addition, Behat can be extended with libraries such as [Mink](https://packagist.org/packages/behat/mink) and tools such as [Selenium](http://www.seleniumhq.org/) so you can run functional tests on the User Interface. Mink also comes with built in contexts, this means a QA can begin writing functional tests without any help from a developer and very little knowledge of code.
 
