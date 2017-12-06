@@ -27,7 +27,7 @@ When I setup Behat I was running the following system, you of course may be runn
 
 Behat is a PHP Library that can easily be pulled in via [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/packages/behat/behat). To get Behat working with Selenium you require a number of libraries. This includes the [Behat Mink](https://packagist.org/packages/behat/mink) extension and the [Mink Selenium driver](https://packagist.org/packages/behat/mink-selenium2-driver) that allow you to automate front end functional tests with a headless Chrome browser.
 
-Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/behat/mink-goutte-driver) headless browser in that it can execute JavaScript code. So to begin we need to config our `composer.json` as follows.
+Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/behat/mink-goutte-driver) headless browser in that it can execute JavaScript code. So to begin we need to setup composer with `composer init` and add a `require-dev` JSON block as follows.
 
 ```javascript
 "require-dev": {
@@ -38,15 +38,25 @@ Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/beh
 }
 ```
 
-Once we've run `composer install` and everything is in our vendor directory we can execute Behat. I like to use the `--verbose` flag because it allows you to see the full output when executing Behat. This is particularly useful when you're learning how to use Behat.
+Once we've run `composer install` and everything is in our vendor directory we can check Behat exists by executing it with the version `-V` flag.
 
 ```
+# Check Behat exists
 vendor/bin/behat -V
-behat 3.4.3
+# Output = behat 3.4.3
+```
 
+If Behat exists you can then install it, which will generate the features directory where you place your tests.
+
+```
+# Install Behat, generate the features directory
 vendor/bin/behat --init
-will install behat and add required directory structure and files.
+```
 
+Finally you can give Behat a test, it won't run anything but it should tell you there are no tests available.
+
+```
+# Run Behat with verbose output, useful for testing and debugging
 vendor/bin/behat --verbose
 
 No scenarios
@@ -54,7 +64,7 @@ No steps
 0m0.20s (7.23Mb)
 ```
 
-Of course when we run Behat for the first time nothing useful will happen. We haven't written any tests or installed all the tools we need.
+To get Behat working and running tests we need to install Selenium and Chrome, and write some tests.
 
 ### Installing Java
 
@@ -70,7 +80,7 @@ The program 'java' can be found in the following packages:
 Ask your administrator to install one of them
 ```
 
-On Ubuntu 14.04 you will need to add a Personal Package Archive that can download and install Java 8. We do this with the following commands. One note: always be careful with PPAs don't add them to a live server unless you have tested and validated them on a dev box first.
+On Ubuntu 14.04 you will need to add a Personal Package Archive that will allow you to download and install Java 8. We do this with the following commands. One note: always be careful with PPAs don't add them to a live server unless you have tested and validated them on a dev box first.
 
 ```
 # Add the PPA
@@ -105,7 +115,7 @@ Once we've downloaded Selenium we can start running it. Essentially what we are 
 java -jar /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar
 ```
 
-Once you've got Selenium running and seen what it can do I'd cancel it by typing `ctrl + c`.
+If Selenium started working ok you should see the output `INFO - Selenium Server is up and running`. You'll also note that this command has taken over you CLI, to exit Selenium and turn it off just type `ctrl + c`.
 
 ### Download Chrome Driver
 
@@ -130,9 +140,11 @@ Once the Chrome driver is installed we can edit the way we run Selenium by telli
 java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar -debug
 ```
 
+Once again you should see `INFO - Selenium Server is up and running` and you can exit Selenium by typing `ctrl + c`.
+
 ### Install Chrome
 
-Finally before we can start writing some tests we need to install Chrome itself. We download Chrome as a Debian package rather than using Aptitude and install it manually. Finally we fix any broken dependencies and then check Chrome works as a headless browser.
+Before we can start writing some tests we need to install Chrome itself. We download Chrome as a Debian package rather than using Aptitude and install it manually. Finally we fix any broken dependencies and then check Chrome works as a headless browser.
 
 ```
 # Install some required dependencies
@@ -149,12 +161,13 @@ sudo apt-get install -f
 
 # Check it's installed
 which google-chrome
+# Output = /usr/bin/google-chrome
 
-# Check Chrome runs as a headless browser and dump output
+# Check Chrome runs as a headless browser and dump output, you should see some HTML markup
 google-chrome --headless --dump-dom https://www.chromestatus.com/
 ```
 
-We're done, we can now moving onto setting up Behat itself.
+We're done, we can now finish setting up Behat and writing tests.
 
 ### Write Behat YAML
 
@@ -166,7 +179,8 @@ Importantly in our Chrome config we have to tell it to execute in headless mode.
 default:
     extensions:
         Behat\MinkExtension:
-            base_url: http://[~You IP or Domain here~]
+            # Set the base_url to match your environment setup
+            base_url: http://localhost:8000
             javascript_session: selenium2
             browser_name: 'chrome'
             selenium2:
@@ -174,13 +188,15 @@ default:
     suites:
         default:
             contexts:
+                # Default Behat Context
                 - FeatureContext
+                # Additional Behat Mink Context
                 - Behat\MinkExtension\Context\MinkContext
 ```
 
 ### Create a Behat Test
 
-Once we've configed Behat we need to write a test that our new setup can execute. If you take a look at my [GitHub library](https://github.com/RobDWaller/behat-selenium-chrome) you will be able to see the Behat tests I have created. These tests are based on a simple web form that submits a name and shows a message. Hopefully they should provide a good example.
+Once we've configed Behat we need to write a test that our new setup can execute. If you take a look at my [GitHub library](https://github.com/RobDWaller/behat-selenium-chrome) you will be able to see the Behat tests I have created in the `features/form.feature` file. These tests are based on a simple web form that submits a name and shows a message. Again look at the [GitHub library](https://github.com/RobDWaller/behat-selenium-chrome) you'll find the test webpages in the `public/` directory, hopefully they will provide a good example.
 
 ```
 Feature: Form Submission
@@ -202,31 +218,44 @@ Feature: Form Submission
 
 The test script for Behat uses Gherkin syntax, I'm not going to explain this now, but you can read my other [Behat post](http://rbrt.wllr.info/2017/11/22/introduction-bdd-testing-with-behat.html) for more details.
 
-To begin creating your own tests you'll need to initiate Behat which will create a `features/` directory with some default code in.
-
-```
-# To initiate Behat run
-vendor/bin/behat --init
-```
-
-Once this is done you'll need to create a `*.feature` file and place your test code in it. In my [GitHub library]() example I create the file `features/form.feature`.
+Once you've written a test for your application and placed it in a `*.feature` file in your `features/` directory you can run Behat and see what happens.
 
 ## Run Behat
 
-We've finally setup Behat so we can now execute it. Make sure Selenium is turned on first and then run Behat.
+To run Behat we first need to turn on Selenium with suppressed output and then execute Behat.
 
 ```
 # Turn on Selenium and suppress the output
-java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar >/dev/null &
+java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar >/dev/null 2>&1 &
 
 # Run Behat
 vendor/bin/behat --verbose
 ```
 
-If all went well we should see something like...
+If all went well you should see output that looks like this...
 
 ```
+Feature: Form Submission
+    In order to see a fun Hello 'Name' message
+    As a website user
+    I need to be able to visit the index page and submit the form with my name
 
+  Scenario: Submit Form
+    Given I am on "/index.php"
+    When I fill in "name" with "John Smith"
+    And I press "submit"
+    Then I should see "Hello John Smith"
+
+  Scenario: Subimt Form Error Message
+    Given I am on "/index.php"
+    When I press "submit"
+    Then I should see "Hello you didn't submit your name..."
+    
+2 scenarios (2 passed)
+7 steps (7 passed)
+0m3.97s (9.12Mb)
 ```
 
 FIN!
+
+If you have any questions, need help, or have any suggestions or amends please message me on Twitter [@RobDWaller](https://twitter.com).
