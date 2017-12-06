@@ -40,7 +40,7 @@ Selenium has advantages over the [PHP Goutte](https://packagist.org/packages/beh
 
 Once we've run `composer install` and everything is in our vendor directory we can check Behat exists by executing it with the version `-V` flag.
 
-```
+```shell
 # Check Behat exists
 vendor/bin/behat -V
 # Output = behat 3.4.3
@@ -48,14 +48,14 @@ vendor/bin/behat -V
 
 If Behat exists you can then install it, which will generate the features directory where you place your tests.
 
-```
+```shell
 # Install Behat, generate the features directory
 vendor/bin/behat --init
 ```
 
 Finally you can give Behat a test, it won't run anything but it should tell you there are no tests available.
 
-```
+```shell
 # Run Behat with verbose output, useful for testing and debugging
 vendor/bin/behat --verbose
 
@@ -70,7 +70,7 @@ To get Behat working and running tests we need to install Selenium and Chrome, a
 
 To run Selenium we need to install Java. You can check whether Java is installed by typing `java -version`. Most likely Java won't be installed or you'll need to update it to Java 8. You'll know Java isn't installed if you see the following output.
 
-```
+```shell
 The program 'java' can be found in the following packages:
  * default-jre
  * gcj-4.8-jre-headless
@@ -82,7 +82,7 @@ Ask your administrator to install one of them
 
 On Ubuntu 14.04 you will need to add a Personal Package Archive that will allow you to download and install Java 8. We do this with the following commands. One note: always be careful with PPAs don't add them to a live server unless you have tested and validated them on a dev box first.
 
-```
+```shell
 # Add the PPA
 sudo add-apt-repository ppa:webupd8team/java
 
@@ -101,7 +101,7 @@ After we have Java setup we need to download the latest version of Selenium whic
 
 If you're not clear on what Selenium is, it is basically a tool that allows you to automate a browser. This can be done by opening an actual browser window or via a headless browser. You can of course find out more on the [Selenium Website](http://www.seleniumhq.org/)
 
-```
+```shell
 # Make a Selenium directory
 sudo mkdir /usr/local/share/selenium
 
@@ -111,7 +111,7 @@ sudo wget http://selenium-release.storage.googleapis.com/3.7/selenium-server-sta
 
 Once we've downloaded Selenium we can start running it. Essentially what we are doing is turning Selenium on, rather than executing a particular command. Once Selenium is turned on we can then send it commands to execute; this is essentially what Behat Mink does.
 
-```
+```shell
 java -jar /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar
 ```
 
@@ -123,7 +123,7 @@ Right now Selenium does not have a browser to execute anything with, so we need 
 
 So we download the Chrome driver and like Selenium it is just a Java executable.
 
-```
+```shell
 # Download the Chrome driver zip
 sudo wget https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip -P /usr/local/share
 
@@ -136,7 +136,7 @@ sudo rm /usr/local/share/chromedriver_linux64.zip
 
 Once the Chrome driver is installed we can edit the way we run Selenium by telling it to use the Chrome driver by adding the `-D` flag. You may also find it useful to use the `-debug` flag as it will help you deal with any problems you may have when running Selenium.
 
-```
+```shell
 java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar -debug
 ```
 
@@ -146,7 +146,7 @@ Once again you should see `INFO - Selenium Server is up and running` and you can
 
 Before we can start writing some tests we need to install Chrome itself. We download Chrome as a Debian package rather than using Aptitude and install it manually. Finally we fix any broken dependencies and then check Chrome works as a headless browser.
 
-```
+```shell
 # Install some required dependencies
 sudo apt-get install -y libxss1 libappindicator1 libindicator7
 
