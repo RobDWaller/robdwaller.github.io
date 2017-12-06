@@ -224,7 +224,7 @@ Once you've written a test for your application and placed it in a `*.feature` f
 
 To run Behat we first need to turn on Selenium with suppressed output and then execute Behat.
 
-```
+```shell
 # Turn on Selenium and suppress the output
 java -jar -Dwebdriver.chrome.driver="/usr/local/share/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.7.1.jar >/dev/null 2>&1 &
 
@@ -234,7 +234,7 @@ vendor/bin/behat --verbose
 
 If all went well you should see output that looks like this...
 
-```
+```shell
 Feature: Form Submission
     In order to see a fun Hello 'Name' message
     As a website user
@@ -250,7 +250,7 @@ Feature: Form Submission
     Given I am on "/index.php"
     When I press "submit"
     Then I should see "Hello you didn't submit your name..."
-    
+
 2 scenarios (2 passed)
 7 steps (7 passed)
 0m3.97s (9.12Mb)
