@@ -2,10 +2,10 @@
 layout: post
 title: "How to Set Up Testing With Behat, Selenium and Chrome"
 published: true
-description: "This post aims to explain how to setup automated functional tests in Behat using Selenium and Chrome."
+description: "This post aims to explain how to setup automated functional UI tests in Behat using Selenium and Chrome on an Ubuntu environment."
 tags: [Testing, Functional Tests, Automation, Automated Tests, Behat, PHP, Selenium, BDD, Chrome, Linux]
 ---
-This post aims to explain how to setup automated functional UI tests in [Behat](http://behat.org/en/latest/) using [Selenium](http://www.seleniumhq.org/) and Chrome. The benefit of setting this up is that these tests can be written with little to no coding experience required. They can be setup by a QA or a Project Manager for example.
+This post aims to explain how to setup automated functional UI tests in [Behat](http://behat.org/en/latest/) using [Selenium](http://www.seleniumhq.org/) and Chrome on an Ubuntu environment. The benefit of setting this up is that these tests can be written with little to no coding experience required. They can be setup by a QA or a Project Manager for example.
 
 If you don't know anything about Behat or BDD I would suggest you read my [introductory post](http://rbrt.wllr.info/2017/11/22/introduction-bdd-testing-with-behat.html) or watch [Ciaran McNulty's talk](https://www.youtube.com/watch?v=83GbyDpJDI4) on the subject.
 
@@ -22,6 +22,7 @@ When I setup Behat I was running the following system, you of course may be runn
 - Ubuntu 14.04
 - Apache
 - PHP 7.1
+- Composer
 
 ### Composer Setup
 
