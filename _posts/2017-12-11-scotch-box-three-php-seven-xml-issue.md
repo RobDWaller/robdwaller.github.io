@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Scotch Box 3.0 PHP 7.0 Xml Issue'
+title: 'Scotch Box 3.0 PHP 7.0 XML Issue'
 published: true
-description: 'Ever since Scotch Box released version 3.0 they've had an issue with the PHP-XML module not being installed on the Vagrant box.'
+description: "Ever since Scotch Box released version 3.0 they've had an issue with the PHP-XML module not being installed on the Vagrant box."
 tags: [scotch box, php, php-xml, bug, issue, vagrant, composer]
 ---
 I've been a long time user of [Scotch Box](https://box.scotch.io/) for my local environment, but ever since they released version 3.0 they've had an [issue with the PHP-XML module](https://github.com/scotch-io/scotch-box) not being installed. This means that when you try to run commands like `composer install` you'll get an error.
