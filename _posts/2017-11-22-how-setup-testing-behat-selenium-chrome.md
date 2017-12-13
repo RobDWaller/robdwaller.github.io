@@ -11,9 +11,9 @@ If you don't know anything about Behat or BDD I would suggest you read my [intro
 
 ### GitHub Library
 
-I've created a [GitHub library](http://rbrt.wllr.info/2017/11/22/how-setup-testing-behat-selenium-chrome.html) that provides an example of setting up and running this functionality on Travis.
+I've created a [GitHub library](https://github.com/RobDWaller/behat-selenium-chrome) that provides an example of setting up and running this functionality on Travis.
 
-Please [take a look](http://rbrt.wllr.info/2017/11/22/how-setup-testing-behat-selenium-chrome.html) as this post will reference it on a number of occasions.
+Please [take a look](https://github.com/RobDWaller/behat-selenium-chrome) as this post will reference it on a number of occasions.
 
 ### System Requirements
 
