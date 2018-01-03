@@ -13,7 +13,7 @@ There isn't a great deal of good documentation on how to do this, so I'm going t
 
 First you will need to install PHP Unit by adding it to your `composer.json` file. Remember always add it to `require-dev` as there is no need for PHP Unit to exist or run in production.
 
-```php
+```js
 "require-dev": {
     "phpunit/phpunit": "~6.0",
     "mockery/mockery": "~1.0"
@@ -53,4 +53,34 @@ There are two important configuration options.
 - `bootstrap="./vendor/autoload.php"` defines how to autoload files and classes. You will usually use the built in composer autoloader.
 - `<directory>./tests</directory>` defines where your test files will exists. This may not always be the `./tests` directory.
 
-Finally you will need to create a test file.
+Finally you will need to create a test file `./tests/ExampleTest.php`.
+
+```php
+<?php
+
+namespace Tests;
+
+use PHPUnit\Framework\TestCase;
+
+class ExampleTest extends TestCase
+{
+    public function testExample()
+    {
+        $var1 = true;
+
+        $this->assertTrue($var1);
+    }
+}
+```
+
+`vendor/bin/phpunit`
+
+```shell
+PHPUnit 6.5.5 by Sebastian Bergmann and contributors.
+
+.                                                                   1 / 1 (100%)
+
+Time: 132 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+```
