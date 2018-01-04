@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Set Up PHP Unit From Scratch'
+title: 'Set Up PHPUnit From Scratch'
 published: true
 description: "Writing unit tests with PHPUnit is a great way to improve your code and your applications, learn how to set it up from scratch."
 tags: [testing, tests, unit tests, phpunit, php]
@@ -73,7 +73,7 @@ class ExampleTest extends TestCase
 }
 ```
 
-It's relatively stright forward, you just extend the PHP Unit `TestCase` class and write a test function `testExample` including an [assertion](https://phpunit.de/manual/current/en/appendixes.assertions.html). Note, all test functions must begin with the keyword `test`.
+It's relatively stright forward, you just extend the PHPUnit `TestCase` class and write a test function `testExample` including an [assertion](https://phpunit.de/manual/current/en/appendixes.assertions.html). Note, all test functions must begin with the keyword `test`.
 
 Finally you can run `vendor/bin/phpunit` and you should see the following output...
 
