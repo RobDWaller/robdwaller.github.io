@@ -7,7 +7,7 @@ tags: [tests]
 ---
 When building an application and writing code there are two types of test you can run to check everything works. The first is 'test to work', these are tests that under normal conditions check your code works.
 
-To take the example of a car, you might create a test that checks when you put the key in the ignition and turn it the engine starts.
+To take the example of a car, you might create a test that checks when you put the key in the ignition and when you turn it the engine starts.
 
 ```
 Given there is a car with an ignition
@@ -20,7 +20,7 @@ Similarly with code you will write a unit test that checks when you pass an expe
 
 While 'test to work' is important and you should always write tests that prove your code works you must also 'test to break'. This is where you ask difficult and unexpected questions of your code and application. This is important because you can achieve 100% code coverage and very high path coverage by just writing 'test to work' tests. However 'test to work' does not guarantee your code will work under all conditions.
 
-To return to our car example, a 'test to break' test may read as follows. Insert a screwdriver into the ignition, twist it and wiggle it, the engine must not start. Another set of tests to break may ask what happens if I drive the car into a wall at 20mph, 40mph, 60mph and 80mph.
+To return to our car example, a 'test to break' test may read as follows. Insert a screwdriver into the ignition, twist it and wiggle it, the engine must not start. Another set of tests to break may ask what happens if I drive a car into a wall at 20mph, 40mph, 60mph and 80mph.
 
 ```
 Given I am in a moving car traveling at 20mph
@@ -31,13 +31,13 @@ And the airbag deploys
 
 Each of these tests check that certain things don't break and in both cases our tests are checking what happens under abnormal circumstances. It's unlikely that someone will drive a car into a wall at 60mph, however you should still test for what happens.
 
-Code should be tested in exactly the same way. Let's look at an example, imagine we have some magical code that builds car objects for a car ordering system. Like the Ford Motoring company we like black cars so we only want users to order black cars. There will be two other rules to follow.
+Code should be tested in exactly the same way. Let's look at an example, imagine we have some magical code that builds car objects for a car ordering system. Like the Ford Motoring company we like black cars so we only want users to order black cars. There will be two other rules to follow also.
 
 - Cars must be black
 - Cars must have four wheels
 - Cars must have three or five doors
 
-To begin we write a test to build a car object, that accepts three arguments `$color`, `$wheels` and `$doors`. There are then three getter methods to retrieve this information.
+To begin we write a test to build a car object that accepts three arguments `$color`, `$wheels` and `$doors`. There are then three getter methods to retrieve this information.
 
 ```php
 public function testMakeCar()
@@ -45,7 +45,9 @@ public function testMakeCar()
     $car = new Car('black', 4, 5);
 
     $this->assertEquals('black', $car->getColour());
+    
     $this->assertEquals(4, $car->getWheelCount());
+    
     $this->assertEquals(5, $car->getDoorCount());
 }
 ```
@@ -96,7 +98,7 @@ Really simple, the next step would be to take this Car object and pass it to an 
 You have ordered a black car with 4 tyres and 5 doors
 ```  
 
-We also want to test this for three doors and five doors as our rules above state. So we write two simple tests...
+We also want to test this for three doors and five doors as our rules above state. So we write two tests...
 
 ```php
 public function testOrderFiveDoorCar()
@@ -148,4 +150,16 @@ class Order
 }
 ```
 
-And it works, our tests pass and we have 100% code coverage, GREAT!! 
+And it works, our tests pass and we have 100% code coverage, GREAT!! We should have also achieved 100% path coverage as we have no control structures in our code. 
+
+In essence we've proved our code works, fulfilled the defined rules and if we use the code in the manner defined above it will work fine.
+
+We haven't though fully tested our code. We haven't written any 'test to break' tests. For example what would happen if we pass in blue, or 6 doors, or eight wheels into our car object?
+
+The answer is nothing, our code will execute fine. We will just get output from our `Order::getOrderDetails()` method that looks like this...
+
+```
+You have ordered a blue car with 8 wheels and 6 doors
+```
+
+This of course will break all our application rules. And in the real world it's precisely how another developer may use your code in the future. To get things right we need to write some tests that check what happens if another developer missuses our code.
