@@ -5,7 +5,7 @@ published: false
 description: ''
 tags: [tests]
 ---
-When building an application and writing code there are two types of test you can carry out to check things work. The first is 'test to work', these are tests that under normal conditions check your code works.
+When building an application and writing code there are two types of test you can run to check everything works. The first is 'test to work', these are tests that under normal conditions check your code works.
 
 To take the example of a car, you might create a test that checks when you put the key in the ignition and turn it the engine starts.
 
@@ -13,12 +13,12 @@ To take the example of a car, you might create a test that checks when you put t
 Given there is a car with an ignition
 When I insert a key
 And turn the key
-Then car's engine will start
+Then the car's engine will start
 ```
 
 Similarly with code you will write a unit test that checks when you pass an expected argument into a method that you are returned the value you expect. You write and carry out these tests to prove your application or car works.  
 
-While 'test to work' is important and you should always write tests that prove your code works you must also 'test to break'. This is where you ask difficult and unexpected questions of your code and application. This is important because you can achieve 100% code coverage and very high path coverage by just writing 'test to work' tests. However 'test to work' does not guarantee your code works under all conditions.
+While 'test to work' is important and you should always write tests that prove your code works you must also 'test to break'. This is where you ask difficult and unexpected questions of your code and application. This is important because you can achieve 100% code coverage and very high path coverage by just writing 'test to work' tests. However 'test to work' does not guarantee your code will work under all conditions.
 
 To return to our car example, a 'test to break' test may read as follows. Insert a screwdriver into the ignition, twist it and wiggle it, the engine must not start. Another set of tests to break may ask what happens if I drive the car into a wall at 20mph, 40mph, 60mph and 80mph.
 
@@ -31,8 +31,121 @@ And the airbag deploys
 
 Each of these tests check that certain things don't break and in both cases our tests are checking what happens under abnormal circumstances. It's unlikely that someone will drive a car into a wall at 60mph, however you should still test for what happens.
 
-Code should be tested in exactly the same way. Let me provide an example, imagine we have some magical code that builds cars. Initially our car code, like the Ford Motoring company, only builds black cars, then one day its decided that we'll start making blue cars too.
+Code should be tested in exactly the same way. Let's look at an example, imagine we have some magical code that builds car objects for a car ordering system. Like the Ford Motoring company we like black cars so we only want users to order black cars. There will be two other rules to follow.
 
-In our code we have a car order object, which defines what our customer wants; A car order validator, that checks the order complies with our set of car rules; And finally a car builder that magically generates our car.
+- Cars must be black
+- Cars must have four wheels
+- Cars must have three or five doors
 
-Initially we have a test that tests if we can build a black car. You can see all the code for this example on GitHub. And what do you know, our car builder makes a black car.
+To begin we write a test to build a car object, that accepts three arguments `$color`, `$wheels` and `$doors`. There are then three getter methods to retrieve this information.
+
+```php
+public function testMakeCar()
+{
+    $car = new Car('black', 4, 5);
+
+    $this->assertEquals('black', $car->getColour());
+    $this->assertEquals(4, $car->getWheelCount());
+    $this->assertEquals(5, $car->getDoorCount());
+}
+```
+
+We then of course write our Car class to fulfil the test...
+
+```php
+
+namespace App;
+
+class Car
+{
+    private $colour;
+
+    private $wheels;
+
+    private $doors;
+
+    public function __construct(string $colour, int $wheels, int $doors)
+    {
+        $this->colour = $colour;
+
+        $this->wheels = $wheels;
+
+        $this->doors = $doors;
+    }
+
+    public function getColour(): string
+    {
+        return $this->colour;
+    }
+
+    public function getWheelCount(): int
+    {
+        return $this->wheels;
+    }
+
+    public function getDoorCount(): int
+    {
+        return $this->doors;
+    }
+}
+```
+
+Really simple, the next step would be to take this Car object and pass it to an Order object which will process the car order. In our example the Order class will accept a Car object and there will be a single method that will output an order statement...
+
+```
+You have ordered a black car with 4 tyres and 5 doors
+```  
+
+We also want to test this for three doors and five doors as our rules above state. So we write two simple tests...
+
+```php
+public function testOrderFiveDoorCar()
+{
+    $car = new Car('black', 4, 5);
+
+    $order = new Order($car);
+
+    $this->assertEquals(
+        'You have ordered a black car with 4 tyres and 5 doors',
+        $order->getOrderDetails()
+    );
+}
+
+public function testOrderThreeDoorCar()
+{
+    $car = new Car('black', 4, 3);
+
+    $order = new Order($car);
+
+    $this->assertEquals(
+        'You have ordered a black car with 4 tyres and 3 doors',
+        $order->getOrderDetails()
+    );
+}
+```
+
+We then write our Order class code to fulfil the tests...
+
+```php
+
+namespace App;
+
+use App\Car;
+
+class Order
+{
+    private $car;
+
+    public function __construct(Car $car)
+    {
+        $this->car = $car;
+    }
+
+    public function getOrderDetails()
+    {
+        return 'You have ordered a ' . $this->car->getColour() . ' car with ' . $this->car->getWheelCount() . ' tyres and ' . $this->car->getDoorCount() . ' doors';
+    }
+}
+```
+
+And it works, our tests pass and we have 100% code coverage, GREAT!! 
