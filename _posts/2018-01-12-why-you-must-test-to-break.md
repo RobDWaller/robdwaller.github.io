@@ -45,9 +45,9 @@ public function testMakeCar()
     $car = new Car('black', 4, 5);
 
     $this->assertEquals('black', $car->getColour());
-    
+
     $this->assertEquals(4, $car->getWheelCount());
-    
+
     $this->assertEquals(5, $car->getDoorCount());
 }
 ```
@@ -95,7 +95,7 @@ class Car
 Really simple, the next step would be to take this Car object and pass it to an Order object which will process the car order. In our example the Order class will accept a Car object and there will be a single method that will output an order statement...
 
 ```
-You have ordered a black car with 4 tyres and 5 doors
+You have ordered a black car with 4 wheels and 5 doors
 ```  
 
 We also want to test this for three doors and five doors as our rules above state. So we write two tests...
@@ -150,7 +150,7 @@ class Order
 }
 ```
 
-And it works, our tests pass and we have 100% code coverage, GREAT!! We should have also achieved 100% path coverage as we have no control structures in our code. 
+And it works, our tests pass and we have 100% code coverage, GREAT!! We should have also achieved 100% path coverage as we have no control structures in our code.
 
 In essence we've proved our code works, fulfilled the defined rules and if we use the code in the manner defined above it will work fine.
 
@@ -162,4 +162,74 @@ The answer is nothing, our code will execute fine. We will just get output from 
 You have ordered a blue car with 8 wheels and 6 doors
 ```
 
-This of course will break all our application rules. And in the real world it's precisely how another developer may use your code in the future. To get things right we need to write some tests that check what happens if another developer missuses our code.
+This of course will break all our application rules. And in the real world it's precisely how another developer may use the code in the future. To get things right we need to write some 'test to break' tests that check what happens if another developer missuses our code.
+
+We'll write three new tests, one to check for black color, one for four wheels and a final one for three or five doors...
+
+```php
+/**
+ * @expectedException App\OrderException
+ * @expectedExceptionMessage You must order a black car
+ */
+public function testOrderBlueCar()
+{
+    $car = new Car('blue', 4, 3);
+
+    $order = new Order($car);
+
+    $order->getOrderDetails();
+}
+
+/**
+ * @expectedException App\OrderException
+ * @expectedExceptionMessage You must order a car with 4 wheels
+ */
+public function testOrderEightWheelCar()
+{
+    $car = new Car('black', 8, 3);
+
+    $order = new Order($car);
+
+    $order->getOrderDetails();
+}
+
+/**
+ * @expectedException App\OrderException
+ * @expectedExceptionMessage You must order a car with 5 or 3 doors
+ */
+public function testOrderSixDoorCar()
+{
+    $car = new Car('black', 4, 6);
+
+    $order = new Order($car);
+
+    $order->getOrderDetails();
+}
+```
+
+My tests are going to force exceptions on the `Order::getOrderDetails()` method. You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference. Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
+
+With these three 'test to break' tests we impose our application rules explicitly, our order process will fail if it receives a Car object containing the wrong data.
+
+To fulfil these tests I simply add a private `validate()` method to my Order class that I call in the `getOrderDetails()` method. In addition I add an OrderException class that extends the PHP Exception class, I like explicit exceptions.
+
+```php
+private function validate(): void
+{
+    if ($this->car->getColour() !== 'black') {
+        throw new OrderException('You must order a black car');
+    }
+
+    if ($this->car->getWheelCount() !== 4) {
+        throw new OrderException('You must order a car with 4 wheels');
+    }
+
+    if ($this->car->getDoorCount() !== 5 && $this->car->getDoorCount() !== 3) {
+        throw new OrderException('You must order a car with 5 or 3 doors');
+    }
+}
+```    
+
+Our code now fulfils the tests and it can only be used in one way. A developer cannot throw a Car object at the Order object without complying with our application rules.
+
+Everything I've stated in this post, I hope, is obvious as the example is very simple. However I strongly believe that as application logic grows and becomes more complex developers often fail to implement 'test to break' principles. It is essential that developers and QAs consider how code and applications may be misused and test for these scenarios. 
