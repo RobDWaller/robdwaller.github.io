@@ -207,7 +207,7 @@ public function testOrderSixDoorCar()
 }
 ```
 
-My tests are going to force exceptions on the `Order::getOrderDetails()` method. You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference... Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
+My tests are going to force exceptions on the `Order::getOrderDetails()` method using [PHPUnit annotations](https://phpunit.de/manual/current/en/appendixes.annotations.html#appendixes.annotations.expectedException). You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference... Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
 
 However, with these three 'test to break' tests now in place we impose our application rules explicitly. Our order process will fail if it receives a Car object containing the wrong data, which is what we want.
 
@@ -234,4 +234,4 @@ Our code now fulfils the tests and it can only be used in one way. A developer c
 
 Everything I've stated in this post, I hope, is obvious as the example is very simple. However in more complex applications things are less obvious and more likely to go wrong, especially when integrated. This is why it is essential to follow 'test to break' principles and always look for ways in which your code may be misused. This will have a number of benefits, your application and code will be more robust, meaning you'll sleep better at night, but importantly you'll spend less time bug fixing after launch.
 
-If you would like to view a working version of the code discussed in this post please take a look at the associated repository. And of course if you have any questions or thoughts please message me on Twitter [@RobDWaller](https://twitter.com/RobDWaller)
+If you would like to view a working version of the code discussed in this post please take a look at the [associated repository](https://github.com/RobDWaller/test-to-break). And of course if you have any questions or thoughts please message me on Twitter [@RobDWaller](https://twitter.com/RobDWaller)
