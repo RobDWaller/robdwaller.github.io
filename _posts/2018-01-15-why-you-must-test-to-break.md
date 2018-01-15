@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 'Why You Must Always Test to Break'
-published: false
-description: ''
-tags: [tests]
+title: 'Why You Must Always Follow Test to Break Principles'
+published: true
+description: 'When building an application and writing code there are two types of test you can run to check everything works, test to work and test to break.'
+tags: [tests, php, phpunit, unit tests, test to work, test to break]
 ---
 When building an application and writing code there are two types of test you can run to check everything works. The first is 'test to work', these are tests that under normal conditions check your code works.
 
-To take the example of a car, you might create a test that checks when you put the key in the ignition and when you turn it the engine starts.
+To take the example of a car, you might create a test that checks when you put the key in the ignition and then turn it the engine starts.
 
 ```
 Given there is a car with an ignition
@@ -18,26 +18,26 @@ Then the car's engine will start
 
 Similarly with code you will write a unit test that checks when you pass an expected argument into a method that you are returned the value you expect. You write and carry out these tests to prove your application or car works.  
 
-While 'test to work' is important and you should always write tests that prove your code works you must also 'test to break'. This is where you ask difficult and unexpected questions of your code and application. This is important because you can achieve 100% code coverage and very high path coverage by just writing 'test to work' tests. However 'test to work' does not guarantee your code will work under all conditions.
+While 'test to work' is important, and you should always write tests that prove your code works, you must also 'test to break'. This is where you ask difficult and unexpected questions of your code and application. This is important because you can achieve 100% code coverage and very high path coverage by just writing 'test to work' tests. However 'test to work' does not guarantee your code will work under all conditions.
 
-To return to our car example, a 'test to break' test may read as follows. Insert a screwdriver into the ignition, twist it and wiggle it, the engine must not start. Another set of tests to break may ask what happens if I drive a car into a wall at 20mph, 40mph, 60mph and 80mph.
+To return to our car example, a 'test to break' test may read as follows. Insert a screwdriver into the ignition, twist it and wiggle it, the engine must not start. Another set of tests to break may ask what happens if a car is driven into a wall at 20mph, 40mph, 60mph and 80mph.
 
 ```
-Given I am in a moving car traveling at 20mph
-When I guide the car into a brick wall
+Given a moving car is traveling at 20mph
+When it is guided into a brick wall
 Then the seat belt tightens
 And the airbag deploys
 ```
 
 Each of these tests check that certain things don't break and in both cases our tests are checking what happens under abnormal circumstances. It's unlikely that someone will drive a car into a wall at 60mph, however you should still test for what happens.
 
-Code should be tested in exactly the same way. Let's look at an example, imagine we have some magical code that builds car objects for a car ordering system. Like the Ford Motoring company we like black cars so we only want users to order black cars. There will be two other rules to follow also.
+Code should be tested in exactly the same way. Let's look at an example, imagine we have some magical code that builds car objects for a car ordering system. Like the Ford Motoring company we like black cars so users can only order black cars. There are also two other rules, so our application rules are as follows.
 
 - Cars must be black
 - Cars must have four wheels
 - Cars must have three or five doors
 
-To begin we write a test to build a car object that accepts three arguments `$color`, `$wheels` and `$doors`. There are then three getter methods to retrieve this information.
+To begin we write a test to build a car object that accepts three arguments `$colour`, `$wheels` and `$doors`. There are then three getter methods to retrieve this information which we will run assertions on.
 
 ```php
 public function testMakeCar()
@@ -108,7 +108,7 @@ public function testOrderFiveDoorCar()
     $order = new Order($car);
 
     $this->assertEquals(
-        'You have ordered a black car with 4 tyres and 5 doors',
+        'You have ordered a black car with 4 wheels and 5 doors',
         $order->getOrderDetails()
     );
 }
@@ -120,7 +120,7 @@ public function testOrderThreeDoorCar()
     $order = new Order($car);
 
     $this->assertEquals(
-        'You have ordered a black car with 4 tyres and 3 doors',
+        'You have ordered a black car with 4 wheels and 3 doors',
         $order->getOrderDetails()
     );
 }
@@ -145,7 +145,7 @@ class Order
 
     public function getOrderDetails()
     {
-        return 'You have ordered a ' . $this->car->getColour() . ' car with ' . $this->car->getWheelCount() . ' tyres and ' . $this->car->getDoorCount() . ' doors';
+        return 'You have ordered a ' . $this->car->getColour() . ' car with ' . $this->car->getWheelCount() . ' wheels and ' . $this->car->getDoorCount() . ' doors';
     }
 }
 ```
@@ -162,9 +162,9 @@ The answer is nothing, our code will execute fine. We will just get output from 
 You have ordered a blue car with 8 wheels and 6 doors
 ```
 
-This of course will break all our application rules. And in the real world it's precisely how another developer may use the code in the future. To get things right we need to write some 'test to break' tests that check what happens if another developer missuses our code.
+This of course will break all our application rules. And in the real world it's precisely how another developer or user may accidentally use the code in the future. To get things right we need to write some 'test to break' tests that check what happens if our code is misused.
 
-We'll write three new tests, one to check for black color, one for four wheels and a final one for three or five doors...
+We'll write three new tests, one to check for black colour, one for four wheels and a final one for three or five doors...
 
 ```php
 /**
@@ -207,11 +207,11 @@ public function testOrderSixDoorCar()
 }
 ```
 
-My tests are going to force exceptions on the `Order::getOrderDetails()` method. You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference. Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
+My tests are going to force exceptions on the `Order::getOrderDetails()` method. You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference... Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
 
-With these three 'test to break' tests we impose our application rules explicitly, our order process will fail if it receives a Car object containing the wrong data.
+However, with these three 'test to break' tests now in place we impose our application rules explicitly. Our order process will fail if it receives a Car object containing the wrong data, which is what we want.
 
-To fulfil these tests I simply add a private `validate()` method to my Order class that I call in the `getOrderDetails()` method. In addition I add an OrderException class that extends the PHP Exception class, I like explicit exceptions.
+To fulfil these tests I simply add a private `validate()` method to my Order class that I call in the `getOrderDetails()` method. In addition I add an OrderException class that extends the PHP Exception class, I like explicit exceptions too...
 
 ```php
 private function validate(): void
@@ -230,6 +230,8 @@ private function validate(): void
 }
 ```    
 
-Our code now fulfils the tests and it can only be used in one way. A developer cannot throw a Car object at the Order object without complying with our application rules.
+Our code now fulfils the tests and it can only be used in one way. A developer cannot throw a Car object at the Order object without complying with our application rules. And it means our code and application are now more robust and properly tested.
 
-Everything I've stated in this post, I hope, is obvious as the example is very simple. However I strongly believe that as application logic grows and becomes more complex developers often fail to implement 'test to break' principles. It is essential that developers and QAs consider how code and applications may be misused and test for these scenarios. 
+Everything I've stated in this post, I hope, is obvious as the example is very simple. However in more complex applications things are less obvious and more likely to go wrong, especially when integrated. This is why it is essential to follow 'test to break' principles and always look for ways in which your code may be misused. This will have a number of benefits, your application and code will be more robust, meaning you'll sleep better at night, but importantly you'll spend less time bug fixing after launch.
+
+If you would like to view a working version of the code discussed in this post please take a look at the associated repository. And of course if you have any questions or thoughts please message me on Twitter [@RobDWaller](https://twitter.com/RobDWaller)
