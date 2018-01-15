@@ -150,13 +150,11 @@ class Order
 }
 ```
 
-And it works, our tests pass and we have 100% code coverage, GREAT!! We should have also achieved 100% path coverage as we have no control structures in our code.
+And it works, our tests pass and we have 100% code coverage, GREAT!! We should have also achieved 100% path coverage as we have no control structures in our code. In essence we've proved our code works, fulfilled the defined rules and if we use the code in the manner defined above it will work fine.
 
-In essence we've proved our code works, fulfilled the defined rules and if we use the code in the manner defined above it will work fine.
+We haven't though fully tested our code as we haven't written any 'test to break' tests. For example what would happen if we pass blue as the colour, or 6 doors, or eight wheels into our car object?
 
-We haven't though fully tested our code. We haven't written any 'test to break' tests. For example what would happen if we pass in blue, or 6 doors, or eight wheels into our car object?
-
-The answer is nothing, our code will execute fine. We will just get output from our `Order::getOrderDetails()` method that looks like this...
+The answer is nothing, our code will execute fine and we will just get output from our `Order::getOrderDetails()` method that looks like this...
 
 ```
 You have ordered a blue car with 8 wheels and 6 doors
@@ -207,11 +205,11 @@ public function testOrderSixDoorCar()
 }
 ```
 
-My tests are going to force exceptions on the `Order::getOrderDetails()` method using [PHPUnit annotations](https://phpunit.de/manual/current/en/appendixes.annotations.html#appendixes.annotations.expectedException). You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference... Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
+The new tests are going to force exceptions on the `Order::getOrderDetails()` method using [PHPUnit annotations](https://phpunit.de/manual/current/en/appendixes.annotations.html#appendixes.annotations.expectedException). You could choose to just return an error message or a boolean `false`, I'm though not a fan of mixed return types nor returning error strings, personal preference... Also you could impose exceptions in the Car object constructor, again though I'm not a fan of doing this.
 
 However, with these three 'test to break' tests now in place we impose our application rules explicitly. Our order process will fail if it receives a Car object containing the wrong data, which is what we want.
 
-To fulfil these tests I simply add a private `validate()` method to my Order class that I call in the `getOrderDetails()` method. In addition I add an OrderException class that extends the PHP Exception class, I like explicit exceptions too...
+To fulfil these tests I simply add a private `validate()` method to my Order class that I call in the `getOrderDetails()` method. In addition, I add an OrderException class that extends the PHP Exception class, I like explicit exceptions too...
 
 ```php
 private function validate(): void
@@ -232,6 +230,6 @@ private function validate(): void
 
 Our code now fulfils the tests and it can only be used in one way. A developer cannot throw a Car object at the Order object without complying with our application rules. And it means our code and application are now more robust and properly tested.
 
-Everything I've stated in this post, I hope, is obvious as the example is very simple. However in more complex applications things are less obvious and more likely to go wrong, especially when integrated. This is why it is essential to follow 'test to break' principles and always look for ways in which your code may be misused. This will have a number of benefits, your application and code will be more robust, meaning you'll sleep better at night, but importantly you'll spend less time bug fixing after launch.
+Everything I've stated in this post I hope is obvious as the example is very simple. However, in more complex applications things are less obvious and more likely to go wrong, especially when integrated. This is why it is essential to follow 'test to break' principles and always look for ways in which your code can be misused. This will have a number of benefits, your application and code will be more robust, meaning you'll sleep better at night, and importantly you'll spend less time bug fixing after launch.
 
 If you would like to view a working version of the code discussed in this post please take a look at the [associated repository](https://github.com/RobDWaller/test-to-break). And of course if you have any questions or thoughts please message me on Twitter [@RobDWaller](https://twitter.com/RobDWaller)
