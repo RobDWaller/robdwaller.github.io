@@ -6,15 +6,17 @@ published: false
 tags: [management]
 ---
 
-I've been a manager of a tech team for two years now and earlier in my career I ran a start up for a couple of years. As such I've had an interest in management for quite a while. Management isn't a topic that is often discussed among developers as we're generally much more interested in the pros and cons of various frameworks, design patterns or code principles.
+I've been a manager of a tech team for two years now and earlier in my career I ran a start up for a couple of years. As such I've had an interest in management for quite a while. Management isn't a topic that is often discussed among developers as we're generally more interested in the pros and cons of various frameworks, design patterns or code principles.
 
 To provide an example, this year's [PHP UK](https://www.phpconference.co.uk/schedule/) conference has nothing on the topic of tech management. This isn't a criticism of the conference, I'm a big fan of it. I went last year and I'm going this year, and I'm certain I'll learn a lot. The PHP UK schedule does though suggest a lack of interest in the subject.
 
-Management is important and the tech industry needs good managers with technical expertise. The weird thing is a lot of developers complain about being managed by non-technical people; that they don't understand our needs or the challenges we have to deal with on a day to day basis. So why don't we discuss it more and become managers? Please note the answer to this question isn't "we do agile where I work..." First lots of developers don't work in agile environments, second agile doesn't preclude hierarchy so you're likely still going to require and have managers.
+Management though is important and the tech industry needs good managers with technical expertise. The weird thing is a lot of developers complain about being managed by non-technical people; that they don't understand our needs or the challenges we have to deal with on a day to day basis. So why don't we discuss it more and become managers? Please note the answer to this question isn't "we do agile where I work..." First lots of developers don't work in agile environments, second agile doesn't preclude hierarchy so you're still going to require and have managers.
 
 The reason developers don't like to discuss management or are not interested may be two fold. First there is an assumption that if you become a manager you can no longer be technical; second, some developers may not feel capable to lead a team of talented and skilled developers. Particularly if that team includes people who they regard as better than them.
 
-I believe these feelings and assumptions to be myths, as developers we should discuss management and its underlying principles more. And we should be more excited about taking on the challenge of management. I have outlined five tips that I have learnt that I hope will inspire those considering a move into management, demystify it a little, and make those who've never thought about it consider it.
+I believe these feelings and assumptions to be myths, as developers we should discuss management and its underlying principles more. And we should be more excited about taking on the challenge of management as it will do the industry a lot of good.
+
+[write lead in]
 
 ### Great Developers Don't Make Great Managers
 
@@ -22,7 +24,7 @@ This is of course a lie, great developers can and do make great managers. The im
 
 It is important that you have experience and a good understanding of code and technical issues, but you don't have to be the best in your team at it. Management is about a lot more than your field of expertise so don't let your code capability put you off a management role. You may be great at it.
 
-A good analogy for this point is football, what do the following football managers all have in common?
+A good analogy for this point is football; what do the following football managers all have in common?
 
 - Alex Fergusson
 - Arsene Wenger
@@ -30,7 +32,7 @@ A good analogy for this point is football, what do the following football manage
 - Jurgen Klopp
 - Jose Mourinho
 
-Answer: none of them were particularly good at football, at least not exceptional. They are though some of the most decorated managers in the game. The theory goes that average football players make better managers because they emphasise better with average players and can therefore get more out of them. Great players by contrast often can't comprehend why less capable players can't do what they can, leading to frustration. Average players also develop other skills that are useful to managers. There is a good article on some of the data behind good football managers [in the FT](https://www.ft.com/content/f340caae-47cd-11e1-b646-00144feabdc0) that covers some of these issues.
+Answer: none of them were particularly good at football, at least not exceptional. They are though some of the most decorated managers in the game. The theory goes that average football players make better managers because they empathise better with average players and can therefore get more out of them. Great players by contrast often can't comprehend why less capable players can't do what they can, leading to frustration. Average players also develop other skills that are useful to managers. There is a good article on some of the data behind good football managers [in the FT](https://www.ft.com/content/f340caae-47cd-11e1-b646-00144feabdc0) that covers some of these issues.
 
 There are of course exceptions to every rule and [Johan Cruyff](https://en.wikipedia.org/wiki/Johan_Cruyff) is one of them. Cruyff was not only one of the greatest footballers of all time, but also one of the greatest managers too. He is widely regarded as the most influential footballer of all time. Even Cruyff admits though that management is about far more than technical skill. That it is important to understand what you are good at and what you are not and that you can acquire the skills you need from others. Cruyff highlights that one of the key skills of a good managers is to spot and deploy talent in the right places.
 
@@ -76,16 +78,16 @@ public function helloWorld(string $hello, string $world): string
 }
 ```
 
-On a personal level I would agree with these developers. However as a manager you need to focus on what is really bad, your line in the sand cannot be type hinting. Of course you should encourage your team to type hint, but nobody in any other team is going to give a damn about it. Your lines in the sand need to be realistic and understandable to non-technical people.
+On a personal level I would agree with these developers. However as a manager you need to focus on what is really bad, your lines in the sand cannot include type hinting. Of course you should encourage your team to type hint, but nobody in any other department is going to give a damn about it. Your lines in the sand need to be realistic and understandable to non-technical people.
 
-So focus on things like security, don't allow people to use PHPMyAdmin or WebMin; Demand that there is always time to QA and test before release; That the budget and timeline matches what can realistically be delivered. Do not throw a strop about not having enough time to type hint every part of your codebase. Things like type hinting are principles to be followed they are not though 'lines in the sand'.  
+So focus on things like security, don't allow people to use PHPMyAdmin or WebMin; Demand that there is always time to QA and test before release; That the budget and timeline matches what can realistically be delivered.  
 
-Compromise on the tech you wish to use too. Aim to incrementally improve the tech you use, don't try a big bang approach as people may not be able to cope with the change and budgets may not be available. As an example, the best way to complete a project may be to use Symfony, an API and Vue JS. Budgets may only allow for you to pick two of the listed tecnologies. You may even have to use WordPress...
-
-The point here is tgat on a project by project basis you may not always get to use the tech you want to. If though you always add something new into each project you do eventually you'll end up using the best tech available. People outside of your team won't notice
+As a manager you will have to compromise in many areas. The important point though is to learn to navigate a path between beligerence and 
 
 ### Keep Coding
 
-There is no reason why when you become a manager that you stop coding or learning about code. I very rarely now code at work. However, I continue to work on some personal projects and regularly attend technical conferences and meetups. It's important to keep your toe in the water and there is no reason you shouldn't. So maybe get involved in an open source project, or write and maintain your own library. Continuing to code will help you stay in touch with what your team members are doing and what is happening in the wider technical space which can only help you as a manager.
+There is no reason why as a manager that you stop coding or learning about code. I very rarely now code at work. However, I continue to work on some personal projects and regularly attend technical conferences and meetups. It's important to keep your toe in the water and there is no reason you shouldn't.
+
+Get involved in an open source project, or write and maintain your own library. Continuing to code will help you stay in touch with what your team members are doing; what is happening in the wider technical space; and maintain your passion for the subject. Overall this can only help you as a manager, so keep coding.
 
 There is of course a great deal more to say on this subject, but the above I hope is a good start.
