@@ -1,6 +1,6 @@
 ---
 layout: 'post'
-title: 'Five Tips for Those Considering Tech Team Management'
+title: 'Five Tips for Aspiring Tech Team Managers'
 description: "Management isn't a topic that is often discussed among developers as we're generally much more interested in the pros and cons of various frameworks, design patterns, code principles or design patterns"
 published: false
 tags: [management]
@@ -34,7 +34,7 @@ Answer: none of them were particularly good at football, at least not exceptiona
 
 There are of course exceptions to every rule and [Johan Cruyff](https://en.wikipedia.org/wiki/Johan_Cruyff) is one of them. Cruyff was not only one of the greatest footballers of all time, but also one of the greatest managers too. He is widely regarded as the most influential footballer of all time. Even Cruyff admits though that management is about far more than technical skill. That it is important to understand what you are good at and what you are not and that you can acquire the skills you need from others. Cruyff highlights that one of the key skills of a good managers is to spot and deploy talent in the right places.
 
-As a tech manager you should remember you can always hire the developers who have the skills and experience you don't. And in fact spotting talent is a skill in itself. 
+As a tech manager you should remember you can always hire the developers who have the skills and experience you don't. And in fact spotting talent is a skill in itself.
 
 I'd really suggest reading [Cryuff's biography](https://www.amazon.co.uk/My-Turn-Autobiography-Johan-Cruyff/dp/150981390X), whether you like football or not, as it is a wonderful treatise on a great man and the principles of good management. In addition some history is also useful the Estate Manager in Xenophon's [Conversations of Socrates](https://www.amazon.co.uk/Conversations-Socrates-Classics-Xenophon/dp/014044517X/) is useful along with [The Prince](https://www.amazon.co.uk/Prince-Niccolò-Machiavelli/dp/1536912883) by Machiavelli. And possibly even [Ethics](https://www.amazon.co.uk/Nicomachean-Ethics-Penguin-Classics/dp/0140449493) by Aristotle.
 
@@ -80,7 +80,7 @@ On a personal level I would agree with these developers. However as a manager yo
 
 So focus on things like security, don't allow people to use PHPMyAdmin or WebMin; Demand that there is always time to QA and test before release; That the budget and timeline matches what can realistically be delivered. Do not throw a strop about not having enough time to type hint every part of your codebase. Things like type hinting are principles to be followed they are not though 'lines in the sand'.  
 
-Compromise on the tech you wish to use too. Aim to incrementally improve the tech you use, don't try a big bang approach as people may not be able to cope with the change and budgets may not be available. As an example, the best way to complete a project may be to use Symfony, an API and Vue JS. Budgets may only allow for you to pick two of the listed tecnologies. You may even have to use WordPress... 
+Compromise on the tech you wish to use too. Aim to incrementally improve the tech you use, don't try a big bang approach as people may not be able to cope with the change and budgets may not be available. As an example, the best way to complete a project may be to use Symfony, an API and Vue JS. Budgets may only allow for you to pick two of the listed tecnologies. You may even have to use WordPress...
 
 The point here is tgat on a project by project basis you may not always get to use the tech you want to. If though you always add something new into each project you do eventually you'll end up using the best tech available. People outside of your team won't notice
 
