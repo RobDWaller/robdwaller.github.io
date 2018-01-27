@@ -6,21 +6,13 @@ published: false
 tags: [management]
 ---
 
-I've been a manager of a tech team for two years now and earlier in my career I ran a start up for a couple of years. As such I've had an interest in management for quite a while. Management isn't a topic that is often discussed among developers as we're generally more interested in the pros and cons of various frameworks, design patterns or code principles.
+Becoming a tech manager and learning how to be good at it is difficult. There isn't a great deal of 'documentation' available and developers don't discuss the topic a lot. Just take a look at your average code conference, there are very few talks on management. Sadly this means most new tech managers and lead developers learn on the job, which isn't always ideal.
 
-To provide an example, this year's [PHP UK](https://www.phpconference.co.uk/schedule/) conference has nothing on the topic of tech management. This isn't a criticism of the conference, I'm a big fan of it. I went last year and I'm going this year, and I'm certain I'll learn a lot. The PHP UK schedule does though suggest a lack of interest in the subject.
-
-Management though is important and the tech industry needs good managers with technical expertise. The weird thing is a lot of developers complain about being managed by non-technical people; that they don't understand our needs or the challenges we have to deal with on a day to day basis. So why don't we discuss it more and become managers? Please note the answer to this question isn't "we do agile where I work..." First lots of developers don't work in agile environments, second agile doesn't preclude hierarchy so you're still going to require and have managers.
-
-The reason developers don't like to discuss management or are not interested may be two fold. First there is an assumption that if you become a manager you can no longer be technical; second, some developers may not feel capable to lead a team of talented and skilled developers. Particularly if that team includes people who they regard as better than them.
-
-I believe these feelings and assumptions to be myths, as developers we should discuss management and its underlying principles more. And we should be more excited about taking on the challenge of management as it will do the industry a lot of good.
-
-[write lead in]
+I've been managing a tech team for two years now and it's been an extreme learning curve. There are lots of thoughts and learnings I could share, but there are five important ones. They are useful for any aspiring manager, lead developer and even those who haven't considered the move into management but probably should. 
 
 ### Great Developers Don't Make Great Managers
 
-This is of course a lie, great developers can and do make great managers. The important point is that if you're considering a management role remember you don't have to be a great developer to be a great manager.
+I'm going to begin with a lie, a big fat one, "great developers don't make great managers". This is obviously false, great developers can and do make great managers. The important point though is that if you're considering a management role remember you don't have to be a great developer to be a great manager.
 
 It is important that you have experience and a good understanding of code and technical issues, but you don't have to be the best in your team at it. Management is about a lot more than your field of expertise so don't let your code capability put you off a management role. You may be great at it.
 
