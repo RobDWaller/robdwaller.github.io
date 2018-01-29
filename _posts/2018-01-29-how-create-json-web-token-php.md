@@ -1,22 +1,22 @@
 ---
 layout: 'post'
 title: 'How to Create a JSON Web Token Using PHP'
-description: ""
-published: false
+description: "If you'd like to build your own JSON Web Token generator or just learn a little bit more about the inner workings of JSON Web Tokens the following guide will help."
+published: true
 tags: [php, json, jwt, tokens, authentication]
 ---
 
-I have spent the last year intermitently working on a PHP JSON Web Token library called [ReallySimpleJWT](), and this week I released [version 1.0.0](). The code is accessible via [GitHub]() and [Packagist]().
+I have spent the last year intermittently working on a PHP JSON Web Token library called [ReallySimpleJWT](https://github.com/RobDWaller/ReallySimpleJWT), and this week I released [version 1.0.0](https://github.com/RobDWaller/ReallySimpleJWT/releases/tag/1.0.0). The code is accessible via [GitHub](https://github.com/RobDWaller/ReallySimpleJWT) and [Packagist](https://packagist.org/packages/rbdwllr/reallysimplejwt).
 
-For those of you who have not used JSON Web Tokens before they are a simple, URL friendly, token based authentication system. They also allow you to easily transfer information via an encoded JSON payload. 
+For those of you who have not used JSON Web Tokens before they are a simple, URL friendly, token based authentication system. They also allow you to easily transfer information via an encoded JSON payload.
 
-The core benefits of JSON Web Tokens are two fold; you don't need to use sessions or cookies to maintain authentication; and you don't have to constantly call the database for user information as this can be stored in the token payload.
+The core benefits of JSON Web Tokens are two fold; you don't need to use sessions or cookies to maintain authentication between states; and you don't have to constantly call the database for user information as this can be stored in the token payload.
 
-Each token is broken down into three parts and each part is concatenated by a dot.
+Each token is broken down into three parts and each part is separated by a dot `.`.
 
 - **Header:** This contains information on the token type, usually JWT, and the hashing algorithm used, for example HMAC SHA256 or RSA.
 - **Payload:** This contains any information you wish to transfer about the user, for example the user identifier.
-- **Signature:** This secures the token and is a hash of the header, payload and a secret.
+- **Signature:** This secures the token and is a hash of the encoded header and payload, along with a secret.
 
 ```js
 // Token structure
@@ -28,7 +28,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 
 JWT security is achieved via the signature which is created by hashing the encoded header and payload and securing this with a secret only known to the author. When receiving a token from a user the author will then be able to validate the signature by re-hashing the received header and payload with the known secret and checking it matches the received signature. If anyone were to tamper with the header or payload the signatures would not match and authentication would fail.
 
-If you wish to get started quickly with JWTs the ReallySimpleJWT library offers an easy to use interface for generating and validating JSON Web Tokens.  
+If you wish to get started quickly with JWTs the [ReallySimpleJWT](https://github.com/RobDWaller/ReallySimpleJWT) library offers an easy to use interface for generating and validating JSON Web Tokens.  
 
 ```php
 use ReallySimpleJWT\Token;
@@ -40,11 +40,11 @@ $token = Token::getToken('userIdentifier', 'secret', 'tokenExpiryDateTimeString'
 $result = Token::validate($token, 'secret');
 ```
 
-It's perfect if you need to quickly implement authentication on a simple API. The library also offers more advanced usage and functionality if you'd like to read the documentation.
+It's perfect if you need to quickly implement authentication on a simple API. The library also offers more advanced usage and functionality if you'd like to [read the documentation](https://github.com/RobDWaller/ReallySimpleJWT/blob/master/readme.md).
 
-## How to Build Your JSON Web Token in PHP
+## How to Build a JSON Web Token in PHP
 
-If you'd like to build your own JSON Web Token generator or just learn a little bit more about the inner workings of JSON Web Tokens the following guide will help. It's very simple and while the examples below are written using PHP the concepts apply to any language. So all developers should find them useful. The full script is at the bottom of this guide.
+If you'd like to build your own JSON Web Token generator or just learn a little bit more about the inner workings of JSON Web Tokens the following guide will help. It's very simple and while the examples below are written using PHP the concepts apply to any language. So all developers should find them useful and the full script is at the bottom of this guide.
 
 ### Create the Header and Payload
 
@@ -60,7 +60,7 @@ $payload = json_encode(['user_id' => 123]);
 
 ### Create Base64Url Header and Payload Strings
 
-Next we encode our `$header` and `$payload` JSON strings as Base64Url strings. This is slightly different to a standard Base64 string and there is no PHP Base64Url magic method yet. So we have to do a bit of string replace magic, this replaces `+` with `-`, `/` with `_` and `=` with `''`. This is so that the Base64 string will work nicely in URLs and ensure the token is passed in its pure form without any URL encoding.    
+Next we encode our `$header` and `$payload` JSON strings as Base64Url strings. This is slightly different to a standard Base64 string and there is no built in PHP Base64Url method yet. So we have to do a bit of string replace magic which will replace `+` with `-`, `/` with `_` and `=` with `''`. This is so that the Base64 string is passed within URLs in its pure form without any URL encoding.    
 
 ```php
 // Encode Header to Base64Url String
@@ -72,11 +72,7 @@ $base64UrlPayload = str_replace(['+', '/', '='], ['-', '_', ''], base64_encode($
 
 ### Create the Signature
 
-To create the signature we need to use the `hash_hmac()` method in PHP using the sha256 algorithm. We pass in a concatenated string of the Base64Url encoded header and footer `$base64UrlHeader . "." . $base64UrlPayload`. It's important to note we have to include the `.` between the two strings. We add a secret, ideally a strong one that is longer than twelve characters. 
-
-The ReallySimpleJWT library enforces this principle, but for our example we don't need to worry. 
-
-Finally we force the `hash_hmac()` method to return the output as binary data.
+To create the signature we need to use the `hash_hmac()` method available in PHP using the sha256 algorithm. We pass in a concatenated string of the Base64Url encoded header and payload `$base64UrlHeader . "." . $base64UrlPayload`. It's important to note we have to include the `.` between the two strings. We add a secret, ideally a strong one that is longer than twelve characters. The ReallySimpleJWT library enforces this principle, but for our example we don't need to worry. Finally we force the `hash_hmac()` method to return the output as binary data.
 
 ```php
 // Create Signature Hash
@@ -101,11 +97,11 @@ Finally we create the JSON Web Token by concatenating the header `$base64UrlHead
 $jwt = $base64UrlHeader . "." . $base64UrlPayload . "." . $base64UrlSignature;
 ```
 
-And that's it, really easy. You can test the JWT that this code produces on the [JWT.io website](https://jwt.io). The code is below in full and I'd suggest you read the relevant [documentation on the JWT site]() along with the [RFC]().
+And that's it, really easy. You can test the JWT that this code produces on the [JWT.io website](https://jwt.io). The code is below in full and I'd suggest you read the relevant [documentation on the JWT site](https://jwt.io/introduction/) along with the [RFC](https://tools.ietf.org/html/rfc7519).
 
-You can of course use the [ReallySimpleJWT Library]() if you wish and I will produce a post on validating JWTs in the next week or two. If you have any thoughts or have noticed any mistakes please message me [@RobDWaller]() on Twitter.
+You can of course use the [ReallySimpleJWT Library](https://github.com/RobDWaller/ReallySimpleJWT) if you wish and I will produce a post on validating JWTs in the next week or two. If you have any thoughts or have noticed any mistakes please message me [@RobDWaller](https://twitter.com/RobDWaller) on Twitter.
 
-## The Script
+### The Script
 
 ```php
 // Create token header as a JSON string
