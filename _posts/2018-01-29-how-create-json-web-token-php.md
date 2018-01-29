@@ -8,9 +8,9 @@ tags: [php, json, jwt, tokens, authentication]
 
 I have spent the last year intermittently working on a PHP JSON Web Token library called [ReallySimpleJWT](https://github.com/RobDWaller/ReallySimpleJWT), and this week I released [version 1.0.0](https://github.com/RobDWaller/ReallySimpleJWT/releases/tag/1.0.0). The code is accessible via [GitHub](https://github.com/RobDWaller/ReallySimpleJWT) and [Packagist](https://packagist.org/packages/rbdwllr/reallysimplejwt).
 
-For those of you who have not used JSON Web Tokens before they are a simple, URL friendly, token based authentication system. They also allow you to easily transfer information via an encoded JSON payload.
+For those of you who have not used JSON Web Tokens before they are a URL friendly, token based authentication system. They also allow you to easily transfer information via an encoded JSON payload.
 
-The core benefits of JSON Web Tokens are two fold; you don't need to use sessions or cookies to maintain authentication between states; and you don't have to constantly call the database for user information as this can be stored in the token payload.
+The core benefits of JSON Web Tokens are twofold; you don't need to use sessions or cookies to maintain authentication between states; and you don't have to constantly call the database for user information as this can be stored in the token payload.
 
 Each token is broken down into three parts and each part is separated by a dot `.`.
 
@@ -40,7 +40,7 @@ $token = Token::getToken('userIdentifier', 'secret', 'tokenExpiryDateTimeString'
 $result = Token::validate($token, 'secret');
 ```
 
-It's perfect if you need to quickly implement authentication on a simple API. The library also offers more advanced usage and functionality if you'd like to [read the documentation](https://github.com/RobDWaller/ReallySimpleJWT/blob/master/readme.md).
+It's perfect if you need to quickly implement user authentication on a simple API. The library also offers more advanced usage and functionality if you'd like to [read the documentation](https://github.com/RobDWaller/ReallySimpleJWT/blob/master/readme.md).
 
 ## How to Build a JSON Web Token in PHP
 
