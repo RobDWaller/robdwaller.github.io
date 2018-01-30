@@ -16,14 +16,23 @@ header {
         line-height: 48px;
         font-size: 16px;
         margin: 0px;
+        float: left;
     }
 
     ul {
+        display: block;
+        float: right;
+        margin: 0px 0px;
+
         li {
             display: inline;
             float: left;
-            margin-right: 20px;
+            margin: 0px 20px 0px 0px;
             line-height: 48px;
+
+            a {
+                color: white;
+            }
         }
     }
 
