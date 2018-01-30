@@ -28,6 +28,13 @@
 
         ul{
             display: none;
+
+            li {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                padding:10px 20px;
+            }
         }
 
         .hamburger {
@@ -53,10 +60,6 @@
 
         .menu--on {
             display: block;
-        }
-
-        a {
-            color: white;
         }
 
     }
