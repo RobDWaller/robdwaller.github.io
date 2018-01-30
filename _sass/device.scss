@@ -12,6 +12,16 @@
     .wrapper {
         width: 100%;
         margin: 0px;
+        flex-direction: column-reverse;
+
+        section {
+            margin-top: 48px;
+            width: 100%;
+        }
+
+        .bio {
+            width: 100%;
+        }
     }
 
     header {
@@ -49,16 +59,5 @@
             color: white;
         }
 
-    }
-
-    section {
-        margin-top: 48px;
-        width: 100%;
-        float: right;
-    }
-
-    .bio {
-        float: right;
-        width: 100%;
     }
 }
