@@ -28,12 +28,18 @@
 
         ul{
             display: none;
+            float: none;
 
             li {
                 width: 100%;
                 display: block;
                 box-sizing: border-box;
                 padding:10px 20px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
             }
         }
 
