@@ -11,6 +11,7 @@
 @media screen and (max-width: 1060px) {
     .wrapper {
         width: 100%;
+        margin: 0px;
     }
 
     header {
@@ -52,6 +53,12 @@
 
     section {
         margin-top: 48px;
+        width: 100%;
+        float: right;
+    }
+
+    .bio {
+        float: right;
         width: 100%;
     }
 }
