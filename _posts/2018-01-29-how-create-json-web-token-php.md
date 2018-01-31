@@ -62,7 +62,7 @@ $payload = json_encode(['user_id' => 123]);
 
 ### Create Base64Url Header and Payload Strings
 
-Next we encode our `$header` and `$payload` JSON strings as Base64Url strings. This is slightly different to a standard Base64 string and there is no built in PHP Base64Url method yet. So we have to do a bit of string replace magic which will replace `+` with `-`, `/` with `_` and `=` with `''`. This is so that the Base64 string is passed within URLs in its pure form without any URL encoding.    
+Next we encode our `$header` and `$payload` JSON strings as Base64Url strings. This is slightly different to a standard Base64 string and there is no built in PHP Base64Url method yet. So we have to do a bit of string replace magic which will replace `+` with `-`, `/` with `_` and `=` with `''`. This is so that the Base64 string is passed within URLs without any URL encoding.    
 
 ```php
 // Encode Header to Base64Url String
