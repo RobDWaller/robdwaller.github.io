@@ -1,16 +1,27 @@
 ---
-title: Security Principles and JSON Web Tokens
+title: Security Principles and Software Development
 layout: post
 description: ""
 published: false
 tags: [security]
 ---
-Last week there was an interesting post on local storage security in dev.to by ... The author had particular ire for JSON Web Tokens, or at least how they are used.
+Security is a topic that is often poorly understood by developers. This I believe is because many developers focus on the technical side of security rather than wider topic which involves people, money, business management, etc. This can result in poor decision making and unnecessary complication.
 
-The post makes a number of good points and is certainly worth a read. The author is clearly a talented and knowledgable developer. The post though presents a slightly missguided view on security and development in general. Overall I would describe it as dogmatic and absolutist.
+In a recent dev.to article Randall Degges shared this on the topic of JSON Web Tokens and local storage.
 
-I think its important to highlight some of the nuances involved in these topics, particularly for junior developers.
+> The biggest security offenders I see today are those of us who store JWTs (session data) in local storage. Many people don't realize that JWTs are essentially the same thing as a username/password.
 
+If an attacker can get a copy of your JWT, they can make requests to the website on your behalf and you will never know. Treat your JWTs like you would a credit card number or password: don't ever store them in local storage.
+
+Generally Randall's post on local storage is excellent, definitely worth a read. Sadly though this statement on JWTs is missguided or at the very least lacks nuance.  
+
+His position on JWTs and local storage is a blanket one, "Don't do it!!" But where you store a JWT is not really of great importance, and storing it somewhere 'safe' doesn't guarantee security. The important questions to ask are, what are you storing in the JWT? And, what are you using the JWT to do or access?
+
+If the answer to that question doesn't include any Personal Identifiable Information, or includes minimal PII, then you can probably do as wish with those JWTs. If by contrast your answer to the above questions is, "All their credit card information!!" Then you should probably consider an alternative technology to JWTs entirely.
+
+You'll note that this approach to solving a security problem is less dogmatic and absolutist. There is a tendency among talented developers to become dogmatic and absolutist. Possibly because everything they see is 'shit' or at least less than perfect. A little like when Plato looked upon Athens in the ... century BC. Like Plato though this approach can lead to poor solutions and bad answers. And it cam be unhelpful for those attempting to understand a topic, particularly if they are junior.
+
+When discussing
 There are two important points to make:
 
 - Software Development is not an absolutist activity.
