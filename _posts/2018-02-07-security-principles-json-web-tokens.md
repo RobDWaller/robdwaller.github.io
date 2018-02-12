@@ -5,7 +5,7 @@ description: ""
 published: false
 tags: [security]
 ---
-Security is a topic that is often poorly understood by developers because many of them focus on the technical side of security rather than the wider topic which involves people, money, risk and business priorities. This can result in poor decision making, unnecessary complication and wasted resource.
+Security is a topic that is often poorly understood by developers because many of them focus on the technical side of security rather than the wider topic which involves people, money, risk and business priorities. As a result we often see poor decision making, unnecessary complication and wasted resource.
 
 It's important that developers when building or choosing security solutions pick the correct one for their business or organisational situation. And it's particularly important that junior developers understand the wider context within which security decisions should be made.
 
@@ -17,13 +17,13 @@ In a recent dev.to article a contributor shared the following advice on the topi
 
 > If an attacker can get a copy of your JWT, they can make requests to the website on your behalf and you will never know. Treat your JWTs like you would a credit card number or password: don't ever store them in local storage.
 
-The post from which this advice comes is generally excellent, it's definitely worth a read, and covers many of the important issues relating to JavaScript local storage. Sadly though this statement on JWTs and security is misguided or at least lacks the important nuances that developers need to understand.  
+The post from which this advice comes is great, it's definitely worth a read, and covers many of the important issues relating to JavaScript local storage. Sadly though this statement on JWTs and security is misguided or at least lacks the important nuances that developers need to understand.  
 
 The position taken on JWTs and local storage is an absolute one, "Don't do it!!" But where you store a JWT is not really of great importance, and storing it somewhere 'safe' doesn't guarantee security. The important questions to ask are, what are you storing in the JWT? And, what are you using the JWT to do or access?
 
 If the answer to those question doesn't include any Personal Identifiable Information, or includes minimal PII, then you can probably do as you wish with those JWTs. If by contrast your answer to the above questions is, "All their credit card information!!" Then you should probably consider an alternative technology to JWTs.
 
-As an example, if you were to implement a content paywall as many online news publications now do JWTs stored in local storage will be a perfectly acceptable security solution. The content you are protecting is of low value, no PII, so the likelihood that a hacker will be interested in hacking this content is very low, possibly pointless. JWTs though will stop your average 'run of the mill' web user from accessing the content without paying for it. A simple solution to a security requirement.
+As an example, if you were to implement a content paywall as many online news publications now do JWTs stored in local storage will be a perfectly acceptable security solution. The content you are protecting is of low value, no PII, so the likelihood that a hacker will be interested in hacking this content is very low. JWTs though will stop your average 'run of the mill' web user from accessing the content without paying for it. A simple solution to a security requirement.
 
 You'll note that this approach to solving a security problem is less dogmatic and absolutist. There is a tendency among talented developers to become dogmatic and absolutist, possibly because everything they see is 'bad' or at least less than perfect. A little like when Plato looked upon Athens in the 5th century BC, but like Plato this approach can lead to poor solutions and bad answers. And it can be unhelpful for those attempting to understand a topic, particularly if they are junior.
 
@@ -31,7 +31,7 @@ It is sensible when dealing with security to avoid dogma, absolutism and one siz
 
 ## 2. There is no such thing as security
 
-It is important to note the irony at the heart of security, which is that it doesn't exist. Recently Google Chrome announced on Twitter that they will be marking all sites using HTTP as "Not Secure". You'll note they already mark HTTPS sites as "Secure".
+There is a great irony at the heart of security, which is that it doesn't exist. Recently Google Chrome announced on Twitter that they will be marking all sites using HTTP as "Not Secure". You'll note they already mark HTTPS sites as "Secure".
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🔐⚠️ The moment we&#39;ve all been waiting for! Chrome will mark all HTTP sites as &quot;Not secure&quot; in July 2018. 🔐⚠️<a href="https://t.co/2eV4GuEa2y">https://t.co/2eV4GuEa2y</a></p>&mdash; emily schechter (@emschec) <a href="https://twitter.com/emschec/status/961662132012986368?ref_src=twsrc%5Etfw">February 8, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -48,7 +48,7 @@ Good security involves building a wall that is higher than the value of the asse
 
 ## 3. Understand the threat
 
-What is important is to first understand the likely security threat you face. Security threats can be broken down into four basic groups:
+When building your wall it is important to understand the likely security threat you face. Security threats can be broken down into four basic groups:
 
 - **1. Kiddy Scripters and Automated Threats:** See most WordPress / Joomla hacks.
 - **2. Skilled Hackers and Hacker Organisations:** Anonymous, LulzSec
@@ -57,11 +57,13 @@ What is important is to first understand the likely security threat you face. Se
 
 The majority of developers will rarely deal with anything above level one. The reason for this is two fold, you have to be doing something of significant financial value and or of significant political value to move above level one. Examples of this would be sensitive government work, aspects of financial work and aspects of major corporate work.
 
-Also the threats are diverse and won't necessarily relate to hacking data, as might occur if a poorly implemented JWT falls into the wrong hands. For example your organisation may be much more vulnerable to a DDOS Attack than a data breach. As a developer it's important you consider how your business might be vulnerable, and the primary vulnerability may not always be financial or PII, it could be reputational. Embarrassing your organisation by taking your website offline may be of far greater value to hackers than stealing the PII you have on your servers.
+Also the threats are diverse and won't necessarily relate to hacking data. For example your organisation may be much more vulnerable to a DDOS Attack than a data breach. As a developer it's important you consider how your organisation might be vulnerable, and the primary vulnerability may not always be financial or PII focused, it could be reputational. Embarrassing your organisation by taking your website offline may be of far greater value to hackers than stealing the PII you have on your servers.
 
-The Fappening in 2014 is a good example of an organisation failing to understand a threat properly. In this case Apple failed to value the content they had on their iCloud system and therefore did not implement security features that could have limited the damage. For example sending out emails when a new device or strange IP connects to an account. The Fappening was an edge case as no-one had really considered the value of celebrity PII before, but it does highlight that the threats organisation face may not always be logical.      
+The Fappening in 2014 is a good example of an organisation failing to understand a threat properly. In this case Apple failed to properly value the content they had on their iCloud system and therefore did not implement security features that could have limited the damage. For example sending out emails when a new device or strange IP connected to an account. The Fappening was an edge case as no-one had really considered the value of celebrity PII before, but it does highlight that the threats organisation face may not always be logical.   
 
 ## 4. Implement a proportionate solution
+
+If you inplement generic security solutions without properly considering the threat you face you may be no safer than if you implemented no security at all.
 
 As a developer you must seriously consider the threats you face before you implement any security solutions. This is so that you can implement proportionate security measures. Proportionate does not simply relate to the security threat though, it also relates to how much money you have to spend. A poor nation cannot build the Great Wall of China, but it can defend itself if it understands the threat and deploys its resources sensibly.
 
