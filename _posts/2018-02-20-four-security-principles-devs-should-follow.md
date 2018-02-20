@@ -13,9 +13,7 @@ It's important that developers when building or choosing security solutions pick
 
 In a [recent dev.to article](https://dev.to/rdegges/please-stop-using-local-storage-1i04) a contributor shared the following advice on the topic of JSON Web Tokens and local storage.
 
-> The biggest security offenders I see today are those of us who store JWTs (session data) in local storage. Many people don't realize that JWTs are essentially the same thing as a username/password.
-
-> If an attacker can get a copy of your JWT, they can make requests to the website on your behalf and you will never know. Treat your JWTs like you would a credit card number or password: don't ever store them in local storage.
+> The biggest security offenders I see today are those of us who store JWTs (session data) in local storage. Many people don't realize that JWTs are essentially the same thing as a username/password. If an attacker can get a copy of your JWT, they can make requests to the website on your behalf and you will never know. Treat your JWTs like you would a credit card number or password: don't ever store them in local storage.
 
 The post from which this advice comes is good, it's definitely [worth a read](https://dev.to/rdegges/please-stop-using-local-storage-1i04), and covers many of the important issues relating to JavaScript local storage. Sadly though this statement on JWTs and security is misguided or at least lacks the important nuances that developers need to understand.
 
