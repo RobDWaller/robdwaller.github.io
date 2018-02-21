@@ -28,6 +28,12 @@ li {
     list-style-type: disc;
 }
 
+ol {
+    li {
+        list-style-type: decimal;
+    }
+}
+
 small {
     font-size: 0.75em;
     line-height: 1.5em;
