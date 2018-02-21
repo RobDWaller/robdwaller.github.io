@@ -15,7 +15,7 @@ In a [recent dev.to article](https://dev.to/rdegges/please-stop-using-local-stor
 
 > The biggest security offenders I see today are those of us who store JWTs (session data) in local storage. Many people don't realize that JWTs are essentially the same thing as a username/password. If an attacker can get a copy of your JWT, they can make requests to the website on your behalf and you will never know. Treat your JWTs like you would a credit card number or password: don't ever store them in local storage.
 
-The post from which this advice comes is good, it's definitely [worth a read](https://dev.to/rdegges/please-stop-using-local-storage-1i04), and covers many of the important issues relating to JavaScript local storage. Sadly though this statement on JWTs and security is misguided or at least lacks the important nuances that developers need to understand.
+The post which this advice comes from is good, it's definitely [worth a read](https://dev.to/rdegges/please-stop-using-local-storage-1i04), and covers many important issues relating to JavaScript local storage. Sadly though this statement on JWTs and security is misguided or at least lacks the important nuances that developers need to understand.
 
 The position taken on JWTs and local storage is an absolute one, "Don't do it!!" But where you store a JWT is not really of great importance, and storing it somewhere 'safe' doesn't guarantee security. The important questions to ask are, what are you storing in the JWT? And, what are you using the JWT to do or access?
 
@@ -25,18 +25,18 @@ As an example, if you were to implement a content paywall as many online news pu
 
 You'll note that this approach to solving a security problem is less dogmatic and absolutist. There is a tendency among talented developers to become dogmatic and absolutist, possibly because everything they see is 'bad' or at least less than perfect. A little like when Plato looked upon Athens in the 5th century BC, but like Plato this approach can lead to [poor solutions and bad answers](https://en.wikipedia.org/wiki/Plato#The_state). And it can be unhelpful for those attempting to understand a topic, particularly if they are junior.
 
-It is sensible when dealing with security to avoid dogma, absolutism and one size fits all statements as there isn't an equivalent of the moral absolute, "Do not murder". Security involves much more nuance.
+It is sensible when dealing with security to avoid dogma, absolutism and one size fits all statements. There isn't an equivalent to the moral absolute "Do not murder" as security involves more nuance.
 
 ## 2. There is no such thing as security
 
-There is a great irony at the heart of security, which is that it doesn't exist. Recently Google Chrome announced on Twitter that they will be marking all sites using HTTP as "Not Secure". You'll note they already mark HTTPS sites as "Secure" in the URL bar.
+There is a great irony at the heart of security, which is that it doesn't exist. Recently Google Chrome announced on Twitter that they will be marking all sites using HTTP as "Not Secure". They already mark HTTPS sites as "Secure" in the URL bar.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🔐⚠️ The moment we&#39;ve all been waiting for! Chrome will mark all HTTP sites as &quot;Not secure&quot; in July 2018. 🔐⚠️<a href="https://t.co/2eV4GuEa2y">https://t.co/2eV4GuEa2y</a></p>&mdash; emily schechter (@emschec) <a href="https://twitter.com/emschec/status/961662132012986368?ref_src=twsrc%5Etfw">February 8, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This is bizarre as HTTPS, or HTTP via TLS, is a very useful security enhancement but does not in any way guarantee security. It is perfectly possible to build a site and serve it via HTTP that is more secure than a site served over HTTPS.
+This is bizarre as HTTPS, or HTTP via TLS, is a very useful security enhancement but does not guarantee security. It is perfectly possible to build a site and serve it via HTTP that is more secure than a site served over HTTPS.
 
-Google's actions here are surprisingly irresponsible as they could encourage average web users to feel safe when they are not and so be less cautious in their actions and behaviours online. And this is without even covering the topic of how the HTTPS connection is implemented, [see CloudFlare](https://www.cloudflare.com/ssl/)... A more sensible approach may be to describe the connection as "Private" or "Public", but "Secure" or "Not Secure" is misleading.
+Google's actions here are surprisingly irresponsible as they could encourage average web users to feel safe when they are not and so be less cautious in their actions and behaviours online. And this is without covering the topic of how the HTTPS connection is implemented, [see CloudFlare flexible SSL](https://www.cloudflare.com/ssl/)... A more sensible approach may be to describe the connection as "Private" or "Public", but "Secure" or "Not Secure" is misleading.
 
 There has never been anything that has been completely secure, and even with all the technical advancements we've made there still isn't. Security has always been relative to what is being protected. People have spent millennia building walls of one type or another, but no-one has ever succeeded in building an impregnable dome.
 
@@ -44,22 +44,22 @@ If you don't believe me just ask the Iranians. In 2009 the Americans, definitely
 
 If you're interested in this topic and stories like this I suggest you read Gordon Corera's book [Intercept: The Secret History of Computers and Spies](https://www.amazon.co.uk/Intercept-Secret-History-Computers-Spies/dp/1780227841/). It's a wonderful book that will contextualise the topics of security and hacking for you.
 
-Good security involves building a wall that is higher than the value of the assets you're protecting. That is it will cost a hacker more to hack your system than they will gain from hacking it. This also means though that your security should be proportionate to what you are protecting. Don't for example air gap a server to protect a few email addresses you've collected from a web sign up form, that would be an extraordinary waste of money.
+Good security involves building a wall that is higher than the value of the assets you're protecting. That is it will cost a hacker more to hack your system than they will gain from hacking it. This also means your security should be proportionate to what you are protecting. Don't for example air gap a server to protect a few email addresses you've collected from a web sign up form, that would be an extraordinary waste of money.
 
 ## 3. Understand the threat
 
 When building your wall it is important to understand the threat you face. Security threats can be broken down into four basic groups:
 
-- **1. Kiddy Scripters and Automated Threats:** See most WordPress / Joomla hacks.
-- **2. Skilled Hackers and Hacker Organisations:** Anonymous, LulzSec
-- **3. Organised Crime and Minor State Actors:** The Mafia, North Korea
-- **4. Major State Actors:** USA, China, Russia, Israel, UK
+1. **Kiddy Scripters and Automated Threats:** See most WordPress / Joomla hacks.
+2. **Skilled Hackers and Hacker Organisations:** Anonymous, LulzSec
+3. **Organised Crime and Minor State Actors:** The Mafia, North Korea
+4. **Major State Actors:** USA, China, Russia, Israel, UK
 
 The majority of developers will rarely deal with anything above level one. The reason for this is two fold, you have to be doing something of significant financial value and or of significant political value to move above level one. Examples of this would be sensitive government work, aspects of financial work and aspects of major corporate work.
 
 Also the threats are diverse and won't necessarily relate to hacking data. For example your organisation may be much more vulnerable to a DDOS Attack than a data breach. As a developer it's important you consider how your organisation might be vulnerable, and the primary vulnerability may not always be financial or PII focused, it could be reputational. Embarrassing your organisation by taking your website offline may be of far greater value to hackers than stealing the PII you have on your servers.
 
-The [Fappening in 2014](https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos) is a good example of an organisation failing to understand a threat properly. In this case Apple failed to properly value the content they had on their iCloud system and therefore did not implement security features that could have limited the damage. For example sending out emails when a new device or strange IP connected to an account. The Fappening was an edge case as no-one had really considered the value of celebrity PII before, but it does highlight that the threats organisation face may not always be logical.   
+The [Fappening in 2014](https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos) is a good example of an organisation failing to understand a threat properly. In this case Apple failed to properly value the content they had on their iCloud system and therefore did not implement security features that could have limited the damage. For example sending out emails when a new device or strange IP connected to an account. The Fappening was an edge case as no-one had really considered the value of celebrity data before, but it does highlight that the threats organisation face may not always be logical.   
 
 ## 4. Implement a proportionate solution
 
@@ -69,7 +69,7 @@ As a developer you must seriously consider the threats you face before you imple
 
 Much of the world enjoys laughing at North Korea, Kim Jong Un and his crazy nuclear plans. However behind the madness there may be some logic. [There is a theory](https://mondediplo.com/2017/10/01northkorea) that North Korea has recognised that America and the West has happily carried out regime change against Afghanistan, Iraq and Libya, but has been much more cautious in relation to Iran and Pakistan. The theory goes that this is because Iran may have nuclear weapons and Pakistan does have nuclear weapons. North Korea has recognised this and is rushing to build a bomb and missile so it doesn't become the next Iraq. It has assessed the threat and is responding logically given its limited means, and it may succeed in defending the North Korean regime from America's bombs. Nuclear bombs may not protect them from their own people in the end though.
 
-I'm not advising you to follow North Korea's example, however you should consider what is a proportionate security response given your organisation's resources. This is particularly important given very few of us work at Apple, Google or Facebook. Most organisations have limited resources and they cannot justify spending large sums of money on security features that only produce marginal gains. When considering your security response you should begin by asking the following three questions.
+I'm not advising you follow North Korea's example, however you should consider what is a proportionate security response given your organisation's resources. This is particularly important given very few of us work at Apple, Google or Facebook. Most organisations have limited resources and they cannot justify spending large sums of money on security features that only produce marginal gains. When considering your security response you should begin by asking the following three questions.
 
 1. What am I defending and how valuable is it?
 2. Who is it that poses me a threat?
