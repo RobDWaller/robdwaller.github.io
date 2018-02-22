@@ -3,7 +3,7 @@ title: Four Security Principles That Software Developers Should Follow
 layout: post
 description: "Security is a topic that is often poorly understood by developers because many of them focus on the technical side of security rather than the wider topic"
 published: true
-tags: [security, privacy google, stuxnet, jwt]
+tags: [security, privacy, google, stuxnet, jwt]
 ---
 Security is a topic that is often poorly understood by developers because many of them focus on the technical side of security rather than the wider topic which involves people, money, risk and business priorities. As a result we often see poor decision making, unnecessary complication and wasted resource.
 
@@ -36,7 +36,7 @@ There is a great irony at the heart of security, which is that it doesn't exist.
 
 This is bizarre as HTTPS, or HTTP via TLS, is a very useful security enhancement but does not in any way guarantee security. It is perfectly possible to build a site and serve it via HTTP that is more secure than a site served over HTTPS.
 
-Google's actions here are surprisingly irresponsible as they could encourage average web users to feel safe when they are not and so be less cautious in their actions and behaviours online. And this is without even covering the topic of how the HTTPS connection is implemented, [see CloudFlare](https://www.cloudflare.com/ssl/)... A more sensible approach may be to describe the connection as "Private" or "Public", but "Secure" or "Not Secure" is misleading.
+Google's actions here are surprisingly irresponsible as they could encourage average web users to feel safe when they are not and so be less cautious in their actions and behaviours online. And this is without even covering the topic of how the HTTPS connection is implemented, [see CloudFlare](https://www.cloudflare.com/ssl/). A more sensible approach may be to describe the connection as "Private" or "Public", but "Secure" or "Not Secure" is misleading.
 
 There has never been anything that has been completely secure, and even with all the technical advancements we've made there still isn't. Security has always been relative to what is being protected. People have spent millennia building walls of one type or another, but no-one has ever succeeded in building an impregnable dome.
 
