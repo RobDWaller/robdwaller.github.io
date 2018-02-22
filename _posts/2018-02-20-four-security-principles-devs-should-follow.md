@@ -1,5 +1,5 @@
 ---
-title: Four Security Principles That Software Developers Should Follow
+title: "Four Security Principles That Software Developers Should Follow"
 layout: post
 description: "Security is a topic that is often poorly understood by developers because many of them focus on the technical side of security rather than the wider topic"
 published: true
