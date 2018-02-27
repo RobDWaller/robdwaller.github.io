@@ -8,10 +8,10 @@ layout: default
 <small class="tags">
     <strong>Tags:</strong>
     {% for tag in page.tags %}
-        {% if !forloop.last %}
-            {{ tag }},
-        {% else %}
+        {% if forloop.last %}
             {{ tag }}
+        {% else %}
+            {{ tag }},
         {% endif %}
     {% endfor %}
 </small>
