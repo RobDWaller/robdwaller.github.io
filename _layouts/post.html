@@ -5,5 +5,14 @@ layout: default
 <small>{{ page.date }}</small>
 <small><a href="/">Home</a> > <a href="/blog.html">Blogs</a> > {{ page.title }}</small>
 <small><strong>Author:</strong> Rob Waller</small>
-<small class="tags"><strong>Tags:</strong> {% for tag in page.tags %}{{tag}}, {% endfor %}</small>
+<small class="tags">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+        {% if !forloop.last %}
+            {{ tag }},
+        {% else %}
+            {{ tag }}
+        {% endif %}
+    {% endfor %}
+</small>
 {{ content }}

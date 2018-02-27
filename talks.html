@@ -8,7 +8,9 @@ description: "A list of conference talks written by Rob Waller on software devel
 <ul>
   {% for talk in site.talks %}
     <li>
-      <a href="{{ talk.url }}">{{ talk.title }}</a>
+      <a href="{{ talk.url }}">{{ talk.title }}</a><br/>
+      {{talk.description}}
+      <a href="{{talk.slides}}" target="_blank">View the slides</a>
     </li>
   {% endfor %}
 </ul>

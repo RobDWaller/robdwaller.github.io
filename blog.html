@@ -9,7 +9,8 @@ description: "A list of blog posts written by Rob Waller on software development
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <small>{{ post.date }}</small>
+      {{ post.description }}
+      <small>{{ post.date | date: '%B %d, %Y' }}</small>
     </li>
   {% endfor %}
 </ul>

@@ -2,60 +2,57 @@
 title: "Five Tips for Aspiring Tech Managers"
 layout: post
 published: true
-description: ""
-tag: ['management']
+description: "Not enough good developers move into management and this has a negative impact on our industry as it can lead to bad business decisions. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry and the lives of developers generally."
+tag: [Management, Mentoring, Leadership]
+slides: "https://speakerdeck.com/robdwaller/5-tips-for-aspiring-tech-managers"
 ---
 ## Elevator Pitch
-> You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
+```
+You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
+```
 
-Management is a difficult area for many developers to move into as it is very different to programming. Based on my learnings as a tech lead, running a business and teachings from sport and history I wish to share my tips for those who want to become managers and succeed at running tech teams.
+Not enough good developers move into management and this has a negative impact on our industry as it can lead to bad business decisions made by ill-informed individuals. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry and the lives of developers generally.
 
 ## Description
-> You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
+```
+You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
+```
 
-Taking the step from coding to management is a difficult one that is not right for every developer. My talk aims to guide those considering management through some of the pitfalls and challenges they may face. In addition, I want to encourage developers of all skill levels to consider management because programming capability is not the most important attribute of a good manager.  
+Management is not a topic of interest for many developers as it diverges from their main interest which is code. It is though a very important topic for developers as management decisions can have serious effects on their jobs and their work. Often technical management decisions are made be ill-informed people who do not have enough technical experience nor understand how business decisions can effect software development and output. It is there fore important that good developers go on to become good technical managers.
 
-The talk is broken down into five topics detailed below and each aims to solve some of the mystery surrounding management for those who haven't experienced it before. Two of the most important topics are the qualities of a good manager and how to lead, or more specifically how to guide and mentor. These sections will focus on many of the non-code related skills and attributes a good tech manager requires.
+Transitioning from code to management can be both a challenging and daunting process. This talk offers five tips that will encourage and guide developers through some of the basic problems and issues that developers will face as they learn to become good managers.
 
-The talk will draw on my own learnings along with those from history and sports. It will consider what thinkers like Socrates and Machiavelli had to say on the topic. Along with answering important questions like why Sir Alex Ferguson was an average footballer but a great manager.   
+### You Don't Have to be a Great Coder to be a Great Manager
 
-### The Qualities of a Good Tech Manager
-There are many qualities a good manager has, two of the most important are balance and compromise. A good tech manager has to learn how to get a team of developers with very different outlooks, opinions and approaches to work together. Often they will have to compromise on quality due to budget restraints or tight deadlines, and they'll have to cope with the frustrations this may cause. Managers must learn to work and communicate with other departments, teams and people with no technical knowledge, often to defend and protect their team. And importantly they need to know the difference between good, ok and bad, and learn to accept that ok is all that is achievable sometimes.
+What often puts developers off becoming managers or tech leads is the assumption that you have to be a great coder, or the best in your team. This is a damaging misconception as managers need many other skills along with their ability to code. Developers should not focus too much on their ability to code when considering a move into management but focus on other important factors such as experience and communication skills. They should take inspiration from other fields, such as sport, where often the best managers are not the most technically gifted, but those who can communicate well, show leadership and have a wide appreciation of their subject and its place in a wider organisation.
 
-### Hiring People
-Hiring within a tech team isn't just about hiring developers, it's also one of the most challenging aspects of management. A bad hire can disrupt a team, upset people and destroy a project. Managers must learn to hire those who are more skilled than them without fear. Their primary aim must be to acquire the skills for their team so it grows and improves. They must help hire the QAs and the Project Managers to ensure they work well with their team. They therefore must learn about different skillsets, particularly the softer social skills. This requires research, hard work and a robust interview process; one that includes tests, or validation as it should be known.
+### Mistakes Will Happen
 
-### How to Lead and Bring People With You
-Setting a direction for your team or handing out orders isn't enough, developers won't write more unit tests just because you tell them to, you must give them a reason to. A good manager understands that there is often a chasm between where a team is today and where they need to be. You can't ask anyone to jump across a chasm, just as much as you can't ask a team of developers who've not heard of PSR to begin writing unit tests. As a manager you must help your team build a bridge across the various chasms they need to cross. You'll need to focus on incremental improvement and encourage self learning so your team grows organically. Most importantly you must learn to push your team forward and lead by example, never ever drag it.
+Every manager will make mistakes, especially new ones, as navigating through the array of challenges management involves is difficult. What is important though is not the mistake itself but how the manager responds to the mistake. Good managers need to take ownership of their mistakes and learn to apologise where is appropriate. Most importantly though they need to learn how to change and improve after a mistake. And finally they need to learn to keep moving and put their mistakes behind them.
 
-### Communication: Internal and External
-Improving communication within a team helps everyone. People know what each other are doing, they know when someone might need help, they can talk through problems as a team. Encourage daily stand ups, friendly and well defined code reviews, retrospectives on big projects and make sure everyone is involved. Always communicate to your team with clarity and honesty, if you're not happy about something tell them, but always explain why and be open to feedback. Tech managers also have to communicate with non-technical people and teams. Always try to remain calm, try to guide people to sensible answers and focus on explaining complexity. Be prepared to write lots of Power Points, draw things out and whiteboard complicated ideas.       
+### Expect the Unexpected
 
-### Dealing With the Unexpected
-Tech management isn't just about technology and writing code. You'll have to deal with lots of other issues, the mental wellbeing of team members' and their complicated personal lives. You'll have to work closely with HR. You'll have to be prepared to deal with individuals' stupid mistakes, their failed attempts at beginning office romances... Occasionally you'll have to fire people, learn to act quickly and decisively, don't dither, you'll only regret it. Always be prepared to deal with the unexpected and always aim to maintain stability so your team can focus on the work and challenges they need to deal with.
+Tech management isn't just about technology and writing code, managers have to deal with lots of other issues. Eg the mental wellbeing of their team, their complicated personal lives and many other issues. Managers have to learn to work with departments such as HR and always be prepared to deal with the unexpected. Anything can happen, but a manager's main aim should be to maintain team stability while odd or difficult situations are occurring. This is so that their team can focus on delivering the work they have been assigned
+
+### Learn to Compromise
+
+As developers we often have quite high standards, as managers though there are times when compromises will need to be made which may lower our standards. This can be for many reasons, business priorities, financial restrictions, difficult clients. It is important to understand how to compromise and what to compromise on. Good managers find a balance between being belligerent and a pushover, the former will damage your inter-team relationships and the latter your team itself. Managers should draw up a short list of 'lines in the sand' that they're not willing to compromise on. These lines must be understandable to the non-technical because they will require the buy in of other teams and managers. In all other areas managers should be willing to compromise.
+
+### Keep Coding
+
+Developers often think when they become managers they must stop coding, but this is of course nonsense. It is very important that tech managers keep on coding. It is important that managers continue to code as their learning does not stop when they becomem managers. Also they will gain respect from their team members and they will keep up to date with the latest technical innovations. It can of course be difficult for managers to find the time to code, especially during the working day. Managers though should not worry too much about this and recognise that a couple of hours a week working on a personal a project is more than enough to keep them in touch.   
 
 ## Notes
-> This is where you should explain things such as technical requirements, why you're the best person to speak on this subject, etc...
+```
+This is where you should explain things such as technical requirements, why you're the best person to speak on this subject, etc...
+```
 
-This talk has no technical requirements, even people from non-technical backgrounds may find it useful. It is primarily aimed at mid to senior level developers who are considering their career path and thinking that management may be an option.
+This talk has no technical requirements, even people from non-technical backgrounds may find it useful. It is primarily aimed at all developers who are considering their career path and thinking that management may be an option for them now or in the future.
 
-I have spent the last 13 years working in the software industry, I've written lots of different code including JavaScript, VB, C#, Bash, SQL and Python. I have spent the majority of my career though writing PHP, I'm a massive fan of the community and attend many community events.
+I have been a technical manager for two years, running a team of ten developers, QAs and project managers. In addition, I spent a few years running a startup which I eventually sold to a larger company. These experiences have provided me with a great insight into management and the business of technology more widely which I'd love to share with other developers.
 
-Currently I am the Head of Technology at a Communications Agency in London called Breakthrough Media where I run the tech team. We are a group of PHP and JavaScript developers along with QAs and Digital Project Managers. We code a lot of WordPress and Laravel, but we also do a lot of Vue and bits and pieces of Python.
+For more information on me please view my [bio](https://rbrt.wllr.info/about.html) or [CV](https://rbrt.wllr.info/cv.pdf).
 
-I was hired by Breakthrough two years ago to help improve their technology team, better define their working processes and improve the robustness and security of their infrastructure. In this time we've moved from a team of contract developers to a team that is now 90% permanent and we're no longer using PHPMyAdmin. We've had some successes and some failures, it's been a fun and interesting period that has taught me a great deal.
+## Slides
 
-Before Breakthrough I was a contractor and ran my own business. I had some success, I built an app that got my business mentioned in Mashable and on CNN, I then sold my business, and finally I nearly went bankrupt. It was a crazy, fun and depressing period. I learnt a lot though, for example, make sure you read and understand every line of a contract before you sign it. I'd advise everyone to try and run a business at some stage in their life.
-
-Overall I believe I have a great deal of insight and guidance to offer developers and aspiring technical managers. Not just based on my current role but also my previous business experience. I would love the opportunity to share my knowledge and experience with a wider audience.
-
-You can find out more about me via the following resources, you'll note I also have a degree in History which I hope shows I'm a well rounded individual.
-
-- [Twitter: @RobDWaller](https://twitter.com/RobDWaller)
-- [GitHub: RobDWaller](https://github.com/RobDWaller)
-- [My Website](http://rbrt.wllr.info)
-- [My CV](http://rbrt.wllr.info/cv.pdf)
-- [Mashable Article](http://mashable.com/2012/08/22/twitter-facebook-fake-followers/#xnoXNq_g6OqQ)
-
-## Tags
-PHP, JavaScript, Management, Manager, Mentoring, Leadership, Hiring, Interviews, Communication, HR, Technology, CTO, Head of Tech, Team Lead
+<script async class="speakerdeck-embed" data-id="9cc457d708334dee8a43ca2037aeb800" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
