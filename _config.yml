@@ -3,3 +3,8 @@ page_title: "RobDWaller A Developer"
 description: "I am a PHP and JavaScript Developer and Head of Tech at a communications agency in London. I also built Twitter's largest anti-bot app."
 url: http://robdwaller.github.io
 twitter: "@robdwaller"
+
+collections:
+    talks:
+        output: true
+        permalink: /:collection/:name
