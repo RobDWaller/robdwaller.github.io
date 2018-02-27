@@ -1,22 +1,18 @@
 ---
 title: "Five Tips for Aspiring Tech Managers"
-layout: post
+layout: talk
 published: true
 description: "Not enough good developers move into management and this has a negative impact on our industry as it can lead to bad business decisions. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry and the lives of developers generally."
 tag: [Management, Mentoring, Leadership]
 slides: "https://speakerdeck.com/robdwaller/5-tips-for-aspiring-tech-managers"
 ---
 ## Elevator Pitch
-```
-You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
-```
+> You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
 
 Not enough good developers move into management and this has a negative impact on our industry as it can lead to bad business decisions made by ill-informed individuals. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry and the lives of developers generally.
 
 ## Description
-```
-You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
-```
+> You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
 
 Management is not a topic of interest for many developers as it diverges from their main interest which is code. It is though a very important topic for developers as management decisions can have serious effects on their jobs and their work. Often technical management decisions are made be ill-informed people who do not have enough technical experience nor understand how business decisions can effect software development and output. It is there fore important that good developers go on to become good technical managers.
 
@@ -43,9 +39,7 @@ As developers we often have quite high standards, as managers though there are t
 Developers often think when they become managers they must stop coding, but this is of course nonsense. It is very important that tech managers keep on coding. It is important that managers continue to code as their learning does not stop when they becomem managers. Also they will gain respect from their team members and they will keep up to date with the latest technical innovations. It can of course be difficult for managers to find the time to code, especially during the working day. Managers though should not worry too much about this and recognise that a couple of hours a week working on a personal a project is more than enough to keep them in touch.   
 
 ## Notes
-```
-This is where you should explain things such as technical requirements, why you're the best person to speak on this subject, etc...
-```
+> This is where you should explain things such as technical requirements, why you're the best person to speak on this subject, etc...
 
 This talk has no technical requirements, even people from non-technical backgrounds may find it useful. It is primarily aimed at all developers who are considering their career path and thinking that management may be an option for them now or in the future.
 

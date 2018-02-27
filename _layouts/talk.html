@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<small><a href="/">Home</a> > <a href="/talks.html">Talks</a> > {{ page.title }}</small>
+<small><strong>Author:</strong> Rob Waller</small>
+<small class="tags">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+        {% if !forloop.last %}
+            {{ tag }},
+        {% else %}
+            {{ tag }}
+        {% endif %}
+    {% endfor %}
+</small>
+<small><a href="{{page.slides}}">View the Slides</a></small>
+{{ content }}
