@@ -23,6 +23,10 @@ p, li {
     font-size: 1.25em;
 }
 
+ol, ul {
+    margin-left: 20px;
+}
+
 li {
     margin-left: 20px;
     list-style-type: disc;
@@ -47,6 +51,7 @@ h1 {
 
 h2 {
     font-size:2em;
+    margin: 1em 0 0.5em 0;
 }
 
 h3 {
