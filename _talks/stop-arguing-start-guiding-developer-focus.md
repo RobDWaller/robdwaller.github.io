@@ -9,7 +9,7 @@ slides: "https://speakerdeck.com/robdwaller/developers-stop-arguing-start-guidin
 ## Elevator Pitch
 > You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
 
-Talented developers need to stop arguing with each other on Twitter and Reddit and focus on guiding and mentoring other developers. Arguments encourage developers to focus on the minutiae rather than getting the basics right. This talk offers six principles developers need to focus to help guide their fellow developers.
+Talented developers need to focus on helping younger and less experienced developers. Often many developers get lost in arguments about the minutiae of code on Twitter or Reddit. These arguments rarely help anyone and serve little purpose. This talk provides six basic principles that developers need to focus on to help guide others and improve our industry.
 
 ## Description
 > You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.

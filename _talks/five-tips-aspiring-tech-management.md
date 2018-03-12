@@ -9,7 +9,7 @@ slides: "https://speakerdeck.com/robdwaller/5-tips-for-aspiring-tech-managers"
 ## Elevator Pitch
 > You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
 
-More developers need to become managers as our industry is rife with bad decisions made by inexperienced people. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry, our products, our users and clients experiences, and our lives.
+More developers should become managers as our industry is rife with bad decisions made by inexperienced people. This talk offers five tips to encourage developers to consider management. More technical managers will improve our industry, our products, the client and user experience, and our lives.
 
 ## Description
 > You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
