@@ -9,14 +9,14 @@ slides: "https://speakerdeck.com/robdwaller/5-tips-for-aspiring-tech-managers"
 ## Elevator Pitch
 > You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible.
 
-More developers need to become managers as our industry is rife with bad decisions made by inexperienced people. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry, our products, the user's experience and developers' lives.
+More developers need to become managers as our industry is rife with bad decisions made by inexperienced people. This talk offers five tips to guide and encourage developers to consider a management role as this will improve our industry, our products, our users and clients experiences, and our lives.
 
 ## Description
 > You should make the description of your talk as compelling and exciting as possible. Remember, you're selling both the organizers of the events to select your talk, as well as trying to convince attendees your talk is the one they should see.
 
 Management is not a topic of interest for many developers as it diverges from their core interest which is code. It is though an important topic for developers as management decisions have serious effects on their jobs and their work. Often technical management decisions are made be ill-informed people who do not have enough technical experience nor understand how business decisions effect software development and output. It is therefore important that good developers go on to become technical managers.
 
-The transition from code to management can be both scary and a challenge. Management forces many developers outside their comfort zone as they have to deal with issues and problems they have little experience of. Like code though though skills management require can be learnt. This talk offers five tips that will encourage and guide developers through some of the basic problems and issues that they will face as they learn to become good managers.
+The transition from code to management can be both scary and a challenge. Management forces many developers outside their comfort zone as they have to deal with issues and problems they have little experience of. Like code though the skills management require can be learnt. This talk offers five tips that will encourage and guide developers through some of the basic problems and issues that they will face as they learn to become good managers.
 
 ### You Don't Have to be a Great Coder to be a Great Manager
 
@@ -32,7 +32,7 @@ Tech management isn't just about technology and code, managers have to deal with
 
 ### Learn to Compromise
 
-Developers often have high standards, as managers though there are times when compromises will need to be made which will lower standards. There are many reasons for this, business priorities, financial restrictions, difficult clients. It is important to understand how to compromise and what to compromise on. Good managers find a balance between belligerence and softness, the former will damage your inter-team relationships and the latter your team itself. Managers must define 'lines in the sand' that they will not compromise on. But these lines must be understandable to the non-technical because they will require the buy in of other teams and managers. A good 'line in the sand' is security. Don't let anyone anyone do anything that will damage security as this may harm your organisation. Code quality by contrast is a bad 'line in the sand'. It is subjective and non-technical people will not understand its importance. In all other areas managers should be willing to compromise.
+Developers often have high standards, as managers though there are times when compromises will need to be made which will lower standards. There are many reasons for this, business priorities, financial restrictions, difficult clients. It is important to understand how to compromise and what to compromise on. Good managers find a balance between belligerence and softness, the former will damage your inter-team relationships and the latter your team itself. Managers must define 'lines in the sand' that they will not compromise on. But these lines must be understandable to the non-technical because they will require the buy in of other teams and managers. A good 'line in the sand' is security. Don't let anyone do anything that will damage security as this may harm your organisation. Code quality by contrast is a bad 'line in the sand'. It is subjective and non-technical people will not understand its importance. In all other areas managers should be willing to compromise.
 
 ### Keep Coding
 
