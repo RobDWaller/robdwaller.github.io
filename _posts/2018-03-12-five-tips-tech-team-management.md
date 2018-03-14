@@ -6,13 +6,13 @@ published: true
 tags: [management, development, tips]
 ---
 
-To become a tech manager and learn how to be good at it is difficult. There isn't a great deal of 'documentation' available and developers don't discuss the topic a lot. Just take a look at your average code conference, there are very few talks on management. Sadly this means most new tech managers and lead developers learn on the job, which isn't always ideal.
+To become a tech manager and learn how to be good at it is difficult. There isn't a great deal of 'documentation' available and developers don't discuss the topic a lot. Just take a look at your average [code conference](https://www.phpconference.co.uk/schedule/), there are very few talks on management. Sadly this means most new tech managers and lead developers learn on the job, which isn't always ideal.
 
-I've been a tech manager for two years now and it's been an extreme learning curve. There are lots of thoughts and insights I could share, but there are five important ones. They are useful for any aspiring manager, lead developer and even those who haven't considered the move into management yet.
+I've been a tech manager for two years now and it's been an extreme learning curve. There are lots of thoughts and insights I could share, but there are five I believe important. They are useful for any aspiring manager, lead developer and even those who haven't considered the move into management yet.
 
-### Great Developers Don't Make Great Managers
+### Great Developers Make Great Managers?
 
-I'm going to begin with a lie, a big fat one, "great developers don't make great managers". This is obviously false, great developers can and do make great managers. The important point though is that you don't have to be a great developer to be a great manager.
+There is often an assumption that the most skilled developers will make the best managers. And that a developer should not go for a management role unless they are best developer in their team. This is a falacy and a lie, you don't have to be a great developer to be a great manager.
 
 It is important that you have experience and a good understanding of code and technical issues, but you don't have to be the best in your team at it. Management is about a lot more than your field of expertise so don't let your code capability put you off a management role, you may be great at it.
 
@@ -24,9 +24,9 @@ A good analogy for this point is football or 'soccer', which like development is
 - Jurgen Klopp
 - Jose Mourinho
 
-Answer: none of them were particularly good at football, at least not exceptional. They are though some of the most decorated managers in the game. The theory goes that average football players make better managers because they empathise better with average players and can therefore get more out of them. Great players by contrast often can't comprehend why less capable players can't do what they can, leading to frustration. Average players also develop other skills such as communication that are useful for managers. There is a good article on some of the data behind good football managers [in the FT](https://www.ft.com/content/f340caae-47cd-11e1-b646-00144feabdc0) that covers some of these issues. It's worth a read for any aspiring manager.
+Answer: none of them were particularly good at football, at least not exceptional. They are though some of the most decorated managers in the game. The theory goes that average football players make better managers because they have higher empathy. They can get more out of less capable players because they better understand their limitations and how best to use and deploy them. Great players by contrast often can't comprehend why average players can't do what they can, leading to frustration and arguments. Average players may also focus on developing other skills such as communication and strategy that are useful for managers. There is a good article on some of the data behind good football managers [in the FT](https://www.ft.com/content/f340caae-47cd-11e1-b646-00144feabdc0) that covers some of these issues. It's worth a read for any aspiring manager.
 
-Overall football and sport more generally highlight that many of the best managers are not always the most technically skilled. So just remember that technical weakness does not exclude you from a management role.                         
+Overall football and sport highlight that many of the best managers are not always the most technically skilled. So remember that technical weakness does not exclude you from a management role.                         
 
 ### Mistakes Will Happen
 
@@ -90,7 +90,7 @@ public function everyValueDivisibleByFive($array)
 
 Dave's code is terrible but it works which is all the business cares about and nobody in any other department or team is going to give a damn about the quality of it. This is not to say you shouldn't encourage your team to follow code principles. But for various reasons you're not always going to be able to follow them so there is no point being belligerent about them.
 
-A better 'line in sand' would focus on security. This a more understandable topic for the non-technical and can have a direct impact on a business. As an example you may outlaw certain tools such as WebMin or PHPMyAdmin. These tools can help developers and improve efficiency but they also expose servers and databases across the web so can be a security hazard.
+A better 'line in sand' would focus on security. This a more understandable topic for the non-technical and can have a direct impact on a business. As an example you may outlaw certain tools such as WebMin or PHPMyAdmin. These tools can help developers and improve efficiency but they also expose servers and databases across the web so can be a security hazard and a business threat.
 
 Other good 'lines in the sand' include: 
 
@@ -100,13 +100,11 @@ Other good 'lines in the sand' include:
 
 All of these issues are understandable and easily explained to the non-technical. They will also stand as solid principles to guide your team and provide them with the time and space to develop good, secure, bug free software. Overall this will be good for your business, reputation and profit margins.  
 
-As a manager you will have to compromise in many areas. The important point is to learn how to navigate a path between belligerence and softness. If you are too belligerent you're going to annoy people, even if you are right. By contrast if you are too soft your team will be buffeted around like a small boat in a storm. You will work longer hours, suffer more stress and produce poorer software. Essentially you should aim, as Aristotle might say, to find the 'mean' between belligerence and softness.
-
 ### Keep Coding
 
-There is no reason to stop coding when you become amanager. I very rarely code at work now, but I continue to work on some personal projects and regularly attend technical conferences and meetups. It's important to keep your toe in the water and there is no reason you shouldn't.
+There is no reason to stop coding when you become a manager. I very rarely code at work now, but I continue to work on some personal projects and regularly attend technical conferences and meetups. It's important to keep your toe in the water and there is no reason you shouldn't.
 
-Get involved in an open source project, or write and maintain your own library. It only has to be a few hours a week. But if you contine to code it will help you stay in touch with what your team members are doing; what is happening in the wider technical space; and maintain your passion for the subject. This will maintain your team's trust in you decisions and help you better advise your organisation. Overall this can only help you as a manager, so keep coding.
+Get involved in an open source project, or write and maintain your own library. It only has to be a few hours a week. But if you contine to code it will help you stay in touch with what your team members are doing; what is happening in the wider technical space; and maintain your passion for the subject. This will increase your team's trust in your decisions and help you better advise your organisation. Overall this can only help you as a manager, so keep coding.
 
 There is of course a great deal more to say on this subject. I hope though that it encorages more developers to become managers as this can only be good for our industry.
 
