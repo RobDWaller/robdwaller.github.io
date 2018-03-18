@@ -1,7 +1,7 @@
 ---
 layout: 'post'
 title: 'Five Tips for Aspiring Tech Team Managers'
-description: "Management isn't a topic that is often discussed among developers as we're generally much more interested in the pros and cons of various frameworks, design patterns, code principles or design patterns"
+description: "To become a tech manager and learn how to be good at it is difficult. There isn't a great deal of 'documentation' available and developers don't discuss the topic a lot."
 published: true
 tags: [management, development, tips]
 ---
@@ -12,7 +12,7 @@ I've been a tech manager for two years now and it's been an extreme learning cur
 
 ### Great Developers Make Great Managers?
 
-There is often an assumption that the most skilled developers will make the best managers. And that a developer should not go for a management role unless they are best developer in their team. This is a falacy and a lie, you don't have to be a great developer to be a great manager.
+There is often an assumption that the most skilled developers will make the best managers. And that a developer should not go for a management role unless they are best developer in their team. This is a fallacy and a lie, you don't have to be a great developer to be a great manager.
 
 It is important that you have experience and a good understanding of code and technical issues, but you don't have to be the best in your team at it. Management is about a lot more than your field of expertise so don't let your code capability put you off a management role, you may be great at it.
 
@@ -90,9 +90,9 @@ public function everyValueDivisibleByFive($array)
 
 Dave's code is terrible but it works which is all the business cares about and nobody in any other department or team is going to give a damn about the quality of it. This is not to say you shouldn't encourage your team to follow code principles. But for various reasons you're not always going to be able to follow them so there is no point being belligerent about them.
 
-A better 'line in sand' would focus on security. This a more understandable topic for the non-technical and can have a direct impact on a business. As an example you may outlaw certain tools such as WebMin or PHPMyAdmin. These tools can help developers and improve efficiency but they also expose servers and databases across the web so can be a security hazard and a business threat.
+A better 'line in sand' would focus on security. This a more understandable topic for the non-technical and can have a direct impact on a business. As an example you may outlaw certain tools such as [WebMin](http://www.webmin.com/) or [PHPMyAdmin](https://www.phpmyadmin.net/). These tools can help developers and improve efficiency but they also expose servers and databases across the web so can be a security hazard and a business threat.
 
-Other good 'lines in the sand' include: 
+Other good 'lines in the sand' include:
 
 - **Testing:** demand that there is always time to QA and test before release to reduce the number of bugs found in production.
 - **Timelines:** demand that the budget and timeline matches what can realistically be delivered, so developers produce fewer bugs and less technical debt.
@@ -104,8 +104,11 @@ All of these issues are understandable and easily explained to the non-technical
 
 There is no reason to stop coding when you become a manager. I very rarely code at work now, but I continue to work on some personal projects and regularly attend technical conferences and meetups. It's important to keep your toe in the water and there is no reason you shouldn't.
 
-Get involved in an open source project, or write and maintain your own library. It only has to be a few hours a week. But if you contine to code it will help you stay in touch with what your team members are doing; what is happening in the wider technical space; and maintain your passion for the subject. This will increase your team's trust in your decisions and help you better advise your organisation. Overall this can only help you as a manager, so keep coding.
+Get involved in an open source project, or write and maintain your own library. It only has to be a few hours a week. But if you continue to code it will help you stay in touch with what your team members are doing; what is happening in the wider technical space; and maintain your passion for the subject. This will increase your team's trust in your decisions and help you better advise your organisation. Overall this can only help you as a manager, so keep coding.
 
-There is of course a great deal more to say on this subject. I hope though that it encorages more developers to become managers as this can only be good for our industry.
+There is of course a great deal more to say on this subject. I hope though that it encourages more developers to become managers as this can only be good for our industry.
 
-If you have any thoughts or feedback on this post please let me know via a tweet @RobDWaller.
+If you have any thoughts or feedback on this post please let me know via a tweet [@RobDWaller](https://twitter.com/RobDWaller).
+
+**Note:** This post is based on a talk I gave at the [PHPLondon](https://twitter.com/phplondon) user group, the slides are below...
+<script async class="speakerdeck-embed" data-id="9cc457d708334dee8a43ca2037aeb800" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
