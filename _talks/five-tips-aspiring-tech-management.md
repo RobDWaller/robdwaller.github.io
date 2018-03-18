@@ -47,6 +47,10 @@ I have been a technical manager for two years, running a team of ten developers,
 
 For more information on me please view my [bio](https://rbrt.wllr.info/about.html) or [CV](https://rbrt.wllr.info/cv.pdf).
 
+### Talks
+
+- I've given this talk at the [PHP London user group](https://www.meetup.com/phplondon/events/248372704/) in March 2018. 
+
 ## Slides
 
 <script async class="speakerdeck-embed" data-id="9cc457d708334dee8a43ca2037aeb800" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
