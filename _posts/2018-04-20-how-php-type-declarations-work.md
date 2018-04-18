@@ -8,9 +8,7 @@ tags: [php, type declarations, type hints, return types]
 
 Type declarations are a simple programming concept that lots of developers use on a daily basis. In the code example below we see a basic method that uses type declarations. The method places a string type hint on the $foo parameter and a string return type on the method itself.
 
-```
-<?php
-
+```php
 function bar(string $foo): string
 {
     return $foo;
@@ -44,9 +42,7 @@ This approach does have some consequences though. If a developer defines type de
 
 As an example, if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now accept one integer argument and return a string. When we call the bar method with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value.
 
-```
-<?php
-
+```php
 function bar(int $foo): string
 {
     return $foo;
@@ -61,9 +57,7 @@ var_dump($result);
 
 It's only when we add `declare(strict_types=1);` to the top of the PHP file that the type declarations are imposed.
 
-```
-<?php
-
+```php
 declare(strict_types=1);
 
 function bar(int $foo): string
@@ -90,9 +84,7 @@ The other caveat to be aware of is that strict types have to be imposed on a fil
 
 To show this in action let's look at another example. Imagine we have a small application that pulls in two functions from two separate files, `foo.php` and `bar.php`. We'll add a `declare(strict_types=1);` to the top of the application file just to prove it has no effect on the files pulled in. Also we'll place the methods we call inside a try catch to handle any errors that are thrown.
 
-```
-<?php
-
+```php
 /**
  * This declare strict types but has no effect on the code.
  */
@@ -127,9 +119,7 @@ try {
 
 In the foo file we'll have a foo method that accepts an integer and returns a string. In this file there will be no `declare(strict_types=1);`.
 
-```
-<?php
-
+```php
 function foo(int $bar): string
 {
     return $bar;
@@ -138,9 +128,7 @@ function foo(int $bar): string
 
 In the bar file we'll have a bar method that also accepts an integer and returns a string. This time though we'll have a `declare(strict_types=1);` at the top of the file.
 
-```
-<?php
-
+```php
 declare(strict_types=1);
 
 function bar(int $foo): string
