@@ -21,20 +21,20 @@ var_dump($result);
 // Output: Hello
 ```
 
-These [type declarations]("https://en.wikipedia.org/wiki/Declaration_(computer_programming)") tell us two things about the method. It accepts one string argument and it will return a string. In a strongly typed language like Go if the `bar()` method is called and an integer argument is passed in, eg 123, an error will occur. The code will also error if the method returns something other than a string for some reason.
+These [type declarations](https://en.wikipedia.org/wiki/Declaration_(computer_programming)) tell us two things about the method. It accepts one string argument and it will return a string. In a strictly typed language like Go if the `bar()` method is called and an integer argument is passed in, eg 123, an error will occur. The code will also error if the method returns something other than a string for some reason.
 
 Type declarations serve two basic purposes in code:
 
 - **Low-level data / code integrity:** it is more difficult to misuse methods and type checking is reduced.
 - **Code readability:** it is clearer what a method accepts and what it will return.
 
-PHP has historically been a weakly typed language. Type declarations were only introduced in PHP 5, and in a limited form. Full type declarations and strong typing did not appear until PHP 7 in 2015. PHP 7 was an exciting step forward for those of us who like the concept of type declarations and strongly typed code.
+PHP has historically been a weakly typed language. Type declarations were only introduced in PHP 5, and in a limited form. Full type declarations and strict types did not appear until PHP 7's release in 2015.
 
-There are though two important caveats to the type declarations introduced in PHP 7 that developers should be aware of.
+PHP 7 was an exciting step forward for those of us who like the concept of type declarations and strictly typed code. There are though two important caveats to the type declarations introduced in PHP 7 that developers should be aware of.
 
 ## PHP 7 is a weakly typed language
 
-By default PHP 7 is a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strong types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strong types on using the internal `declare(strict_types=1);` method at the top of a PHP file.
+By default PHP 7 remains a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strict / strict types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strict types on using the internal `declare(strict_types=1);` method at the top of a PHP file.
 
 This implementation means that PHP will 'ignore' type hints and return types unless the `declare(strict_types=1);` method appears at the top of the file. This makes some sense as there is a lot of legacy PHP code still in use and developers should be able to upgrade to the latest version of PHP without rewriting their entire codebase.
 
@@ -137,7 +137,7 @@ function bar(int $foo): string
 }
 ```
 
-When we call the `foo(123)` and `bar(123)` methods respectively we'll get some very different output. The foo method will return a string so we'll see an output of `string(3) "123"`. By contrast the bar method will throw an error because strong types have been imposed. We'll see an error message outputted, `Return value of bar() must be of the type string, integer returned`.
+When we call the `foo(123)` and `bar(123)` methods respectively we'll get some very different output. The foo method will return a string so we'll see an output of `string(3) "123"`. By contrast the bar method will throw an error because strict types have been imposed. We'll see an error message outputted, `Return value of bar() must be of the type string, integer returned`.
 
 As is shown in this example, within the same application strict types can be imposed and not imposed at the same time.
 
