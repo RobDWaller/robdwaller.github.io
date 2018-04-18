@@ -1,8 +1,8 @@
 ---
 layout: 'post'
 title: 'How PHP Type Declarations Actually Work'
-description: ""
-published: false
+description: "There are two important caveats to the type declarations introduced in PHP 7 that developers should be aware of."
+published: true
 tags: [php, type declarations, type hints, return types]
 ---
 
@@ -23,7 +23,7 @@ var_dump($result);
 // Output: Hello
 ```
 
-These type declarations tell us two things about the method. It accepts one string argument and it will return a string. In a strongly typed language like Go if the `bar()` method is called and an integer argument is passed in, eg 123, then an error will occur. The code will also error if the method returns something other than a string for some reason.
+These [type declarations]("https://en.wikipedia.org/wiki/Declaration_(computer_programming)") tell us two things about the method. It accepts one string argument and it will return a string. In a strongly typed language like Go if the `bar()` method is called and an integer argument is passed in, eg 123, an error will occur. The code will also error if the method returns something other than a string for some reason.
 
 Type declarations serve two basic purposes in code:
 
@@ -36,13 +36,13 @@ There are though two important caveats to the type declarations introduced in PH
 
 ## PHP 7 is a weakly typed language
 
-By default PHP 7 is a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strong typing. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strong typing on using the internal `declare(strict_types=1);` method at the top of a PHP file.
+By default PHP 7 is a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strong types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strong types on using the internal `declare(strict_types=1);` method at the top of a PHP file.
 
 This implementation means that PHP will 'ignore' type hints and return types unless the `declare(strict_types=1);` method appears at the top of the file. This makes some sense as there is a lot of legacy PHP code still in use and developers should be able to upgrade to the latest version of PHP without rewriting their entire codebase.
 
 This approach does have some consequences though. If a developer defines type declarations but does not call `declare(strict_types=1);` PHP will use type coercion to make things work. Type coercion basically means a value of one type will be cast to a value of another type when required. This is less than ideal when using type hints and return types as methods may not function as expected.
 
-As an example, if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now accept one integer argument and return a string. When we call `bar();` with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value.
+As an example, if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now accept one integer argument and return a string. When we call the bar method with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value.
 
 ```
 <?php
@@ -56,7 +56,7 @@ $result = bar(123);
 
 var_dump($result);
 
-// Output: '123' as a string
+// Output: string(3) "123"
 ```
 
 It's only when we add `declare(strict_types=1);` to the top of the PHP file that the type declarations are imposed.
@@ -78,25 +78,23 @@ var_dump($result);
 // Output: '123' as a string
 ```
 
-Now when we call the bar method with an integer argument of 123 we'll get an error. This is because the method expects to return a string but it is attempting to return an integer. Strict typing has been imposed on the method and the following error is outputted.
+Now when we call the bar method with an integer argument of 123 we get an error. This is because the method expects to return a string but it is attempting to return an integer. Strict types have been imposed on the method and the following error is outputted.
 
 ```
 FATAL ERROR Uncaught TypeError: Return value of bar() must be of the type string, integer returned
 ```
 
-## Strong typing is on a per file basis
+## Strict types are on a per file basis
 
-The other caveat to be aware of is that strong types have to be imposed on a file by file basis. Strong types cannot be imposed on a global basis. This means you have to place `declare(strict_types=1);` in every file where you want strong types to be imposed.
+The other caveat to be aware of is that strict types have to be imposed on a file by file basis, they cannot be applied on a global basis. This means you have to place `declare(strict_types=1);` in every file where you want strict types to be imposed. Again this has been done to help backwards compatibility, but it means you cannot impose strict types across an application easily.
 
-This again has been done to help backwards compatibility. It means you cannot impose strong types across an application easily.
-
-Let's look at another example. Imagine we have a small application that pulls in functions from two separate files, `foo.php` and `bar.php`. We'll add a `declare(strict_types=1);` to the top of the application file just to prove it has no effect on the files pulled in. Also we'll place the methods we call inside a try catch to handle any errors that are thrown.
+To show this in action let's look at another example. Imagine we have a small application that pulls in two functions from two separate files, `foo.php` and `bar.php`. We'll add a `declare(strict_types=1);` to the top of the application file just to prove it has no effect on the files pulled in. Also we'll place the methods we call inside a try catch to handle any errors that are thrown.
 
 ```
 <?php
 
 /**
- * This declare strict types has no effect on the code.
+ * This declare strict types but has no effect on the code.
  */
 declare(strict_types=1);
 
@@ -116,6 +114,7 @@ try {
      * This method will throw an error.
      */
     var_dump(bar(123));
+
 } catch (Error $e) {
 
     /**
@@ -150,16 +149,16 @@ function bar(int $foo): string
 }
 ```
 
-When we call the `foo(123)` and `bar(123)` methods respectively we'll get some very different out put. The foo method will return a string so we'll see an output of `string(3) "123"`. By contrast the bar method will throw an error because strong types have been imposed. We'll see an error message outputted, `Return value of bar() must be of the type string, integer returned`.
+When we call the `foo(123)` and `bar(123)` methods respectively we'll get some very different output. The foo method will return a string so we'll see an output of `string(3) "123"`. By contrast the bar method will throw an error because strong types have been imposed. We'll see an error message outputted, `Return value of bar() must be of the type string, integer returned`.
 
-As can be seen, within the same application we can have strong types imposed and not imposed.
+As is shown in this example, within the same application strict types can be imposed and not imposed at the same time.
 
 ## The Consequences
 
-I don't wish to get into the rights and wrongs of PHP's approach to type declarations, smarter people than I have designed and implemented it. But the consequences of PHP's approach to type declarations should be obvious. The most important being PHP's type system cannot be trusted. And this means low level integrity errors can slip into code unless you are meticulous with `declare(strict_types=1);` statements.
+I don't wish to get into the rights and wrongs of PHP's approach to type declarations, smarter people than I have designed and implemented them. But the consequences of PHP's approach to type declarations should be obvious. The most important being PHP's type system cannot be trusted. And this means low level integrity errors can slip into code unless you are meticulous with `declare(strict_types=1);` statements.
 
-For instance when unit testing with PHPUnit you will want to use `assertSame()` instead of `assertEquals()`. This is because `assertSame()` checks value and type where as `assertEquals()` only checks value. And if you want to ensure code integrity you need to check type as well as value.
+For instance when unit testing with [PHPUnit](https://phpunit.de/manual/6.5/en/appendixes.assertions.html#appendixes.assertions.assertSame) you should use `assertSame()` instead of `assertEquals()`. This is because `assertSame()` checks value and type where as `assertEquals()` only checks value. And if you want to ensure code integrity you need to check type as well as value.
 
-Type declarations are a big step forward for PHP and I believe all PHP developers should use them with `declare(strict_types=1);` on or off. It is though important that PHP developers understand how they work. Misunderstanding PHP's type system will likely lead to bugs in your code that may have significant effects on your applications.
+Type declarations are a big step forward for PHP and I believe all PHP developers should use them whether `declare(strict_types=1);` is on or off. It is though important that PHP developers understand how they work. Misunderstanding PHP's type system will likely lead to bugs and will have negative effects on your applications.
 
-For more information on PHP's type system I suggest your [read the RFC]() on PHP type declarations.
+For more information on PHP's type system I suggest your [read the RFC](https://wiki.php.net/rfc/scalar_type_hints_v5) on PHP scalar type declarations.
