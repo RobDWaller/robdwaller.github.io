@@ -6,7 +6,7 @@ published: true
 tags: [php, type declarations, type hints, return types]
 ---
 
-Type declarations are a simple programming concept that lots of developers use on a daily basis. In the [code example below](https://3v4l.org/PJOaL) we see a basic method that uses type declarations. The method places a string type hint on the $foo parameter and a string return type on the method itself.
+Type declarations are a simple programming concept that lots of developers use on a daily basis. In the [code example below](https://3v4l.org/PJOaL) we see a basic method that uses type declarations. The method places a string type hint on the ``$foo` parameter and a string return type on the method itself.
 
 ```php
 function bar(string $foo): string
@@ -30,15 +30,15 @@ Type declarations serve two basic purposes in code:
 
 PHP has historically been a weakly typed language. Type declarations were only introduced in PHP 5, and in a limited form. Full type declarations and strict types did not appear until PHP 7's release in 2015.
 
-PHP 7 was an exciting step forward for those of us who like the concept of type declarations and strictly typed code. There are though two important caveats to the type declarations introduced in PHP 7 that developers should be aware of.
+PHP 7 was an exciting step forward for those of us who like the concept of type declarations and strictly typed code. There are though two important caveats that PHP developers should be aware of.
 
 ## PHP 7 is a Weakly Typed Language
 
-By default PHP 7 remains a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strict types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strict types on using the internal `declare(strict_types=1);` method at the top of a PHP file.
+By default PHP 7 remains a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strict types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strict types on by placing the `declare(strict_types=1);` method at the top of a PHP file.
 
-This implementation means that PHP will 'ignore' type hints and return types unless the `declare(strict_types=1);` method appears at the top of the file. This makes some sense as there is a lot of legacy PHP code still in use and developers should be able to upgrade to the latest version of PHP without rewriting their entire codebase.
+This implementation means that PHP will 'ignore' type hints and return types unless the `declare(strict_types=1);` statement appears at the top of the file. This makes some sense as there is a lot of legacy PHP code still in use. And developers should be able to upgrade to the latest version of PHP without rewriting their entire codebase.
 
-This approach does have some consequences though. If a developer defines type declarations but does not add `declare(strict_types=1);` to the start of the file PHP will use type coercion to make things work. Type coercion basically means a value of one type will be cast to a value of another type when required. This is less than ideal when using type declarations as methods may not function as expected.
+This approach does have some consequences though. If a developer defines type declarations but does not add `declare(strict_types=1);` PHP will use type coercion to make things work. Type coercion basically means a value of one type will be cast to a value of another type when required. This is less than ideal when using type declarations as methods may not function as expected.
 
 As [an example](https://3v4l.org/EGpLn), if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now have an integer type hint on the `$foo` parameter and a string return type on the method. When we call the bar method with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value to comply with the defined return type.
 
@@ -137,10 +137,10 @@ When we call the `foo(123)` and `bar(123)` methods respectively we'll get some v
 
 ## The Consequences
 
-I don't wish to get into the rights and wrongs of PHP's approach to type declarations, smarter people than I have designed and implemented them. But the consequences of this approach should be obvious. The most important being PHP's type system cannot be trusted. And this means low level integrity errors can slip into code unless you are meticulous with `declare(strict_types=1);` statements.
+I don't wish to get into the rights and wrongs of PHP's approach to type declarations, smarter people than I have designed and implemented them. But the consequences of this approach should be obvious. The most important is PHP's type system cannot be trusted. And this means low level integrity errors can slip into code unless you are meticulous with `declare(strict_types=1);` statements.
 
 It also means you should be careful when testing code. For instance when unit testing with [PHPUnit](https://phpunit.de/manual/6.5/en/appendixes.assertions.html#appendixes.assertions.assertSame) you should use `assertSame()` instead of `assertEquals()`. This is because `assertSame()` checks value and type where as `assertEquals()` only checks value. And if you want to ensure code integrity you need to check type as well as value.
 
-Type declarations are a big step forward for PHP and I believe all PHP developers should use them whether `declare(strict_types=1);` is on or off. It is though important that PHP developers understand how they work as misunderstanding PHP's type system will lead to bugs and will have negative effects on your applications.
+Type declarations are a big step forward for PHP and I believe all PHP developers should use them whether `declare(strict_types=1);` is on or off. It is though important that PHP developers understand how they work as misunderstanding PHP's type system will lead to bugs and will have negative effects on applications.
 
 For more information on PHP's type system I suggest you [read the RFC](https://wiki.php.net/rfc/scalar_type_hints_v5) on PHP scalar type declarations.
