@@ -32,7 +32,7 @@ PHP has historically been a weakly typed language. Type declarations were only i
 
 PHP 7 was an exciting step forward for those of us who like the concept of type declarations and strictly typed code. There are though two important caveats to the type declarations introduced in PHP 7 that developers should be aware of.
 
-## PHP 7 is a weakly typed language
+## PHP 7 is a Weakly Typed Language
 
 By default PHP 7 remains a weakly typed language. This may seem counterintuitive given the introduction of full type declarations and strict types. But it was decided to aid backwards compatibility that type declarations would not be forced on PHP code. Developers can turn strict types on using the internal `declare(strict_types=1);` method at the top of a PHP file.
 
@@ -74,7 +74,7 @@ Now when we call the bar method with an integer argument of 123 we get an error.
 FATAL ERROR Uncaught TypeError: Return value of bar() must be of the type string, integer returned
 ```
 
-## Strict types are on a per file basis
+## Strict Types Are Imposed on a File by File Basis
 
 The other caveat to be aware of is strict types have to be imposed on a file by file basis, they cannot be applied globally. This means you have to place `declare(strict_types=1);` in every file where you want strict types to be imposed. Again this has been done to help backwards compatibility, but it means you cannot easily impose strict types across an application.
 
