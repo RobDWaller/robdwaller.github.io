@@ -6,7 +6,7 @@ published: true
 tags: [php, type declarations, type hints, return types]
 ---
 
-Type declarations are a simple programming concept that lots of developers use on a daily basis. In the code example below we see a basic method that uses type declarations. The method places a string type hint on the $foo parameter and a string return type on the method itself.
+Type declarations are a simple programming concept that lots of developers use on a daily basis. In the [code example below](https://3v4l.org/PJOaL) we see a basic method that uses type declarations. The method places a string type hint on the $foo parameter and a string return type on the method itself.
 
 ```php
 function bar(string $foo): string
@@ -18,7 +18,7 @@ $result = bar('Hello');
 
 var_dump($result);
 
-// Output: Hello
+// Output: string(5) "Hello"
 ```
 
 These [type declarations](https://en.wikipedia.org/wiki/Declaration_(computer_programming)) tell us two things about the method. It accepts one string argument and it will return a string. In a strictly typed language like Go if the `bar()` method is called and an integer argument is passed in, eg 123, an error will occur. The code will also error if the method returns something other than a string for some reason.
@@ -40,7 +40,7 @@ This implementation means that PHP will 'ignore' type hints and return types unl
 
 This approach does have some consequences though. If a developer defines type declarations but does not add `declare(strict_types=1);` to the start of the file PHP will use type coercion to make things work. Type coercion basically means a value of one type will be cast to a value of another type when required. This is less than ideal when using type declarations as methods may not function as expected.
 
-As an example, if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now have an integer type hint on the `$foo` parameter and a string return type on the method. When we call the bar method with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value to comply with the defined return type.
+As [an example](https://3v4l.org/EGpLn), if we edit our 'foo bar' code from above we'll see the type coercion at work. The bar method will now have an integer type hint on the `$foo` parameter and a string return type on the method. When we call the bar method with an integer argument of 123 the method will return 123 as a string. This is because type coercion has converted the integer value to a string value to comply with the defined return type.
 
 ```php
 function bar(int $foo): string
@@ -55,7 +55,7 @@ var_dump($result);
 // Output: string(3) "123"
 ```
 
-It's only when we add `declare(strict_types=1);` to the top of the PHP file that the type declarations are imposed.
+It's only when we add `declare(strict_types=1);` to the [top of the PHP file](https://3v4l.org/dtYQ9) that the type declarations are imposed.
 
 ```php
 declare(strict_types=1);
@@ -141,6 +141,6 @@ I don't wish to get into the rights and wrongs of PHP's approach to type declara
 
 It also means you should be careful when testing code. For instance when unit testing with [PHPUnit](https://phpunit.de/manual/6.5/en/appendixes.assertions.html#appendixes.assertions.assertSame) you should use `assertSame()` instead of `assertEquals()`. This is because `assertSame()` checks value and type where as `assertEquals()` only checks value. And if you want to ensure code integrity you need to check type as well as value.
 
-Type declarations are a big step forward for PHP and I believe all PHP developers should use them whether `declare(strict_types=1);` is on or off. It is though important that PHP developers understand how they work. Misunderstanding PHP's type system will lead to bugs and will have negative effects on your applications.
+Type declarations are a big step forward for PHP and I believe all PHP developers should use them whether `declare(strict_types=1);` is on or off. It is though important that PHP developers understand how they work as misunderstanding PHP's type system will lead to bugs and will have negative effects on your applications.
 
 For more information on PHP's type system I suggest you [read the RFC](https://wiki.php.net/rfc/scalar_type_hints_v5) on PHP scalar type declarations.
