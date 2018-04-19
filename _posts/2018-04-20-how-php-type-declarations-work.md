@@ -6,7 +6,7 @@ published: true
 tags: [php, type declarations, type hints, return types]
 ---
 
-Type declarations are a simple programming concept that lots of developers use on a daily basis. In the [code example below](https://3v4l.org/PJOaL) we see a basic method that uses type declarations. The method places a string type hint on the ``$foo` parameter and a string return type on the method itself.
+Type declarations are a simple programming concept that lots of developers use on a daily basis. In the [code example below](https://3v4l.org/PJOaL) we see a basic method that uses type declarations. The method places a string type hint on the `$foo` parameter and a string return type on the method itself.
 
 ```php
 function bar(string $foo): string
