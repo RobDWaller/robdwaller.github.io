@@ -55,7 +55,7 @@ So what does planning look like? It can take many forms, but its main aim, as me
 
 This can be achieved by sitting with a client and writing some user stories. Define what they want their users to achieve and why. Alternatively you can hire business analysts and UX specialists to learn about and document a client's business and user needs. Note a UX specialist is someone who researches user behavior, not someone who just draws up sitemaps and wireframes.
 
-There is also [Behaviour Driven Development](). [Ciaran McNulty](https://twitter
+There is also [Behaviour Driven Development](https://en.m.wikipedia.org/wiki/Behavior-driven_development). [Ciaran McNulty](https://twitter
 com/ciaranmcnulty) has been pushing [BDD principles](https://youtu.be/83GbyDpJDI4) in the PHP community for a number of years. In his [latest talk](http://meetu.ps/e/Flwzn/2D0Hf/d) at PHP London he highlighted the benefit of [example mapping](https://cucumber.io/blog/2015/12/08/example-mapping-introduction) which aims to understand project complexity by writing requirements, rules and examples. 
 
 An example requirment may be:
@@ -82,7 +82,7 @@ User 1 receives 10 loyalty points.
 
 With an example the complexity of the loyalty scheme is clearer. Users only recieve loyalty points for the cost of the product not the tax. Now imagine there are hundreds of examples for a big project. Suddenly the project is easier to understand, it is clearer what has to be done, and it's more testable. Also the unknown unknowns are reduced dramatically.
 
-If you haven't read about [Behaviour Driven Development]() I suggest you do. Even if you are unable to use it the underlying principles will help you become a better developer and or manager.
+If you haven't read about [Behaviour Driven Development](https://en.m.wikipedia.org/wiki/Behavior-driven_development) I suggest you do. Even if you are unable to use it the underlying principles will help you become a better developer and or manager.
 
 Project priority must also be clear before coding begins. If data entry is the most important aspect of a system, don't begin by building a notifications system.
 
@@ -124,7 +124,7 @@ If you haven't got a clearly defined process a good place to start is the [Joel 
 
 Without a process code quality will suffer. Developers will work independently, produce code of varying quality and lots of bugs will slip into production. The knock on effects of this can be enormous. They may even result in complete project failure, so it is essential implement a well structured process. 
 
-## The Budgets Mytg
+## The Budgets Myth
 
 Some in the tech community will argue  it's not possible to get MPP right. Often they will argue there isn't enough budget and therefore time to do proper management, planning and process. 
 
