@@ -55,8 +55,7 @@ So what does planning look like? It can take many forms, but its main aim, as me
 
 This can be achieved by sitting with a client and writing some user stories. Define what they want their users to achieve and why. Alternatively you can hire business analysts and UX specialists to learn about and document a client's business and user needs. Note a UX specialist is someone who researches user behaviour, not someone who just draws up sitemaps and wireframes.
 
-There is also [Behaviour Driven Development](https://en.m.wikipedia.org/wiki/Behavior-driven_development). [Ciaran McNulty](https://twitter
-com/ciaranmcnulty) has been pushing [BDD principles](https://youtu.be/83GbyDpJDI4) in the PHP community for a number of years. In his [latest talk](http://meetu.ps/e/Flwzn/2D0Hf/d) at PHP London he highlighted the benefit of [example mapping](https://cucumber.io/blog/2015/12/08/example-mapping-introduction) which aims to understand project complexity by writing requirements, rules and examples.
+There is also [Behaviour Driven Development](https://en.m.wikipedia.org/wiki/Behavior-driven_development). [Ciaran McNulty](https://twitter.com/ciaranmcnulty) has been pushing [BDD principles](https://youtu.be/83GbyDpJDI4) in the PHP community for a number of years. In his [latest talk](http://meetu.ps/e/Flwzn/2D0Hf/d) at PHP London he highlighted the benefit of [example mapping](https://cucumber.io/blog/2015/12/08/example-mapping-introduction) which aims to understand project complexity by writing requirements, rules and examples.
 
 An example requirement may be:
 
