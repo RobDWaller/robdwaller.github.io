@@ -1,7 +1,7 @@
 ---
 layout: 'post'
 title: "Why Tech Projects Fail: Management, Planning, Process"
-description: "It's important we understand why tech projects fail so we can reduce their occurance."
+description: "Without good management, planning and process it is simply not possible to write good code and produce great products which is what all developers want to do."
 published: true
 tags: [management, planning, process, development]
 ---
