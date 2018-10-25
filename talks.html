@@ -11,7 +11,9 @@ description: "A list of conference talks written by Rob Waller on software devel
     <li>
       <a href="{{ talk.url }}">{{ talk.title }}</a><br/>
       {{talk.description}}<br/>
-      <a href="{{talk.slides}}" target="_blank">View the slides</a>
+      {% if talk.slides != null %}
+        <a href="{{talk.slides}}" target="_blank">View the slides</a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
