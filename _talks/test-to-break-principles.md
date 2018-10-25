@@ -11,12 +11,19 @@ There are two types of tests a developer can write, ‘test to work’ and ‘te
 
 ## Talk Description
 
-This talk focuses on what good management, planning and process look like and explains why they are essential to successful tech projects.
+The talk aims to highlight the importance of testing, why developers must spend more of their time testing, how testing generates more robust applications and why testing makes developers’ lives easier.
 
-- **Management:** this sits at the heart of project failure, bad management always leads to project failure. Good managers hire the right developers, support their staff, and set realistic goals and deadlines.
-- **Planning:** developers need clear requirements to deliver what is desired. Good planning helps define understandable tasks, clarify complexity, highlight unknowns and define priority. All of which are essential to project success.
-- **Process:** helps ensure quality by catching bugs and ensuring business requirements are delivered. Process is not about code, but about communication, code reviews, testing and deployment steps. All of which ensure the end product is as good as it can be.
+The talk is based around a live coding demo.
+
+The talk will:
+
+- Explain the difference between tests that prove an application works and tests which aim to break the application logic.
+- Highlight how test to break principles force developers to introduce logic to handle unexpected behaviour.
+- Show how test to break principles result in more robust applications as developers write code that can only be used in one way.
+- Encourage developers to apply test to break principles to all types of tests, including manual tests.
 
 ## Notes
 
-This talk is based on a blog shared on the dev.to community: https://dev.to/robdwaller/why-tech-projects-fail-management-planning-process-hmg
+This talk is based on a blog post found on my personal site: [https://rbrt.wllr.info/2018/01/15/why-you-must-test-to-break.html](https://rbrt.wllr.info/2018/01/15/why-you-must-test-to-break.html)
+
+There is also a GitHub library which will form the basis of the demo: [https://github.com/RobDWaller/test-to-break](https://github.com/RobDWaller/test-to-break)

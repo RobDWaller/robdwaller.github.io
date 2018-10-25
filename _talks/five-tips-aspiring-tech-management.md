@@ -24,7 +24,7 @@ The talk covers examples from development, sport, history and my personal experi
 
 ## Notes
 
-You can read the rough outline of the talk on my blog: http://rbrt.wllr.info/2018/03/12/five-tips-tech-team-management.html
+You can read the rough outline of the talk on my blog: [http://rbrt.wllr.info/2018/03/12/five-tips-tech-team-management.html](http://rbrt.wllr.info/2018/03/12/five-tips-tech-team-management.html)
 
 ### Talks
 
