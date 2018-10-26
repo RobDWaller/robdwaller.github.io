@@ -5,7 +5,9 @@ description: "When you run a developer test or assessment you are not checking t
 tags: [python, FizzBuzz, tests, interviews]
 published: true
 ---
-Recently I wrote a Python test which I was going to use during interviews for hiring developers. I never got to use it sadly as I decided to leave the job it was for, let's just say the company had a few issues... Anyway, I shared the test on Twitter and got some interesting feedback. A number of developers / friends thought it was a little too easy.
+Recently I wrote a [Python test](https://github.com/RobDWaller/python-assessment) which I was going to use during interviews for hiring developers. I never got to use it sadly as I decided to leave the job it was for, let's just say the company had a few issues...
+
+The test asks a developer to complete a few tasks based around list and dictionary manipulation. I shared it on Twitter and got some interesting feedback. A number of developers / friends thought it was a little too easy.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">it&#39;s almost too easy. I don&#39;t think you can figure out if someone is mid/senior from this</p>&mdash; @r4vi (@r4vi) <a href="https://twitter.com/r4vi/status/1050426504008622080?ref_src=twsrc%5Etfw">October 11, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
