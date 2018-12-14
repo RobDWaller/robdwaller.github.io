@@ -5,7 +5,7 @@ description: "To coincide with the deprecation of PHP 7.0 and the release of PHP
 tags: [jwt, php, json, json web tokens]
 published: true
 ---
-To coincide with the deprecation of PHP 7.0 and the release of PHP 7.3 I have been working on version 2.0.0 of my Really Simple JSON Web Token library.
+To coincide with the deprecation of PHP 7.0 and the release of PHP 7.3 I have been working on version 2.0.0 of my [Really Simple JSON Web Token library](https://github.com/RobDWaller/ReallySimpleJWT).
 
 I recently released [two alpha versions](https://github.com/RobDWaller/ReallySimpleJWT/releases/tag/2.0.0-alpha) of the library and a beta version will follow shortly. The aim is to have the release candidate ready for early 2019 and do the full release two weeks later.
 
