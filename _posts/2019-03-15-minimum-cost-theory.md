@@ -3,7 +3,7 @@ layout: post
 title: "The Minimum Cost Theory of Software Development"
 description: "Every software development task has a minimum cost which covers writing code that functions well and is bug free."
 tags: [development, tech, finance, costs]
-published: false
+published: true
 ---
 The Minimum Cost theory of software development relates to the financial cost, including time and materials, to complete a software development task.
 
