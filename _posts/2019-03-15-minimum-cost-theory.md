@@ -13,10 +13,12 @@ It states:
 
 Put simply this means you will continue to spend money on a development task until it functions well and is bug free. Or alternatively you decide to delete it. Once you understand the Minimum Cost theory you can better structure your development process to minimise costs.
 
-Good tech teams and companies should aim to get as close as possible to the *minimum cost* of development. This can take time and will require good planning, code analysis, code review and excellent testing, all executed before code is pushed into production. These steps will all reduce the generation of bugs and poor functionality, and mean you get closer to the minimum cost.  
+Good tech teams and companies aim to get as close as possible to the *minimum cost* of development. This can take time and will require good planning, code analysis and review, and excellent testing, all executed before code is pushed into production. These steps will reduce the creation of bugs and poor functionality, and mean you get closer to the *minimum cost*.  
 
-By contrast if you rush tasks, cut corners and release code too earlier costs will spiral as you will have to fix bugs and faulty functionality which are in production. And this process has all sorts of untracked financial side-effects. First it will force a company to divert extra resources to maintenance and bug fixing. It may also result in less users interacting with your website, or it may drive inefficiencies in other company departments which are reliant on your software. But you will see your costs diverge significantly from the *minimum cost*.
+By contrast if you rush tasks, cut corners and release code too earlier costs will spiral as you will have to fix bugs and faulty functionality which are in production. And this process has financial consequences. It will force you to divert resources to maintenance and bug fixing which will reduce the efficiency of your development team. This may cause you to hire more developers, or wait longer for new functionality.
 
-My advice generally is you cannot save money on a development task, you can only postpone the point at which you pay for it. I encourage all those involved in the tech industry to consider before they plan their next development task or project.
+There are also untracked financial side-effects caused by poor functionality and bugs in production. For example, they may result in less users interacting with your software, leading to fewer conversions. Or they may drive inefficiencies in other company departments which are reliant on your software. Overall the poorer your work and the higher your defect density the further you will diverge from the *minimum cost*.
+
+My advice generally is you cannot save money on a development task, you can only postpone the point at which you pay for it. I encourage all those involved in the tech industry to consider this before they plan their next development task or project.
 
 Any questions, drop me a message [@RobDWaller](https://twitter.com/RobDWaller)
