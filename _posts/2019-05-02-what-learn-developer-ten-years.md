@@ -27,15 +27,15 @@ After about 18 months one of my old work contacts put in touch with a company wh
 
 By the time I was 29, I was nearly bankrupt, the relationship I'd been in had fallen apart, mainly due to me, and I had no business. At this point you may be asking, why on earth did you do this? The answer is simple, it was one of the best experiences of my life, and fast forwarded my development career. I learnt more than any classroom or book could teach me about the business of technology and I became a much better software developer.
 
-There were also some fun parts, I wrote a Twitter analytics algorithm that got me into Mashable and on to CNN News. And I got a free trip to LA to speak at a marketing conference about social media analytics. And overall nothing really bad happened, I tried something, it didn't work out, I went back to what I was doing, but I was earning a lot more money.
+There were also some fun parts, I wrote a Twitter analytics algorithm that got me into [Mashable](https://mashable.com/2012/08/22/twitter-facebook-fake-followers/) and on to [CNN News](https://rbrt.wllr.info/2019/05/05/when-appeared-on-cnn.html). And I got a free trip to LA to speak at a marketing conference about social media analytics. And overall nothing really bad happened, I tried something, it didn't work out, I went back to what I was doing, but I was earning a lot more money.
 
-My advice is if there is something you want try or do, just give it go, see what happens. It might not be for you in the end, but at least you'll know and you can easily go back to what you were doing previously. And it doesn't have to be as mad as starting a business, it could just be to try free lance work, or remote work, or a role in management, or a contribution to an open source project. Just give it a go, you've got nothing to lose and you won't regret it.
+My advice is if there is something you want try or do, just give it go, see what happens. It might not be for you in the end, but at least you'll know and you can easily go back to what you were doing previously. And it doesn't have to be as mad as starting a business, it could be to try free lance work, or remote work, or a role in management, or a contribution to an open source project. Just give it a go, you've got nothing to lose and you won't regret it.
 
 ## You are Ignorant
 
 Over the years I've learnt a great deal about myself, I can be arrogant, blunt, loud, dismissive, aggressive, single minded, difficult, selfish and worse. And I have to try and control these traits as much as I can. But the most important thing I've learnt is I am ignorant. As I've learnt more and gained experience I've come to the realisation I don't know much. This isn't a new concept I've stumbled upon, Socrates spoke about man's ignorance 2,500 years ago.
 
-But it is a really important life lesson to understand your ignorance, or what you actually know. For instance I can code in numerous languages, but I only know PHP well. But even within PHP my areas of expertise are limited to Test Driven Development, Code Quality and JSON Web Tokens. I don't know a great deal about any of the PHP frameworks, I'm certainly not a *Laravel expert*.
+But it is a really important life lesson to understand your ignorance, or what you actually know. For instance I can code in numerous languages, but I only know PHP well. But even within PHP my areas of expertise are limited to Test Driven Development, Code Quality and [JSON Web Tokens](https://github.com/RobDWaller/ReallySimpleJWT). I don't know a great deal about any of the PHP frameworks, I'm certainly not a *Laravel Expert*.
 
 My advice to all developers is accept your ignorance because it is not a bad thing, it is natural. If you know a little about something it doesn't mean you understand it well or are an expert in it, so don't pretend you are. It's ok to say, "I don't know, I'll have to look into that." In fact, it's the mature and sensible thing to do. And if someone reprimands you for saying it then they are an idiot.
 
@@ -47,7 +47,7 @@ And finally, love your QA! A developer who accepts their own ignorance understan
 
 This is simple, avoid stress, like it were the plague, but like a worse plague, where people's heads explode. Stress adds nothing to your life, it's not a motivator, it doesn't make you more focused, it's just a life negative. And the consequences of stress can be significant, it can ruin your life.
 
-The solution to stress is relatively straightforward, stop doing the thing that causes you stress. This is easier said than done and requires you to have a good understanding of yourself. Who you are as a person, what your strengths and weaknesses are, and what you like and what you don't like.
+The solution to stress is relatively straightforward, stop doing the thing that causes you stress. This is easier said than done and requires you to have a good understanding of yourself; who you are as a person; what your strengths and weaknesses are; and what you like and what you don't like.
 
 I've realised I'm a bad employee but a good contactor / consultant. My main skill is analysis, which I believe comes from my degree in History. This means I am very good at spotting problems and defining solutions. I'm a bit like a problem seeking missile, I almost can't help myself, I just have to look under the rock in the dark corner.
 
@@ -65,7 +65,7 @@ The combination of stress and alcohol is even worse, an explosive mix. I for a l
 
 You should also be careful of companies who have drinking cultures. I used to think drinking cultures were fun, and I played my part in them, but they usually exist to hide a company's demons. Which more often than not is people are under too much pressure and stress levels are high.
 
-I'm not saying don't drink or don't enjoy a drink with your work colleagues, just be careful. If you're drinking to help with stress, or you drink large amounts often, once a week or more, or you drink more often with work colleagues than friends and loved ones you probably need to get some help, or make some significant work life changes. Don't let the *demon drink* take a hold, as my mother likes to say.
+I'm not saying don't drink or don't enjoy a drink with your work colleagues, just be careful. If you're drinking to help with stress; or you drink large amounts often, once a week or more; or you drink more often with work colleagues than friends and loved ones; you probably need to get some help, or make some significant work life changes. Don't let the *demon drink* take a hold, as my mother likes to say.
 
 ## Fin
 
