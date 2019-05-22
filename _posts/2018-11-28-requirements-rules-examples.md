@@ -26,7 +26,7 @@ An important question to ask is, what is the aim of a project plan? Three things
 - **Easier to tests:** a plan with examples or test cases makes it easier for developers and QAs to write and run tests.
 - **Increase transparency:** everyone involved in a project understands what has to be done to deliver it.
 
-One approach which achieves these three aims is a Requirements, Rules and Examples spreadsheet, and it is so simple one person can complete it in less than an hour. I'd advise a team complete it together, but I appreciate the pressure some teams are under.
+One approach which achieves these three aims is a Requirements, Rules and Examples spreadsheet, and it is so simple one person can complete it in less than an hour. I'd advise a to team complete it together, but I appreciate the pressure some teams are under.
 
 So how does RRE work? It's easy, get a spreadsheet and create three columns, from left to right, with the headers Requirements, Rules and Examples.
 
@@ -45,7 +45,7 @@ As the numbers suggest as you move from left to right on the spreadsheet more in
 
 <img src="/assets/img/rre.JPG" />
 
-What is apparent is the creation of a first name field on a web form is more complicated than it may seem on the surface. Our RRE spreadsheet which only took a matter of minutes to fill IN highlights this well.   
+What is apparent is the creation of a first name field on a web form is more complicated than it may seem on the surface. Our RRE spreadsheet which only took a matter of minutes to fill in highlights this well.   
 
 The second benefit of RRE is it makes testing easier as in essence each example is a test case. A developer can write a unit test for the example and a QA can do a manual test of the example on the final product. To highlight this I have created a [Python Flask code repository](https://github.com/RobDWaller/requirements-rules-examples) that shows this in action.
 
@@ -79,4 +79,4 @@ The final benefit of an RRE spreadsheet is transparency. You create a document t
 
 There are no rules around how you write your requirements, rules and examples. The aim is simply to document your plan as fast as is possible. As mentioned above my advice is you create this spreadsheet in a team setting as you'll be able to come up with more examples faster. But if you can't it isn't the end of the world.
 
-A Requirements, Rules and Examples spreadsheet is not a replacement for Behaviour Driven Development or Scrum Practices. It is an approach to help those who are currently struggling with planning tech and development projects. And it should be seen as a first step on your way to BDD. It will help you plan projects better and show to stakeholders the benefits of better planning. And hopefully this will result in better code and products with fewer bugs.
+A Requirements, Rules and Examples spreadsheet is not a replacement for Behaviour Driven Development or Scrum Practices. It is an approach to help those who are currently struggling with planning tech and development projects. And it should be seen as a first step on your way to BDD. It will help you plan projects better and show stakeholders the benefits of better planning. And hopefully this will result in better code and products with fewer bugs.
