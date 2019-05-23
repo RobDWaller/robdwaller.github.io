@@ -26,7 +26,7 @@ An important question to ask is, what is the aim of a project plan? Three things
 - **Easier to tests:** a plan with examples or test cases makes it easier for developers and QAs to write and run tests.
 - **Increase transparency:** everyone involved in a project understands what has to be done to deliver it.
 
-One approach which achieves these three aims is a Requirements, Rules and Examples spreadsheet, and it is so simple one person can complete it in less than an hour. I'd advise a to team complete it together, but I appreciate the pressure some teams are under.
+One approach which achieves these three aims is a Requirements, Rules and Examples spreadsheet, and it is so simple one person can complete it in less than an hour. I'd advise a team complete it together, but I appreciate the pressure some teams are under.
 
 So how does RRE work? It's easy, get a spreadsheet and create three columns, from left to right, with the headers Requirements, Rules and Examples.
 
