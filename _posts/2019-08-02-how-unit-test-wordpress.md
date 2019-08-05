@@ -30,7 +30,7 @@ WP_Mock also allows you to check whether an action or filter has been added:
 WP_Mock::expectActionAdded('admin_notices', [$atlantic, 'atlanticCity']);
 ```
 
-This is useful because when you add actions and filters nothing happens directly, but you can test they exist and they are being used in the way you expect. In addition, with the `expectAction()` and `onFilter()` methods you can mock and test what happens when you call specific actions and filters.
+This is useful because when you add actions and filters nothing happens directly, but you can test they exist and they are being used in the way you expect. In addition, with the `expectAction()`, `expectFilter()` and `onFilter()` methods you can mock and test what happens when specific actions and filters are called by your code.
 
 To use WP_Mock there is some custom setup you need to configure, you will need to setup a bootstrap file to initiate WP_Mock. This bootstrap file will then need to be referenced in you PHPUnit XML config file:
 
