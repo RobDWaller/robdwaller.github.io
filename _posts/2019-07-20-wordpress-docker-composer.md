@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Setup WordPress with Composer and Docker"
+title: "How to Set Up WordPress with Composer and Docker"
 description: "Dusty is a WordPress starter repository, and it comes with a Composer and Docker integration out of the box."
 tags: [php, wordpress, docker, composer, dusty]
 published: true
