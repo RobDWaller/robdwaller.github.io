@@ -35,9 +35,9 @@ I'm very proud of the [Fakers App](https://fakers.statuspeople.com), it played a
 
 I've open sourced all the code for the project because while a lot of the code is a mess there are some interesting ideas hidden in their. And a lot of lessons. I also believe spam and fake followers is still a massive problem on social media so if you want to take the core 'algorithm' and build something new, or a lot better, go for it!
 
-- [Original Fakers App]()
-- [Rebuild One]()
-- [Rebuild Two]()
+- [Original Fakers App](https://github.com/RobDWaller/StatusPeopleSpam)
+- [Rebuild One](https://github.com/RobDWaller/FakersTwo)
+- [Rebuild Two](https://github.com/RobDWaller/fakers-zero)
 
 Thanks to everyone who has used and supported the app over the years. Here's to the next crazy idea and if you have any questions just drop me a message on Twitter [@RobDWaller](https://twitter.com/RobDWaller).
 
