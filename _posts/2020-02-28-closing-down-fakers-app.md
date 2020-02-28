@@ -5,7 +5,7 @@ description: "I started the Fakers App in 2012 as a side project to help some jo
 tags: [twitter, spam, fake followers, fakers app]
 published: true
 --- 
-I started the [Fakers App](https://twitter.com) in 2012 as a side project to help some journalists researching people who were buying fake followers on Twitter. The app ran a simple algorithm against a user's Twitter followers and highlighted which ones were either fake or inactive. In the early days fake accounts were easy to spot, they followed a lot of accounts but had no followers of their own. It got more complicated of course.
+I started the [Fakers App](https://fakers.statuspeople.com) in 2012 as a side project to help some journalists researching people who were buying fake followers on Twitter. The app ran a simple algorithm against a user's Twitter followers and highlighted which ones were either fake or inactive. In the early days fake accounts were easy to spot, they followed a lot of accounts but had no followers of their own. It got more complicated of course.
 
 <img src="/assets/img/fakers-screenshot.png" />
 
@@ -31,7 +31,7 @@ There have been two attempts over the years to rewrite the application so it wor
 
 More importantly though my heart is no longer in the project, my life has moved on. I got engaged, bought a house and I recently had my first child, my son Jacob was born in December 2019. I also have [new software projects](https://github.com/RobDWaller/ReallySimpleJWT) which take up my time and require my support. Put simply I can't maintain the project in the same way I did 4 or 5 years ago.
 
-I'm very proud of the [Fakers App](https://fakers.com), it played an enormous part in my growth as a software developer. And I believe it helped a lot of people and made a difference to the Twitter ecosystem.
+I'm very proud of the [Fakers App](https://fakers.statuspeople.com), it played an enormous part in my growth as a software developer. And I believe it helped a lot of people and made a difference to the Twitter ecosystem.
 
 I've open sourced all the code for the project because while a lot of the code is a mess there are some interesting ideas hidden in their. And a lot of lessons. I also believe spam and fake followers is still a massive problem on social media so if you want to take the core 'algorithm' and build something new, or a lot better, go for it!
 
