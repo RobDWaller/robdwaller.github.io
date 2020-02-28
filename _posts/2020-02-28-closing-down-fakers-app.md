@@ -19,7 +19,7 @@ The final outcome of all this was over 1.5 million people used the app to check 
 
 Sadly though after 8 years I feel its time to bring the project to an end. When all this began I was 28 and little more than a junior developer with quite the ego. I was completely unprepared for handling and building a website which was generating so much traffic and interest. 
 
-I suppose this is where the problems began, I didn't know how to write decent, maintainable code, I just knew how to make things work. This was enough to keep the car on the road, but not good for the long term sustainability of the project. You can see the codebase on [GitHub](), which I've now made public. The nicest way to describe it is to say it is "full of interesting ideas". A fairer description is to say it provides a lesson in what "not" to do for any junior developer.
+I suppose this is where the problems began, I didn't know how to write decent, maintainable code, I just knew how to make things work. This was enough to keep the car on the road, but not good for the long term sustainability of the project. You can see the codebase on [GitHub](https://github.com/RobDWaller/StatusPeopleSpam), which I've now made public. The nicest way to describe it is to say it is "full of interesting ideas". A fairer description is to say it provides a lesson in what "not" to do for any junior developer.
 
 Lessons learnt:
 - Don't write your own framework.
@@ -27,7 +27,7 @@ Lessons learnt:
 - Do minimise your [code complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
 - Do write some documentation.
 
-There have been two attempts over the years to rewrite the application so it works better, [one a few years ago]() and [one more recently](). But the task is too complex for a developer who's outlook on software development has fundamentally changed. Eight year's ago I had no idea what a unit test was, now I'm a [Test Driven Development evangelist](https://en.wikipedia.org/wiki/Test-driven_development). I'm now far more aware of the importance of making software function correctly and this means tasks take longer but the outcomes are better.
+There have been two attempts over the years to rewrite the application so it works better, [one a few years ago](https://github.com/RobDWaller/FakersTwo) and [one more recently](https://github.com/RobDWaller/fakers-zero). But the task is too complex for a developer who's outlook on software development has fundamentally changed. Eight years ago I had no idea what a unit test was, now I'm a [Test Driven Development evangelist](https://en.wikipedia.org/wiki/Test-driven_development). I'm now far more aware of the importance of making software function correctly and this means tasks take longer but the outcomes are better.
 
 More importantly though my heart is no longer in the project, my life has moved on. I got engaged, bought a house and I recently had my first child, my son Jacob was born in December 2019. I also have [new software projects](https://github.com/RobDWaller/ReallySimpleJWT) which take up my time and require my support. Put simply I can't maintain the project in the same way I did 4 or 5 years ago.
 
