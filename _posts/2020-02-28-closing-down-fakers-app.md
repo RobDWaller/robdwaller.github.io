@@ -3,7 +3,7 @@ layout: post
 title: "Closing Down The Fakers App"
 description: "I started the Fakers App in 2012 as a side project to help some journalists researching people who were buying fake followers on Twitter."
 tags: [twitter, spam, fake followers, fakers app]
-published: false
+published: true
 --- 
 I started the [Fakers App](https://twitter.com) in 2012 as a side project to help some journalists researching people who were buying fake followers on Twitter. The app ran a simple algorithm against a user's Twitter followers and highlighted which ones were either fake or inactive. In the early days fake accounts were easy to spot, they followed a lot of accounts but had no followers of their own. It got more complicated of course.
 
