@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prove Your Code Works: Introduction"
-description: "One question I believe software developers need to ask themselves more often is, "Can I prove this code works?"
+description: "One question I believe software developers need to ask themselves more often is, Can I prove this code works?"
 tags: [code quality, documentation, tests, code analysis]
 published: true
 --- 
