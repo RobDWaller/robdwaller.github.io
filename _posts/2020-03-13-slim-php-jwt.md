@@ -29,7 +29,7 @@ $app->get('/route/example', function (Request $request, Response $response) {
 
 It's literally a few lines of code, you just pass the `JwtMiddleware::json()` method a token secret, a request key and a response message. If the JSON Web Token passed with the request is invalid you'll see the response message and if it is valid the route will load as expected.
 
-PSR-JWT is also completely customisable, you can even use your own [handlers](https://github.com/RobDWaller/psr-jwt#handlers) to define how authorisation should be handled and what the response should be. You can also use the library to generate JSON web tokens.
+PSR-JWT is also completely customisable, you can even use your own [handlers](https://github.com/RobDWaller/psr-jwt#handlers) to define how authorisation works and what the response should be. You can also use the library to generate JSON web tokens.
 
 ```php
 require 'vendor/autoload.php';
@@ -45,6 +45,4 @@ $token = $builder->setSecret('!secReT$123*')
 echo $token->getToken();
 ```
 
-Have a read of the [documentation](https://github.com/RobDWaller/psr-jwt/blob/master/README.md) to find out more about all the features available in PSR-JWT.
-
-Also if you want to understand JSON Web Tokens in more detail I suggest you give [RFC 7519](https://tools.ietf.org/html/rfc7519) and [RFC 6750](https://tools.ietf.org/html/rfc6750) a read. If you have any questions feel free to drop me a message on Twitter [@RobDWaller](https://twitter.com/RobDWaller).
+Have a read of the [documentation](https://github.com/RobDWaller/psr-jwt/blob/master/README.md) to find out more about all the features available in PSR-JWT. Also if you want to understand JSON Web Tokens in more detail I suggest you give [RFC 7519](https://tools.ietf.org/html/rfc7519) and [RFC 6750](https://tools.ietf.org/html/rfc6750) a read. If you have any questions feel free to drop me a message on Twitter [@RobDWaller](https://twitter.com/RobDWaller).
