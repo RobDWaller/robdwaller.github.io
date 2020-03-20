@@ -17,7 +17,7 @@ To add a GitHub Actions badge to your project just use the following markdown. O
 [![Actions Status](https://github.com/{user}/{repo}/workflows/{action}/badge.svg)](https://github.com/{user}/{repo}/actions)
 ```
 
-One thing which can be a little confusing is what should the `{action}` name be. This should reference the name property in the yaml action config file within your `./.github/workflows` directory.
+One thing which can be a little confusing is what the `{action}` name should be. This should reference the name property in the yaml action config file within your `./.github/workflows` directory.
 
 For a [Rust project](https://github.com/RobDWaller/csp-generator/blob/master/.github/workflows/build-test.yml) I recently worked on this is `Build and Test`.
 
