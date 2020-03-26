@@ -15,7 +15,7 @@ As maintainability increases costs fall. Maintenance costs never fall to zero bu
 
 One problem with code maintainability though is it's difficult to quantify. What does maintainable code mean or look like? There are tools like [Code Climate](https://codeclimate.com/) which attempt to define it, but they don't offer a lot of detail on what it means. Also it's not always possible for a development team to use a cloud based tool like Code Climate.
 
-To help I have created a quick ten point code maintainability test. It is similar in intent to the [Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/), it is a bunch of simple, binary questions. For a positive answer you score a point, and the closer your score is to ten the more maintainable your code is.
+To help I have created a quick ten point [Code Maintainability Test](https://rbrt.wllr.info/2020/03/26/code-maintainability-test-questions.html). It is similar in intent to the [Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/), it is a bunch of simple, binary questions. For a positive answer you score a point, and the closer your score is to ten the more maintainable your code is.
 
 Of course this test is not meant to be comprehensive. It is only meant to provide a rough guide to how maintainable code is. Like sticking a licked finger in the air to test the direction of the wind. It does not capture all the nuance of code maintainability.
 
