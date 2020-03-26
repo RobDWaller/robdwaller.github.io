@@ -37,7 +37,7 @@ Usable code is easy to learn and fast to contribute to. Well formatted code with
 
 ### Bug Density
 
-Type usage, static analysers and code tests will all reduce bug density. The lower your bug density the fewer bugs you'll have to fix in production.
+Strong types, static analysers and code tests will all reduce bug density. The lower your bug density the fewer bugs you'll have to fix in production.
 
 - Do you have a [code coverage](https://en.wikipedia.org/wiki/Code_coverage) score greater than 60%? **(+1 Point)**
 - Do you have a code coverage score greater than 90%? **(+1 Point)**
@@ -46,7 +46,7 @@ Type usage, static analysers and code tests will all reduce bug density. The low
 
 ### Code Complexity
 
-Code with low complexity is easier to read and understand, easier to test, easier to find bugs, and easier to extend.
+Code with low complexity is easier to read and understand, easier to test, easier to debug, and easier to extend.
 
 - Do you run [mess detection](https://phpmd.org) tools? **(+1 Point)**
 - Do you have an average [code complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) below 10? **(+1 Point)**

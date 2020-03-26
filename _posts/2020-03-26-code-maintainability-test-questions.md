@@ -5,20 +5,20 @@ description: "These are just the questions for the code maintainability test I c
 tags: [code, maintainability, maintenance, costs]
 published: true
 ---
-These are just the questions for the Code Maintainability Test. It will help you understand the state of your codebase and make improvements. For a fuller explanation of the Code Maintainability Test please read the [associated post](https://rbrt.wllr.info/2020/03/26/code-maintainability-test.html).
+These are just the questions for the Code Maintainability Test. The test will help you understand the state of your codebase and make improvements. For a fuller explanation of the Code Maintainability Test please read the [associated post](https://rbrt.wllr.info/2020/03/26/code-maintainability-test.html).
 
 ## Questions
 
-- Do you have a well written README which explains installation, setup and usage? **(+1 Point)**
-- Do you have clear code comments which explain the existence and intent of the code? **(+1 Point)**
-- Do you run code lint tools? **(+1 Point)**
-- Do you have a code coverage score greater than 60%? **(+1 Point)**
-- Do you have a code coverage score greater than 90%? **(+1 Point)**
-- Do you run mutation test or fault injection tools? **(+1 Point)** 
-- Do you use a strongly typed language or run a static analyser? **(+1 Point)**
-- Do you run mess detection tools? **(+1 Point)**
-- Do you have an average code complexity below 10? **(+1 Point)**
-- Do you have an average code complexity below 5? **(+1 Point)** 
+1. Do you have a well written README which explains installation, setup and usage? **(+1 Point)**
+2. Do you have clear code comments which explain the existence and intent of the code? **(+1 Point)**
+3. Do you run code lint tools? **(+1 Point)**
+4. Do you have a code coverage score greater than 60%? **(+1 Point)**
+5. Do you have a code coverage score greater than 90%? **(+1 Point)**
+6. Do you run mutation test or fault injection tools? **(+1 Point)** 
+7. Do you use a strongly typed language or run a static analyser? **(+1 Point)**
+8. Do you run mess detection tools? **(+1 Point)**
+9. Do you have an average code complexity below 10? **(+1 Point)**
+10. Do you have an average code complexity below 5? **(+1 Point)** 
 
 ## Scores
 
