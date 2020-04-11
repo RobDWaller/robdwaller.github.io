@@ -1,3 +1,4 @@
+// Tablet
 @media screen and (max-width: 1280px) {
     .wrapper {
         width: 1060px;
@@ -8,6 +9,7 @@
     }
 }
 
+// Mobile
 @media screen and (max-width: 1060px) {
     .wrapper {
         width: 100%;
@@ -19,8 +21,16 @@
             width: 100%;
         }
 
-        .bio {
+        .sidebar {
             width: 100%;
+        
+            .avatar {
+                display: none;
+            }
+
+            .bio, .contact {
+                width: 100%;
+            }
         }
     }
 
@@ -53,15 +63,15 @@
         }
 
         .hamburger__line {
-            width: 40px;
+            width: 24px;
             background: white;
-            height: 8px;
-            margin: 4px;
+            height: 2px;
+            margin: 6px 12px;
             display: block;
         }
 
         .hamburger__line-first {
-            margin-top:8px;
+            margin-top:15px;
         }
 
         .menu--on {
@@ -72,5 +82,9 @@
     iframe {
         width: 100%;
         height: auto;
+    }
+
+    footer {
+        width: 100%;
     }
 }
