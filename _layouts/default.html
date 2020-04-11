@@ -25,7 +25,7 @@
     </head>
     <body>
         <header>
-            <h2>{{ site.page_title | default: site.github.repository_name }}</h2>
+            <a href="/"><img src="/assets/svg/logo.svg" alt="Wllr:Tech, Rob Waller Website and Blog" /></a>
             <ul class="menu" id="menu">
                 <li>
                     <a href="/">Home</a>
@@ -47,23 +47,33 @@
             </div>
         </header>
         <div class="wrapper">
-            <div class="bio">
-                <h2>Bio</h2>
-
-                {% if site.github.is_user_page %}
-                    <img class="profile-pic" src="{{ site.github.owner_gravatar_url }}" alt="Rob Waller Profile Picture" />
-                {% endif %}
-
-                <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-                {% if site.github.is_project_page %}
-                    <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
-                {% endif %}
-
-                {% if site.github.is_user_page %}
-                    <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-                {% endif %}
-                <p>Tweet Me: <a href="https://twitter.com/RobDWaller" target="_blank">@RobDWaller</a></p>
+            <div class="sidebar">
+                <div class="avatar">
+                    {% if site.github.is_user_page %}
+                        <img class="profile-pic" src="{{ site.github.owner_gravatar_url }}" alt="Rob Waller Profile Picture" />
+                    {% else %}
+                        <img class="profile-pic" src="/assets/img/rob.jpg" alt="Rob Waller Profile Picture" />
+                    {% endif %}
+                </div>
+                <div class="bio">
+                    <h2>Bio</h2>
+                    <p>{{ site.description | default: site.github.project_tagline }}</p>
+                    <p><a href="/about.html">Find Out More</a></p>
+                    <p><a href="/cv.pdf">Download My CV</a></p>
+    
+                    {% if site.github.is_project_page %}
+                        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
+                    {% endif %}
+    
+                    {% if site.github.is_user_page %}
+                        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+                    {% endif %}
+                </div>
+                <div class="contact">
+                    <h2>Contact Me</h2>
+                    <p>Tweet Me: <a href="https://twitter.com/RobDWaller" target="_blank">@RobDWaller</a></p>
+                    <p>Email Me: rdwaller1984@gmail.com</p>
+                </div>
             </div>
             <section>
                 {{ content }}
@@ -73,8 +83,8 @@
             {% if site.github.is_project_page %}
             <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
             {% endif %}
-            <small>Hosted on GitHub Pages &mdash; Theme extended from <a href="https://github.com/orderedlist">orderedlist</a></small>
             <small>All views expressed on this website are that of its author, they do not represent any other person or organisation.</small>
+            <small>&copy; Rob Waller 2020</small>
         </footer>
         <script src="/assets/js/app.js" type="text/javascript"></script>
     </body>
