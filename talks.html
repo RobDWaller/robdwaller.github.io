@@ -1,19 +1,28 @@
 ---
 layout: default
 permalink: talks.html
-title: "Rob Waller Conference Talks"
+title: "Talks"
 description: "A list of conference talks written by Rob Waller on software development and tech management"
 ---
 <h1>{{ page.title}}</h1>
 <p>{{ page.description }}</p>
-<ul>
-  {% for talk in site.talks %}
-    <li>
-      <a href="{{ talk.url }}">{{ talk.title }}</a><br/>
-      {{talk.description}}<br/>
-      {% if talk.slides != null %}
-        <a href="{{talk.slides}}" target="_blank">View the slides</a>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+{% for talk in site.talks %}
+  <div class="post-snippet">
+    <h3><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+    <p>{{ talk.description }}</p>
+    {% if talk.slides != null %}
+      <p><a href="{{talk.slides}}" target="_blank">View the slides</a></p>
+    {% endif %}
+    <small>
+      <span class="tags">
+        {% for tag in talk.tags %}
+          {% if forloop.last %}
+              #{{ tag }}
+          {% else %}
+              #{{ tag }}
+          {% endif %}
+        {% endfor %}
+      </span>
+    </small>
+  </div>
+{% endfor %}
