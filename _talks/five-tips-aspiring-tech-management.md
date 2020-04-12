@@ -26,9 +26,7 @@ The talk covers examples from development, sport, history and my personal experi
 
 You can read the rough outline of the talk on my blog: [http://rbrt.wllr.info/2018/03/12/five-tips-tech-team-management.html](http://rbrt.wllr.info/2018/03/12/five-tips-tech-team-management.html)
 
-### Talks
-
- I've given this talk at:
+## Presented At
 
 - PHP London
 - PHP Dorset
