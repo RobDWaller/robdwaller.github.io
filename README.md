@@ -58,6 +58,17 @@ jekyll serve --host 0.0.0.0 --port 80
 
 Navigate to [localhost:8080](http://localhost:8080/) and view the site.
 
+To see future posts which are yet to be published run the following command:
+
+```bash
+jekyll serve --host 0.0.0.0 --port 80 --future
+```
+
+To see posts which have published state of `false` run the following command:
+
+```bash
+jekyll serve --host 0.0.0.0 --port 80 --unpublished
+```
 
 ## License
 
