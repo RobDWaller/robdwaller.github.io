@@ -6,7 +6,7 @@
         <title>{{ page.title | default: site.title }}</title>
 
         <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -25,7 +25,7 @@
     </head>
     <body>
         <header>
-            <a href="/"><img src="/assets/svg/logo.svg" alt="Wllr:Tech, Rob Waller Website and Blog" /></a>
+            <a href="/"><img src="/assets/svg/logo.svg" loading="lazy" alt="Wllr:Tech, Rob Waller Website and Blog" /></a>
             <ul class="menu" id="menu">
                 <li>
                     <a href="/">Home</a>
@@ -50,9 +50,9 @@
             <div class="sidebar">
                 <div class="avatar">
                     {% if site.github.is_user_page %}
-                        <img class="profile-pic" src="{{ site.github.owner_gravatar_url }}" alt="Rob Waller Profile Picture" />
+                        <img class="profile-pic" src="{{ site.github.owner_gravatar_url }}" loading="lazy" alt="Rob Waller Profile Picture" />
                     {% else %}
-                        <img class="profile-pic" src="/assets/img/rob.jpg" alt="Rob Waller Profile Picture" />
+                        <img class="profile-pic" src="/assets/img/rob.jpg" loading="lazy" alt="Rob Waller Profile Picture" />
                     {% endif %}
                 </div>
                 <div class="bio">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="contact">
                     <h2>Contact Me</h2>
-                    <p>Tweet Me: <a href="https://twitter.com/RobDWaller" target="_blank">@RobDWaller</a></p>
+                    <p>Tweet Me: <a href="https://twitter.com/RobDWaller" rel="noopener" target="_blank">@RobDWaller</a></p>
                     <p>Email Me: rdwaller1984@gmail.com</p>
                 </div>
             </div>
@@ -86,6 +86,6 @@
             <small>All views expressed on this website are that of its author, they do not represent any other person or organisation.</small>
             <small>&copy; Rob Waller 2020</small>
         </footer>
-        <script src="/assets/js/app.js" type="text/javascript"></script>
+        <script defer src="/assets/js/app.js" type="text/javascript"></script>
     </body>
 </html>
