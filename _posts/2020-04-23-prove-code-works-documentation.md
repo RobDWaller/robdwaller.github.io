@@ -5,7 +5,7 @@ description: "Good documentation helps other developers navigate code and implem
 tags: [code quality, documentation, tests, code analysis]
 published: true
 ---
-One of the ways you can prove your code works and improve its observability is to write some documentation. Good documentation provides evidence the authors of the code understand its intent and how it can be best used and implemented. It also helps other developers navigate code and implement it in their projects.
+One of the ways you can prove your code works and improve its observability is to write some documentation. Good documentation provides evidence the authors of the code understand its intent and how best to use and implement it. It also helps other developers navigate code and implement it in their projects.
 
 In many cases good documentation allows developers to implement a package or framework without ever looking at the code. It is something that is done well in Open Source projects but less so in commercial settings. In fact it can often be forgotten about in commercial settings.
 
