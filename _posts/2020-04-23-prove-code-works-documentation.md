@@ -5,7 +5,7 @@ description: "Good documentation helps other developers navigate code and implem
 tags: [code quality, documentation, tests, code analysis]
 published: true
 ---
-One of the ways you can prove your code works and provide some professional guarantees is to write some documentation. Good documentation provides evidence the authors of the code understand its intent and how best to use and implement it. It also helps other developers navigate code and implement it in their projects.
+One of the ways you can prove your code works and provide some professional guarantees is to write some documentation. Good documentation provides evidence the authors of the code understand its intent and how best to use and implement it. It also helps other developers navigate code and add it to their projects.
 
 In many cases good documentation allows developers to implement a package or framework without ever looking at the code. It is something that is done well in Open Source projects but less so in commercial settings. In fact it can often be forgotten about in commercial settings.
 
@@ -73,7 +73,7 @@ Another benefit of good comments is they help improve the way you name things. F
 
 ## Semantic Versioning
 
-Semantic Versioning, or [SemVer](https://semver.org/), is one of the best ways you can document change and communicate that change to other developers. It provides a clear indication of what code you have released and how developers should respond to the release.
+Semantic Versioning, or [SemVer](https://semver.org/), is one of the best ways you can document change and communicate change to other developers. It provides a clear indication of what code you have released and how developers should respond to the release.
 
 For those who have not come across SemVer before it is a format for [tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) code releases: 
 
@@ -87,7 +87,7 @@ For those who have not come across SemVer before it is a format for [tagging](ht
 
 So if your current release has a tag `1.0.3` and you add some new functionality which is backwards compatible your next release tag will be `1.1.0`. But if you were to make a breaking change the release tag would become `2.0.0`.
 
-SemVer clearly communicates to developer how they should react to your releases. If it is a MAJOR version then they will have to make changes to their own codebase to continue using your framework or package. Where as if it is a PATCH version they don't have to do anything. 
+SemVer clearly communicates to developers how they should react to your releases. If it is a MAJOR version then they will have to make changes to their own codebase to continue using your framework or package. Where as if it is a PATCH version they don't have to do anything. 
 
 The other benefit of following SemVer is you will tag your code in Git which means developers can easily go through the history of your code, and see what state it was in at a particular release. They don't have to go through the commit history to find when a change or bug was introduced.
 
