@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Prove Your Code Works: Tests"
-description: ""
+description: "Tests are one of the most important ways to prove your code works, they enable observability and provide a guarantee code will work as expected."
 tags: [code quality, documentation, tests, code analysis]
-published: false
+published: true
 ---
 Tests are one of the most important ways to prove your code works, they enable observability and provide a guarantee code will work as expected. In general they are a professional approach to software development. 
 
