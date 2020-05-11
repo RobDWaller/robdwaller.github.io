@@ -2,7 +2,7 @@
 layout: post
 title: "Code Isolation and How to Handle Input Output"
 description: "Code Isolation is a relatively simple concept, it just means one piece of code should not know about or affect any other piece of code."
-tags: [code isolation, isolation, IO, input output]
+tags: [code isolation, isolation, IO, input output, business logic]
 published: true
 ---
 Code Isolation is a relatively simple concept, it just means one piece of code should not know about or affect any other piece of code. We see this in other fields such as car manufacture, you can replace a headlight without affecting the battery or the wheels. Each part of the car is isolated from the other.
