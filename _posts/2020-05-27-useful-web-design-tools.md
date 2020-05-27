@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Useful Web Design Tools"
-description: "There are though some great, free design tools online which are very helpful and I thought I'd make a quick note of a few of them."
+description: "There are some great, free design tools online which are very helpful and I thought I'd make a quick note of a few of them."
 tags: [web design, colours, fonts, icons]
 published: true
 ---
@@ -15,5 +15,8 @@ There are though some great, free design tools online which are very helpful and
 **SVG Repo:** If you need some nice icons for your site then there are some lovely free ones available on this site.
 [https://www.svgrepo.com/](https://www.svgrepo.com/)
 
-**Coolors:** Need a colour scheme for your site the the Coolors colour scheme generator tool is really helpful.
+**Coolors:** Need a colour scheme for your site then the Coolors colour scheme generator tool is really helpful.
 [https://coolors.co/](https://coolors.co/)
+
+**Vecta Nano:** You'll probably want to compress any SVG icons you find online. If you only have a few of them then Vecta Nano is a very easy tool to use. 
+[https://vecta.io/nano](https://vecta.io/nano)
