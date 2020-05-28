@@ -34,4 +34,9 @@ You can read the rough outline of the talk on my blog: [http://rbrt.wllr.info/20
 
 ## Slides
 
-<script async class="speakerdeck-embed" data-id="9cc457d708334dee8a43ca2037aeb800" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<blockquote class="embedly-card"><h4><a href="https://speakerdeck.com/robdwaller/5-tips-for-aspiring-tech-managers">5 Tips for Aspiring Tech Managers</a></h4><p>Explains why more developers should become managers and offers some simple tips for those considering a move in management.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+## Videos
+
+TBC
