@@ -1,29 +1,25 @@
 ---
-title: "Prove Your Code Works: A Path Towards Professional Software Development"
+title: "Prove Your Code Works: How to Communicate Quality"
 layout: talk
 published: true
-description: "This talk will delve into professionalism and how good documentation, tests and code analysis can help tech teams become more professional."
+description: "This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others."
 tag: [tech, software, professionalism, observability, tests, documentation, analysis]
 ---
 ## Talk Abstract
 
-The tech industry has a problem with software quality and security. A lot of software produced is subpar and often dangerous. The reason for this is because professional standards are not widely adopted. The aim of professional software development is to provide guarantees and prove code works. This talk will delve into professionalism and how good documentation, tests and code analysis can help tech teams become more professional and produce better products.
+Professionalism has two core features, expertise and guarantees. This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others. It covers the checks to make, the metrics to collect and the documentation to write so a developer can prove code works.  
 
 ## Talk Description
 
-There are [many](https://www.theregister.co.uk/2019/07/08/ico_threatens_ba_with_huge_fine_for_huge_data_loss/), [many](https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos) examples of where things have gone wrong with software and users have been harmed. There is also [lots](https://twitter.com/Ocramius/status/1249963501340233730) and [lots](https://twitter.com/afilina/status/1239623168681271296) of anecdotal evidence organisations don't take the issue of software quality and security seriously. One of the contributing factors is the lack of professional standards within the industry and an unwillingness among many organisations to implement any. 
+This talk looks at the professional guarantees a software developer can provide users, customers and managers to assure them the software they use or purchase works to a reasonable standard.   
 
-Professionalism is something developers and everyone involved in technology should care about deeply. As the social and financial consequences when software development goes wrong can be enormous. 
+The talk's focus is the concept of observability, and how to prove software works without the need to look at the code. It will cover three main areas, the checks to make, the metrics to collect and the documentation to write which all provide software with observability.
 
-This talk will delve into the subject of professionalism and what it means for the tech industry. It will answer a number of questions to help understand the topic and define what professional standards look like for software developers and the tech industry.  
+**Checks:** There are two core checks developers should run against code. The most obvious is tests, which includes simple unit tests and more advanced concepts like mutation tests and fault injection. The second group of checks include the various forms of static analysis which can be run against code. This can range from linting through mess detection and to code validity checks.
 
-**What is professionalism?** it provides a guarantee work carried out will be of a reasonable standard. It is not the same as 'good' or 'great' and should not be confused with these terms. There is a difference between a well built house and a beautiful mansion which sits atop the Hollywood Hills.
+**Metrics:** The various code checks a developer can run against code will generate a vast array of information. This will include very useful metrics which can highlight the quality of code. Complexity Scores will highlight how testable and maintable code is, and Mutation Scores will highlight how well tested code is.
 
-**What do professional standards look like in other industries?** Many other industries like medicine, accountancy and construction follow professional standards, much of which is backed by law and regulation. You cannot just build a house like you can build a website or app.
-
-**What professional standards can software developers and the tech industry follow?** As an industry, and as a base guarantee, we should be able to prove the code we produce works. This means we should be able to provide observability of our work so we can highlight information which proves we've made every effort to ensure our code work properly. There are three areas which developers and tech teams should focus on: Documentation, Tests and Code Analysis. 
-
-**What are the benefits of professional standards to the tech industry?** the main benefit is fewer bugs. This may seem like a trivial benefit, but it does have enormous consequences. It will improve the user experience and reduce the need for maintenance. Both of these will have financial consequences, the former will help generate more revenue and the latter will reduce costs. There are also many other benefits.
+**Documentation:** To truly provide observability and communicate quality good documentation is require. This includes Semantic Versioning and Release Notes which are a great way to communicate change. Code Comments which guide developers through a codebase and surface information hidden within code. And finally READMEs and Badges which provide a great means to highlight code qaulity metrics, but also provide a place to communicate installation, setup and usage information.
 
 ## Notes
 
@@ -38,8 +34,12 @@ Professionalism is a topic I care about deeply and I have spent the past few yea
 
 ## Presented At
 
-TBC
+- PHP Hants
 
 ## Slides
+
+TBC
+
+## Videos
 
 TBC
