@@ -4,6 +4,7 @@ layout: talk
 published: true
 description: "There are two types of tests a developer can write, ‘test to work’ and ‘test to break’. Both are essential to robust development, but many developers only use the former and not the latter. This talk explains why ‘test to break’ principles are essential to ensure robust application development ."
 tag: [tests, QA, unit tests, test to work, test to break]
+slides: "https://speakerdeck.com/robdwaller/test-to-break-principles"
 ---
 ## Talk Abstract
 
