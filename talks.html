@@ -2,7 +2,7 @@
 layout: default
 permalink: talks.html
 title: "Talks"
-description: "A list of conference talks written by Rob Waller on software development and tech management"
+description: "A list of conference talks written by Rob Waller on software development and the tech industry."
 ---
 <h1>{{ page.title}}</h1>
 <p>{{ page.description }}</p>
@@ -11,7 +11,7 @@ description: "A list of conference talks written by Rob Waller on software devel
     <h3><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
     <p>{{ talk.description }}</p>
     {% if talk.slides != null %}
-      <p><a href="{{talk.slides}}" target="_blank">View the slides</a></p>
+      <small><a href="{{talk.slides}}" target="_blank">View the slides</a></small>
     {% endif %}
     <small>
       <span class="tags">
