@@ -7,7 +7,7 @@ tag: [tech, software, professionalism, observability, tests, documentation, anal
 ---
 ## Talk Abstract
 
-Professionalism has two core features, expertise and guarantees. This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others. It covers the checks to make, the metrics to collect and the documentation to write so a developer can prove code works.  
+Professionalism has two core features, expertise and guarantees. This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others. It covers the checks to make, the metrics to collect and the documentation to write so developers can prove code works.  
 
 ## Talk Description
 
@@ -15,11 +15,11 @@ This talk looks at the professional guarantees a software developer can provide 
 
 The talk's focus is the concept of observability, and how to prove software works without the need to look at the code. It will cover three main areas, the checks to make, the metrics to collect and the documentation to write which all provide software with observability.
 
-**Checks:** There are two core checks developers should run against code. The most obvious is tests, which includes simple unit tests and more advanced concepts like mutation tests and fault injection. The second group of checks include the various forms of static analysis which can be run against code. This can range from linting through mess detection and to code validity checks.
+**Checks:** There are two core checks developers should run against code. The most obvious is tests, which includes simple unit tests and more advanced concepts like mutation tests and fault injection. The second group of checks include the various forms of static analysis which can be run against code. This includes linting, mess detection and to code validity checks.
 
-**Metrics:** The various code checks a developer can run against code will generate a vast array of information. This will include very useful metrics which can highlight the quality of code. Complexity Scores will highlight how testable and maintable code is, and Mutation Scores will highlight how well tested code is.
+**Metrics:** The various code checks a developer can run against code will generate a vast array of information which includes metrics which highlight the quality of code. For instance, Complexity Scores show how testable and maintable code is, and Mutation Scores will highlight how well tested code is.
 
-**Documentation:** To truly provide observability and communicate quality good documentation is require. This includes Semantic Versioning and Release Notes which are a great way to communicate change. Code Comments which guide developers through a codebase and surface information hidden within code. And finally READMEs and Badges which provide a great means to highlight code qaulity metrics, but also provide a place to communicate installation, setup and usage information.
+**Documentation:** To truly provide observability and communicate quality good documentation is required. This includes Semantic Versioning and Release Notes which are a great way to communicate change. Code Comments which guide developers through a codebase and surface information hidden within code. And finally READMEs and Badges which provide a great means to highlight code qaulity metrics, but also provide a place to communicate installation, setup and usage information.
 
 ## Notes
 
