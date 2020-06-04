@@ -35,10 +35,12 @@ Professionalism is a topic I care about deeply and I have spent the past few yea
 ## Presented At
 
 - PHP Hants
+- PHP Sussex
 
 ## Slides
 
-TBC
+<blockquote class="embedly-card"><h4><a href="https://speakerdeck.com/robdwaller/prove-your-code-works-how-to-communicate-quality">Prove Your Code Works: How to Communicate Quality</a></h4><p>Professionalism has two core features, expertise and guarantees. This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others. It covers the checks to make, the metrics to collect and the documentation to write so developers can prove code works.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 ## Videos
 
