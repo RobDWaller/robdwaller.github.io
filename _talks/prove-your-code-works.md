@@ -4,6 +4,7 @@ layout: talk
 published: true
 description: "This talk delves into the topic of observability and how professional software developers can guarantee their software works and communicate this to others."
 tag: [tech, software, professionalism, observability, tests, documentation, analysis]
+slides: "https://speakerdeck.com/robdwaller/prove-your-code-works-how-to-communicate-quality"
 ---
 ## Talk Abstract
 
