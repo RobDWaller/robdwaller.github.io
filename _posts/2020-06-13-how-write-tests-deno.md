@@ -3,7 +3,7 @@ layout: post
 title: "How to Write Tests in Deno"
 description: "This post aims to show you how to begin to write tests in Deno, and provides an honest appraisal of Deno's test tools so you are aware of current pitfalls."
 tags: [deno, javascript, tests, unit tests]
-published: false
+published: true
 ---
 Deno is a new JavaScript / Typescript runtime which aims to supercede Node.js, and with the   the release of [Deno 1.0](https://deno.land/v1) it is gaining more traction with developers. Personally I'm a big fan of [Deno](https://deno.land/), I think it's a step forward for the JavaScript community, and I hope it succeeds. 
 
