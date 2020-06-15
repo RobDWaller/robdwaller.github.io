@@ -15,7 +15,7 @@ To begin you need to [install Deno](https://deno.land/manual/getting_started/ins
 deno test tests/example.test.ts
 ```
 
-You can also run individual tests or groups of tests by using the `--filter` option which will run tests where the test name matches the filter pattern. 
+And you can run individual tests or groups of tests by using the `--filter` option which will run tests where the test name matches the filter pattern. 
 
 ```sh
 deno test --filter "test name" tests/
