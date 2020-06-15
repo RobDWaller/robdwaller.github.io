@@ -187,13 +187,13 @@ The `assertAsyncThrows()` is a little more complicated, mainly because it deals 
 Deno.test("Test Assert Throws Async", () => {
   assertThrowsAsync((): Promise<void> => {
     return new Promise((): void => {
-      throw Error("Panic!");
+      throw new Error("Panic! Threw Error");
     });
-  });
+  }, Error, "Panic! Threw Error");
 
-  assertThrowsAsync((): Promise<number[]> => {
+  assertThrowsAsync((): Promise<void> => {
     return new Promise((resolve, reject): void => {
-      reject("Panic!");
+      reject("Panic! Promise Rejected");
     });
   });
 });
