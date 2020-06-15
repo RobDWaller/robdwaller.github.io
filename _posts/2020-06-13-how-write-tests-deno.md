@@ -128,7 +128,7 @@ My overall feeling is the `assertEquals()` and `assertNotEquals()` assertions ar
 
 There are two methods available to assert a thing contains a thing in Deno, `assertStringContains()` and `assertArrayContains()`.
 
-The `assertStringContains()` assertion does what it says on the tin. It does a simple includes check on a string to see if it contains the expected string. It's not complicated and so is likely to be stable and useable.
+The `assertStringContains()` assertion does what it says on the tin. It does a simple includes check on a string to see if it contains the expected string. It's not complicated and so will be stable and useable.
 
 ```js
 Deno.test("Test Assert String Contains", () => {
@@ -136,7 +136,7 @@ Deno.test("Test Assert String Contains", () => {
 });
 ```
 
-The `assertArrayContains()` again does what you'd expect, it finds a value in an array. But in contrast to the `assertStringContains()` assertion it is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which is concerning. I've noticed some bugs in the assertion, so you may experience unexpected behavior with this assertion.
+The `assertArrayContains()` assertion again does what you'd expect, it finds a value in an array. But in contrast to the `assertStringContains()` assertion it is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which is concerning. I've noticed some bugs in the assertion, so you may experience unexpected behavior with this assertion.
 
 ```js
 Deno.test("Test Assert Array Contains", () => {
