@@ -15,7 +15,13 @@ To begin you need to [install Deno](https://deno.land/manual/getting_started/ins
 deno test tests/example.test.ts
 ```
 
-Take a look at the [documentation](https://deno.land/manual/testing) to learn more on this.
+You can also run individual tests or groups of test by using the `--filter` option which will run tests where the test name matches the filter pattern. 
+
+```sh
+deno test --filter "test name" tests/
+```
+
+Take a look at the [documentation](https://deno.land/manual/testing) to learn more on how to run tests in Deno.
 
 Another great feature of Deno is it comes with TypeScript built in, so you get type checking out of the box. This also means Deno files can just be TypeScript files, and we can create test files by appending files with `.test.ts`. For example, `person.test.ts` will contain tests for our person module `person.ts`.
 
@@ -171,7 +177,7 @@ The `assertThrows()` assertion is relatively straight forward, the only complexi
 ```js
 Deno.test("Test Assert Throws", () => {
   assertThrows((): void => {
-    assertStrictEquals(new Date(), new Date());
+    assertStrictEquals(2, 3);
   });
 
   // assertStrictEquals will throw an AssertionError with the message "Values Don't Match!"
