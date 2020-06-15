@@ -53,7 +53,7 @@ The [asserts module](https://deno.land/std/testing/asserts.ts) makes nine assert
 
 ## Assert
 
-The assert method is a simple 'truthy' assertion and it's value is limited because numerous values will assert. This is not great if you're trying to write explicit and precise tests.
+The assert method is a simple 'truthy' assertion and it's value is limited because numerous values will assert. This is not great if you're trying to write explicit and precise tests, but should be fine if you're writing something simple and generic.
 
 ```js
 Deno.test("Test Assert Second", () => {
@@ -136,7 +136,7 @@ Deno.test("Test Assert String Contains", () => {
 });
 ```
 
-The `assertArrayContains()` assertion by contrast is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which can be concerning. I've noticed some bugs in the assertion, so you may experience unexpected behavior with this assertion.
+The `assertArrayContains()` again does what you'd expect, it finds a value in an array. But in contrast to the `assertStringContains()` assertion it is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which is concerning. I've noticed some bugs in the assertion, so you may experience unexpected behavior with this assertion.
 
 ```js
 Deno.test("Test Assert Array Contains", () => {
@@ -148,7 +148,7 @@ Deno.test("Test Assert Array Contains", () => {
 
 ## Assert Regex
 
-You can assert regular expressions in Deno tests using the `assertMatch()` assertion. It is a simple assertion which does a basic RegExp test on a string. It's not complicated and does what you'd expect it to, so it's likely to be stable and usable.
+You can assert regular expressions in Deno tests using the `assertMatch()` assertion. It is a simple assertion which does a basic RegExp test on a string. It's not complicated and does what you'd expect it to, so it will be stable and usable.
 
 ```js
 Deno.test("Test Assert Match", () => {
@@ -221,8 +221,8 @@ There is though some work to be done in this area for Deno. It's fair to say som
 
 My advice is if you are writing unit tests stick to the following assertions as they are precise and stable:
 
-- `assertStrictEquals(actual: unknown, expected: unknown, msg?: string): void` *
-- `assertStringContains(actual: string, expected: string, msg?: string): void` *
+- `assertStrictEquals(actual: unknown, expected: unknown, msg?: string): void`
+- `assertStringContains(actual: string, expected: string, msg?: string): void`
 - `assertMatch(actual: string, expected: RegExp, msg?: string): void`
 - `assertThrows(fn: () => void, ErrorClass?: Constructor, msgIncludes = "", msg?: string): Error`
 
