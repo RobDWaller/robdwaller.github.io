@@ -230,7 +230,7 @@ Use the remaining assertions if you are writing more general tests like integrat
 
 ## Beyond Deno Core Assertions
 
-If you want more than the Deno standard assertions module has to offer I have begun work on an assertion library called [explicitly](https://deno.land/x/explicitly). The library extends the standard Deno assertions with a collection of simple but explicit assertions. These assertions are geared towards developers who wish to write clear and concise unit tests in Deno.
+If you want more than the Deno standard assertions module has to offer I have begun work on an assertion library called [explicitly](https://deno.land/x/explicitly). The library extends the standard Deno assertions with a collection of simple but explicit assertions. These assertions are geared towards developers who wish to write clear and precise unit tests in Deno.
 
 - `assertTrue(actual: unknown): void`
 - `assertFalse(actual: unknown): void`
