@@ -193,9 +193,7 @@ Deno.test("Test Assert Throws Async", () => {
 
   assertThrowsAsync((): Promise<number[]> => {
     return new Promise((resolve, reject): void => {
-      const range = Array.from(Array(10).keys());
-  
-      reject(range);
+      reject("Panic!");
     });
   });
 });
