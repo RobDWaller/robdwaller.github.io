@@ -19,7 +19,7 @@ Take a look at the [documentation](https://deno.land/manual/testing) to learn mo
 
 Another great feature of Deno is it comes with TypeScript built in, so you get type checking out of the box. This also means Deno files can just be TypeScript files, and we can create test files by appending files with `.test.ts`. For example, `person.test.ts` will contain tests for our person module `person.ts`.
 
-To write a test in Deno, first we import the assertion we want to use from the [asserts module](https://deno.land/std/testing/asserts.ts) and then we write the test in the required Deno format.
+To write a test in Deno import the assertion you wish to use from the [asserts module](https://deno.land/std/testing/asserts.ts) and then write the test in the required Deno format.
 
 ```js
 import {
@@ -35,9 +35,9 @@ The assertions will throw an error if they fail, this will be caught and the err
 
 <img src="/assets/img/deno-test-fail.PNG" alt="Example of Deno test fail output" />
 
-There is no concept of NPM, Node Modules or package.json in Deno, which is a good thing. Instead you can import modules directly from local or remote locations within files. In this case we import the `assert()` method from the remote asserts module located at `https://deno.land/std/testing/asserts.ts`.
+There is no concept of NPM, Node Modules or package.json in Deno, which is a good thing. Instead you import modules directly from local or remote locations within files. In this case we import the `assert()` method from the remote asserts module located at `https://deno.land/std/testing/asserts.ts`.
 
-But this is where things become a little hazy, and developers need to be careful. All of Deno's core features, including the asserts module are held under the `std` namespace. And this namespace is currently unstable, as of writing we're on version 0.56. This means the test modules like the asserts module are not feature complete, will have bugs and are subject to change at short notice. My personal view is it is possible to write stable tests in Deno but there is more work to do in this area and developers should consider the lack stability before they write their tests.
+But this is where things become a little hazy, and developers need to be careful. All of Deno's core features, including the asserts module, are held under the `std` namespace. And this namespace is currently unstable, as of writing we're on version 0.56. This means the test modules like the asserts module are not feature complete, will have bugs and are subject to change at short notice. My personal view is it is possible to write stable tests in Deno but there is more work to do in this area and developers should consider the lack stability before they write their tests.
 
 The [asserts module](https://deno.land/std/testing/asserts.ts) makes nine assertion methods available for use:
 
@@ -53,7 +53,7 @@ The [asserts module](https://deno.land/std/testing/asserts.ts) makes nine assert
 
 ## Assert
 
-The assert method is a simple 'truthy' assertion and it's value is limited because numerous values will assert. This is not great if you're trying to write explicit and precise tests. I would generally avoid using this assertion.
+The assert method is a simple 'truthy' assertion and it's value is limited because numerous values will assert. This is not great if you're trying to write explicit and precise tests.
 
 ```js
 Deno.test("Test Assert Second", () => {
@@ -65,9 +65,9 @@ Deno.test("Test Assert Second", () => {
 
 ## Assert Equal vs Strict Equal
 
-Equality is a slightly confused topic in Deno assertions currently, there are three equality assertions available, `assertEquals()`, `assertNotEquals()` and `assertStrictEquals()`. 
+There are three equality assertions available, `assertEquals()`, `assertNotEquals()` and `assertStrictEquals()`. 
 
-The `assertEquals()` and `assertNotEquals()` methods are based on an internal [equal method](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L76). This is quite a complicated method, it's [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) is 30, and it tries to provide a general equality check for JavaScript, which is no mean feat. 
+The `assertEquals()` and `assertNotEquals()` methods are based on an internal [equal method](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L76). This is a complicated method, it's [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) is 30, and it tries to provide a general equality check for JavaScript, which is no mean feat. 
 
 As the examples show it will assert numerous types, including objects.
 ```js
@@ -99,7 +99,7 @@ Deno.test("Test Assert Not Equals", () => {
 
 The difference to `assertStrictEquals()` is the strict equality check will not assert two instances of identical objects as they won't be referentially the same.
 
-The under the hood strict equals does a simple, strict `===` check, there is no reference to the `equal()` method. This limits the scope of what `assertStrictEquals()` defines as equal, which makes things more precise and stable.
+Under the hood strict equals does a simple `===` check, there is no reference to the `equal()` method. This limits the scope of what `assertStrictEquals()` defines as equal, which is simpler, and makes things more precise and stable.
 
 ```js
 Deno.test("Test Assert Strict Equals", () => {
@@ -122,13 +122,13 @@ Deno.test("Test Floats Strict", () => {
 });
 ```
 
-Overall in terms of equality checks I would stick with `assertStrictEquals()` as the value of `assertEquals()` is debatable. It's based on very complicated functionality, which has the potential to be buggy, and the need to assert the equality of whole objects in unit tests is minimal. For unit tests I'd stick to asserting primitives with `assertStrictEquals()`.
+My overall feeling is the `assertEquals()` and `assertNotEquals()` assertions are focussed towards integration and functional tests. Also they need to be handled with care as they are based on complicated functionality, which has the potential to be buggy. If you are writing unit tests focused on pure business logic I would stick with `assertStrictEquals()` as it is a more precise and stable assertion.
 
 ## Assert Contains
 
 There are two methods available to assert a thing contains a thing in Deno, `assertStringContains()` and `assertArrayContains()`.
 
-The `assertStringContains()` assertion does what it says on the tin. It does a simple includes check on a string to see if it contains the expected string. It's not very complicated and therefore useable and likely to be stable.
+The `assertStringContains()` assertion does what it says on the tin. It does a simple includes check on a string to see if it contains the expected string. It's not complicated and so is likely to be stable and useable.
 
 ```js
 Deno.test("Test Assert String Contains", () => {
@@ -136,7 +136,7 @@ Deno.test("Test Assert String Contains", () => {
 });
 ```
 
-The `assertArrayContains()` assertion by contrast is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which is always concerning. I've noticed some bugs in the assertion and it doesn't seem to provide much more value than a simple `Array.includes()` check. You may experience unexpected behavior with this assertion.
+The `assertArrayContains()` assertion by contrast is quite complicated and contains [nested loops](https://github.com/denoland/deno/blob/master/std/testing/asserts.ts#L278) which can be concerning. I've noticed some bugs in the assertion, so you may experience unexpected behavior with this assertion.
 
 ```js
 Deno.test("Test Assert Array Contains", () => {
@@ -148,7 +148,7 @@ Deno.test("Test Assert Array Contains", () => {
 
 ## Assert Regex
 
-You can assert regular expressions in Deno tests using the oddly named `assertMatch()` assertion. It is a simple assertion which does a basic RegExp test on a string. It's not complicated and does what you'd 'expect' it to, so it's likely to be stable and quite usable.
+You can assert regular expressions in Deno tests using the `assertMatch()` assertion. It is a simple assertion which does a basic RegExp test on a string. It's not complicated and does what you'd expect it to, so it's likely to be stable and usable.
 
 ```js
 Deno.test("Test Assert Match", () => {
@@ -201,7 +201,7 @@ Deno.test("Test Assert Throws Async", () => {
 });
 ```
 
-It should be noted recent changes have been made to both these assertions to genericise them so the may have some stability issues in the near future.
+It should be noted recent changes have been made to both these assertions to genericise them which will make them more usable but may result in some stability issues in the near future.
 
 ## Custom Messages
 
@@ -217,13 +217,20 @@ Deno.test("Test Assert Equal Fail Custom Message", () => {
 
 Overall Deno tests are relatively straight forward to set up and begin using, which is a massive benefit compared to the config hell of Node and NPM test libraries. 
 
-There is though some work to be done in this area for Deno. It's fair to say some of the assertions are overcomplicated and stability may be an issue in the near future. But overall it is a great start and a big step forward for testing within the JavaScript community. 
+There is though some work to be done in this area for Deno. It's fair to say some of the assertions are complicated and stability may be an issue in the near future. But overall it is a great start and a big step forward for testing within the JavaScript community. 
 
-Please do give [Deno](https://deno.land) a try, I think you'll like it.
+My advice is if you are writing unit tests stick to the following assertions as they are precise and stable:
+
+- `assertStrictEquals(actual: unknown, expected: unknown, msg?: string): void` *
+- `assertStringContains(actual: string, expected: string, msg?: string): void` *
+- `assertMatch(actual: string, expected: RegExp, msg?: string): void`
+- `assertThrows(fn: () => void, ErrorClass?: Constructor, msgIncludes = "", msg?: string): Error`
+
+Use the remaining assertions if you are writing more general tests like integration and functional tests.
 
 ## Beyond Deno Core Assertions
 
-If you want more than the Deno standard assertions module has to offer I have begun work on an assertion library called [explicitly](https://deno.land/x/explicitly). The library extends the standard Deno assertions with a collection of simple but explicit assertions. These assertions are geared towards developers who wish to write clear and concise Unit Tests in Deno.
+If you want more than the Deno standard assertions module has to offer I have begun work on an assertion library called [explicitly](https://deno.land/x/explicitly). The library extends the standard Deno assertions with a collection of simple but explicit assertions. These assertions are geared towards developers who wish to write clear and concise unit tests in Deno.
 
 - `assertTrue(actual: unknown): void`
 - `assertFalse(actual: unknown): void`
