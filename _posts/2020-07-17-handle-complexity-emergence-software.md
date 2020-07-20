@@ -5,13 +5,13 @@ description: "In software development complexity itself is an emergent property 
 tags: [complexity, code isolation, clean architecture, architecture]
 published: true
 ---
-All complex systems have what is called emergent properties. For instance water has emergent properties like damp and wet. When a surface has 10 water molecules spread across it we don't classify it as wet, but at some point when there are enough water molecules on a surface it will become wet. The property of wetness emerges from a collection of water molecules.
+All complex systems have what is called emergent properties. For instance water has emergent properties like damp and wet. When a surface has 10 water molecules spread across it we don't classify it as wet, but at some point when there are enough water molecules on a surface it will become wet. The property of wetness emerges from a collection of water molecules interacting with an object.
 
-The difficulty with emergence is defining the boundaries, for instance between dryness, dampness and wetness. Emergence is also situational, can a granite work top become damp in the same way as a t-shirt? Solid surfaces are generally defined as wet or dry where as permeable surfaces can become damp.
+The difficulty with emergence is defining the boundaries, for instance between dry, damp and wet. Emergence is also situational, can a granite work top become damp in the same way as a t-shirt? Solid surfaces are generally defined as wet or dry where as permeable surfaces can become damp.
 
 In software development complexity itself is an emergent property of code. At some point in the development process software crosses the boundary between simple and complex. Software goes from readable and easy to understand to unreadable and hard to understand. The emergence of this complexity can depend on a number of factors, how the code is written, how much code is written, how difficult the problem is which the code aims to solve, etc.
 
-As software developers one of our primary aims is to minimise complexity, and there are strong incentives to do this. One obvious one is financial, as software becomes more complex it becomes harder and more costly to maintain. You require more developers to keep the lights on and get things done. The second is developer wellbeing, it is not fun to work on code which is too complicated. Instead of adding new features which generate business value and make users happy developers feel like their only purpose is to ensure the tower of cards does not come crashing down.
+As software developers one of our primary aims is to minimise complexity, and there are strong incentives to do this. One obvious one is financial, as software becomes more complex it becomes harder and more costly to maintain. You require more developers to keep the lights on and get things done. The second is developer wellbeing, it is not fun to work on code which is too complicated. Instead of adding new features which generate business value and make users happy developers often feel like their only purpose is to ensure the tower of cards does not come crashing down.
 
 ## What is Software Complexity?
 
@@ -33,7 +33,7 @@ Of these metrics Cyclomatic Complexity is the easiest to understand and begin us
 
 There are also plenty of tools like [PHPMD](https://phpmd.org/rules/codesize.html#cyclomaticcomplexity) and [ESLint](https://eslint.org/docs/rules/complexity) which allow you to run and automate complexity checks. You can add them to your Continuous Integration pipeline, set some thresholds and if some new code breaches the threshold you can review it and fix it. This process alone will help you keep a lid on a lot of complexity.
 
-But of course the topic of complexity is not that simple. You also need to be able to read code manually and spot when complexity is creeping into the design.
+But of course the topic of complexity is not so simple. You also need to be able to read code and spot when complexity is creeping into the design.
 
 For instance the PHP code below has a Cyclomatic Complexity score of four, which is good. 
 
@@ -130,14 +130,11 @@ interface Person {
   age: number,
 }
 
-function overEighteen(person: Person): boolean {
-  return person.age >= 18;
-}
-
 export function overEighteens(): Person[] {
   return retrievePeople().filter(person => overEighteen(person));
 }
 
+/** Filesystem Call **/
 function retrievePeople(): Person[] {
   const file = fromFileUrl(new URL("../../assets/people.json", import.meta.url));
   const json = readJsonSync(file)
@@ -155,8 +152,13 @@ function retrievePeople(): Person[] {
   
   return [];
 }
+
+/** Decision Point **/
+function overEighteen(person: Person): boolean {
+  return person.age >= 18;
+}
 ```
-The above code is not production ready nor testable, but it highlights the principle of isolation and it is more robust. Data retrieval exists in one place and we ensure it returns a correct collection of data. And our age check exists in another place and expects a `Person` object. 
+The above code is not production ready nor easily testable, but it highlights the principle of isolation and it is more robust. Data retrieval exists in one place and we ensure it returns a correct collection of data. And our age check exists in another place and expects a `Person` object. 
 
 The code can be improved further and made more testable by abstracting the code into separate modules. The age check can then be tested with a unit test and the data retrieval with an integration test. We've achieved isolation in this code because the age check `overEighteen()` method no longer knows where the `Person` data came from, or the purpose of the `boolean` it returns.
 
@@ -168,8 +170,8 @@ Minimising the emergence of complexity in software is difficult, as software by 
 
 There are though strategies which can help developers with this problem. The first is metrics and tooling, and I would encourage all developers to impose Cyclomatic Complexity checks in their CI pipelines. If this is applied to an existing codebase start with a threshold of 20 and lower it as your code improves with the aim of getting below 10. If it is a new project be brave, start with a threshold of five or six and see how you get on.
 
-Also begin to consider the Code Isolation principle and how it can be used to improve your codebase. Analyse where your business logic can be better isolated so it is easier to test and becomes more robust. And as part of this begin to look at Clean Architecture principles and the various implementations of it, you may find one which suits your use case.  
+Also begin to consider the Code Isolation principle and how it can be used to improve your codebase. Analyse where your business logic can be better isolated so it is easier to test and becomes more robust. And as part of this begin to look at Clean Architecture principles and the various implementations, you may find one which suits your use case.  
 
-And finally write some documentation as it is one of the best ways to tackle code complexity. First it forces you to explain what your code does and what its purpose is. This will help you spot and fix some of the flaws in your code. But most importantly it will help other developers understand why your code exists and what it does which will make it easier for them to contribute.
+And finally write some documentation as it is one of the best ways to tackle code complexity. It forces you to explain what your code does and what its purpose is. This will help you spot and fix some of the flaws in your code. But most importantly it will help other developers understand why your code exists and what it does which will make it easier for them to contribute.
 
 It is unlikely you can stop any complexity emerging in the software you produce, but by applying some of the tools and ideas above you can hopefully minimise many of its negative effects.
