@@ -11,19 +11,19 @@ Complexity is an emergent property of code, at some point a codebase will cross 
 
 ## Talk Description
 
-The primary aim of this talk is to show developers how to spot code complexity and how to produce code which minimises complexity. And it is hoped this will help developers and businesses avoid costly re-writes or project cancellations. The talk covers three areas:
+The aim of this talk is to highlight the importance of complexity management in software development. It will show developers how to spot code complexity and minimises it. This will help developers and businesses avoid costly re-writes or project cancellations. The talk covers three areas:
 
 **What is Code Complexity?**
 
-Software by its nature is complex, vastly complex in fact. It is though a pointless and futile endeavour to consider all the dependencies which are required to produce working software. Instead when discussing code complexity we need to focus on individual projects and codebases. And of primary importance is how simple, understandable, testable and extendable code is.  
+Software by its nature is complex, vastly complex in fact. It is though a pointless and futile endeavour to consider all the dependencies which are required to produce working software. Instead this talk will focus on complexity in terms of individual projects and codebases.  
 
 **How to Spot Code Complexity**
 
-There are two ways to spot code complexity, tooling and manual analysis. The former relies on metrics such as Cyclomatic Complexity, N-Path Complexity and CRAP Scores. These metrics can be linked to Continuos Integration pipelines and trigger alerts when thresholds are breached. They can provide an early warning system for the emergence of complexity, but they do not provide a complete answer. Developers also need to learn how to spot the signs of complexity by reading code and analysing its design.
+There are two ways to spot code complexity, tooling and manual analysis. The former relies on metrics such as Cyclomatic Complexity. These metrics can provide an early warning system for the emergence of complexity, but they do not provide a complete answer. Developers also need to learn how to spot the signs of complexity by reading code and analysing its design. The talk will review which metrics and tools help manage complexity, and provide code examples which highlight the telltale signs of complexity. 
 
 **Code Isolation**
 
-Code Isolation is the core design principle which aims to minimise code complexity. It is the bedrock on top of which Clean Architecture sits, and its core principle is "A should not know about B or C or anything else." The overall aim is to isolate domains and units of code so they are simple, readable, testable and extendable.
+Code Isolation is the core design principle which aims to minimise code complexity. It is the bedrock on which Clean Architecture sits, and its basic principle is "A should not know about B or C or anything else." The overall aim is to isolate domains and units of code so they are simple, readable, testable and extendable. The talk will provide practical examples of how to write isolated code so as to reduce complexity.
 
 ## Notes
 
