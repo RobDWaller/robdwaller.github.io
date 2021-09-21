@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "The Four Types of Company Culture"
-description: ""
+description: "I've found working at companies with decent people cultures has dramatically improved my wellbeing."
 tags: [management, culture, teams, developers]
-published: false
+published: true
 ---
 I haven't written anything in ages, a very long time. I was thinking though the other day about company culture and how if affects your work life and wellbeing.
 
