@@ -29,9 +29,9 @@ A cautious developer is aware they won't get things perfect, and there will be p
 
 But they can probably be broken down into four topics:
 
-- **Clean Code:** Learn some [theory](https://www.goodreads.com/book/show/43940.Object_Thinking), follow some [principles](), and run [static analysis]() to keep code consistent, tidy and simple. 
+- **Clean Code:** Learn some [theory](https://www.goodreads.com/book/show/43940.Object_Thinking), follow some [principles](https://laracasts.com/series/solid-principles-in-php/episodes/1), and run [static analysis](https://phpstan.org/) to keep code consistent, tidy and simple. 
 - **Tests:** The more tests you have the more confidence you will have your code will work as expected.
-- **Security:** Nothing is completely secure, but you can ensure run times and dependencies are up to date, and you can run security focused [static analysis]() tools.
+- **Security:** Nothing is completely secure, but you can ensure run times and dependencies are up to date, and you can run security focused [static analysis](https://phpstan.org/) tools.
 - **Documentation:** Help others understand why your code exists, what it does and how to use it.
 
 None of the above will guarantee you produce great, perfectly designed code, but it does mean the code you produce will be of a reasonable standard and minimise risk. This has significant business benefits as clean and reliable software is much [cheaper to maintain](https://deepsource.io/blog/exponential-cost-of-fixing-bugs/). 
