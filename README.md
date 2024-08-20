@@ -41,13 +41,13 @@ RUN gem install jekyll bundler
 To spin up the Docker environment use the following command.
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Shell into the docker environment.
 
 ```bash
-docker-compose exec ruby bash
+docker compose exec ruby bash
 ```
 
 Build Jekyll and start a server:
