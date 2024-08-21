@@ -3,3 +3,4 @@ _site
 docker-compose.yml
 Dockerfile
 .jekyll-cache
+.jekyll-metadata
