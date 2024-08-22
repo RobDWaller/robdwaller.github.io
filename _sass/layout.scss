@@ -96,7 +96,17 @@ header {
             }
         }
     }
-    
+}
+
+.content {
+    width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+
+.wrapper, .content {
     section {
         width: 900px;
         display: block;
