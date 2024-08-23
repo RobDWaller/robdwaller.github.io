@@ -11,7 +11,7 @@
 
 // Mobile
 @media screen and (max-width: 1060px) {
-    .wrapper {
+    .wrapper, .content {
         width: 100%;
         margin: 0px;
         flex-direction: column-reverse;
