@@ -34,3 +34,11 @@ Human society began to settle and urbanise around [10 to 15 thousand years ago](
 What we do know is mathematics has no birth point. But it has played a role in human society for many thousands of years. Written evidence for the use of mathematics began to appear from the 4th millennium BC onwards. By the 1st millennium BC there is widespread evidence of the use of mathematics across the globe. It has emerged from the fog of history.
 
 So what does this mean for the origins of computers and software? Well the question is, what tools were developed to aide early societies in calculating and solving complicated problems? Not a question to be answered now, but one imagines it is closely linked to the origins of mathematics.
+
+---
+
+**Useful Sources**
+
+- [https://www.goodreads.com/book/show/12896546-the-history-of-mathematics](https://www.goodreads.com/book/show/12896546-the-history-of-mathematics)
+- [https://www.britannica.com/science/mathematics/Ancient-mathematical-sources](https://www.britannica.com/science/mathematics/Ancient-mathematical-sources)
+- [https://plato.stanford.edu/entries/pythagoras/](https://plato.stanford.edu/entries/pythagoras/)
