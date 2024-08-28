@@ -112,6 +112,14 @@ header {
         margin-top: 48px;
         object-fit: cover;
     }
+
+    hr {
+        width:30%;
+        margin: 2.5em 35%;
+        border: 0px;
+        height: 1px;
+        background-color: rgb(217, 217, 217);
+    }
 }
 
 .wrapper, .content {
