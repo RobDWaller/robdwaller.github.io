@@ -30,6 +30,9 @@ layout: content
 <article class="post">
 {{ content }}
 </article>
+{% if page.canonical %}
+<small>Post originally appeared <a href="{{ page.canonical }}" target="_blank">here</a>.</small>
+{% endif %}
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
