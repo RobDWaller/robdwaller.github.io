@@ -6,6 +6,9 @@
     <body>
         {% include header.html %}
         <div class="content">
+            {% if page.image %}
+                <img src="{{ page.image }}" />    
+            {% endif %}
             <section>
                 {{ content }}
             </section>

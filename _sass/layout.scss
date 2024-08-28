@@ -102,8 +102,16 @@ header {
     width: 900px;
     margin: 0px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: white;
+
+    img {
+        width: 900px;
+        height: 394px;
+        display: block;
+        margin-top: 48px;
+        object-fit: cover;
+    }
 }
 
 .wrapper, .content {
@@ -124,6 +132,12 @@ header {
         .tags {
             margin-bottom: 30px;
         }
+    }
+}
+
+.content { 
+    section:nth-child(2) {
+        margin-top: 0px;
     }
 }
 
