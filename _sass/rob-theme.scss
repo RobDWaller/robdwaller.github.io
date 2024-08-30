@@ -28,6 +28,10 @@ p, li {
     font-size: 1.25em;
 }
 
+.content p {
+    margin: 1.5em 0;
+}
+
 a {
     color: rgb(248, 105, 0);
 }
@@ -108,10 +112,10 @@ em {
 }
 
 blockquote {
-    border-left: 4px solid rgb(14, 8, 35);
+    border-left: 4px solid rgb(217, 217, 217);
     padding: 5px 20px;
-    margin: 20px 40px;
-    background: rgb(217, 217, 217);
+    margin: 20px 10px;
+    background: rgba(217, 217, 217, 0.1);
     
     p {
         font-family: 'Nunito Sans', sans-serif, arial;
