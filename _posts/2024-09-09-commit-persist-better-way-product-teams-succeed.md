@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "To Commit To Persist: A Better Way for Product Teams to Succeed"
+title: "Commit To Persist: A Better Way for Product Teams to Succeed"
 description: "We get commitment in product development all wrong! Commitment is a critical aspect of achieving strategic goals."
 tags: [software, product, development, strategy]
 image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Fran%C3%A7ois_Tomb_Carlo_Ruspi_02.jpg"
