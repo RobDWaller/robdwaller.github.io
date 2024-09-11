@@ -5,21 +5,21 @@ title: "Videos"
 description: "A list of videos of me from various technology conferences and events."
 ---
 <h1>{{ page.title}}</h1>
-<p>{{ page.description }}</p>
-{% for video in site.videos %}
+{% for video in site.videos reversed %}
   <div class="post-snippet">
     <h3><a href="{{ video.url }}">{{ video.title }}</a></h3>
     <p>{{ video.description }}</p>
     <small>
-      <span class="tags">
-        {% for tag in video.tags %}
-          {% if forloop.last %}
-              #{{ tag }}
-          {% else %}
-              #{{ tag }}
-          {% endif %}
-        {% endfor %}
-      </span>
+        <span class="date">{{ video.date | date: '%B %d, %Y' }}</span>
+        <span class="tags">
+            {% for tag in video.tags %}
+            {% if forloop.last %}
+                #{{ tag }}
+            {% else %}
+                #{{ tag }}
+            {% endif %}
+            {% endfor %}
+        </span>
     </small>
   </div>
 {% endfor %}
