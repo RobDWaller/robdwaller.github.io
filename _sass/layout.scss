@@ -156,7 +156,7 @@ header {
     .post-latest {
         box-sizing: border-box;
         width: 50%;
-        padding: 20px;
+        padding: 20px 20px 20px 0px;
 
         img {
             width: 100%;
@@ -169,7 +169,7 @@ header {
     .video-latest {
         box-sizing: border-box;
         width: 50%;
-        padding: 20px;
+        padding: 20px 0px 20px 20px;
 
         iframe {
             width: 100%;
