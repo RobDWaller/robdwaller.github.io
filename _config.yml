@@ -11,3 +11,6 @@ collections:
     videos:
         output: true
         permalink: /:collection/:name
+
+plugins:
+  - jekyll-feed
