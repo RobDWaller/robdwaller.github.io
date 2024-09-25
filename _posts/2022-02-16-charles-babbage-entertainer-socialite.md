@@ -6,6 +6,7 @@ tags: [history, computers, software, babbage]
 canonical: "https://medium.com/@history_dev/charles-babbage-the-entertainer-and-socialite-7b3ad997d95f"
 image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*IpznfvxoJAPgEQ2YukUKfA.jpeg"
 published: true
+author: rob_waller
 ---
 It is well documented Charles Babbage was a difficult, belligerent and often quarrelsome man. He fell out spectacularly with Joseph Clement his lead engineer on the Difference Engine which meant it was never completed. In 1830 he published his [famous attack](https://www.goodreads.com/book/show/13162379-reflections-on-the-decline-of-science-in-england) on English science and the Royal Society entitled, Reflections on the Decline of Science and some of its Causes. It, of course, upset many members of the Royal Society. Also, as I’ve noted previously, by his death in 1871 he was [mocked by the press](https://medium.com/@history_dev/the-death-of-charles-babbage-a-sad-tale-of-labour-misspent-ce46e93086e7) and seen as a bit of a joke.
 

@@ -5,6 +5,7 @@ description: "One of the first, or most prominent people, to work on a Big Data 
 tags: [history, computers, software, ibm, hollerith]
 canonical: "https://medium.com/@history_dev/4-facts-about-big-data-pioneer-herman-hollerith-6db48fb611c3"
 published: true
+author: rob_waller
 ---
 One of the first, or most prominent people, to work on a Big Data problem was [Herman Hollerith](https://en.wikipedia.org/wiki/Herman_Hollerith). In the 1880s the US Census Bureau was struggling to process census data in a timely fashion. It took eight years to process the 1880 census meaning data only became available just before the next census began.
 

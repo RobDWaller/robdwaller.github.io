@@ -6,6 +6,7 @@ tags: [history, computers, software, babbage]
 canonical: "https://medium.com/@history_dev/the-death-of-charles-babbage-a-sad-tale-of-labour-misspent-ce46e93086e7"
 image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Difference_engine_plate_1853.jpg"
 published: true
+author: rob_waller
 ---
 How do you wish to be remembered? It is a question we all consider at some point in our lives. A more talented member of society may wish to be remembered as a brilliant mind like Charles Babbage. A man who today is regarded as the father of modern computing. Interestingly though, Charles Babbage wasn’t remembered as fondly at the time of his death as he is today.
 

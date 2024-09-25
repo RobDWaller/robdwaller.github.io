@@ -6,6 +6,7 @@ tags: [history, computers, software, ukraine]
 canonical: "https://medium.com/@history_dev/ukraines-incredible-contributions-to-computer-science-e32b6a3f7964"
 image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*FYrGb5I-GEur_OLn3rNmeg.jpeg"
 published: true
+author: rob_waller
 ---
 On February 24th 2022 I was woken up at 6:13 am by a mobile phone call. It was my partner, she was pregnant and she’d been in hospital for a few days. She sounded panicked and said, “I need you here now! I’m in labour, the baby is coming!” Shocked and bewildered I got up very quickly and into the car. The radio was on as normal and as I sped to the hospital I heard the news, Russia had invaded Ukraine! My heart sank.
 

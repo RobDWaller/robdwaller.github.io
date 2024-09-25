@@ -6,6 +6,7 @@ tags: [history, computers, software, turing]
 canonical: "https://medium.com/@history_dev/turing-the-halting-problem-and-the-dawn-of-the-digital-age-3d8bb493addc"
 image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bombe-rebuild.jpg"
 published: true
+author: rob_waller
 ---
 For over 2,000 years great engineers, mathematicians and scientists have [produced various analogue computers](https://medium.com/@history_dev/the-origins-of-computers-the-abacus-and-the-astrolabe-9272affc5212). Ranging from the Antikythera Mechanism of antiquity to the Difference Engines of the Victorian period. During the 1930s, 40s and 50s though there was a great flurry of activity that transported us from the analogue age to the digital.
 

@@ -5,6 +5,7 @@ description: "Kateryna Yushchenko studied Mathematics and in the 1950s became in
 tags: [history, computers, software, ukraine, yushchenko]
 canonical: "https://medium.com/@history_dev/the-incredible-struggle-of-software-pioneer-kateryna-yushchenko-114f63a474f3"
 published: true
+author: rob_waller
 ---
 [Kateryna Yushchenko](https://en.wikipedia.org/wiki/Kateryna_Yushchenko_%28scientist%29) was born in Ukraine on the 8th of December 1919 just after the Russian Revolution. She studied Mathematics and in the 1950s became involved in the [MESM](https://en.wikipedia.org/wiki/MESM) project, the Soviet Union’s first computer.
 

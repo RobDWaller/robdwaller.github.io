@@ -6,6 +6,7 @@ tags: [history, computers, software]
 canonical: "https://medium.com/@history_dev/the-origins-of-software-the-abstraction-of-behaviour-from-the-machine-e9220706fcf9"
 image: "https://miro.medium.com/v2/resize:fit:762/format:webp/1*yVqnr_Gpmao3ukhOeXR3Bg.jpeg"
 published: true
+author: rob_waller
 ---
 Software is to the 21st century what oil was to the 20th century. It is what drives our society forward and makes new opportunities possible. [Three of the four](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization#2022) largest companies in the world (Alphabet, Microsoft & Amazon) began their ascent by writing software. While the largest company in the world Apple built hardware and wrote software.
 

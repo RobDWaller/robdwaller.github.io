@@ -6,6 +6,7 @@ tags: [history, computers, software, babbage, good enough]
 canonical: "https://medium.com/@history_dev/the-failure-of-charles-babbage-and-the-good-enough-principle-b5c3f258f1c3"
 image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ppP7vBdCetCabm2eL1Jm1w.png"
 published: true
+author: rob_waller
 ---
 There are two important questions to ask about Charles Babbage, why did he fail to build his mechanical computers? And what can his failures teach computer scientists and businesses today? One of the reasons Babbage failed is because of his difficult, unstable personality. The breakdown of his relationship with his chief engineer, Joseph Clement, on the Difference Engine project is a well-documented example.
 

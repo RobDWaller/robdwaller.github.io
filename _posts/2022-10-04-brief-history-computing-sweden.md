@@ -6,6 +6,7 @@ tags: [history, computers, software, sweden]
 canonical: "https://medium.com/@history_dev/a-very-brief-history-of-computing-in-sweden-41a33537d976"
 image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4sbETf3ZdkHxm2Yj52uWIg.jpeg"
 published: true
+author: rob_waller
 ---
 Sweden isn’t a country one immediately thinks of when considering the development of computers. However, it has a rich history in the field of computing dating back to the 19th Century.
 
