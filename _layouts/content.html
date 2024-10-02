@@ -7,7 +7,12 @@
         {% include header.html %}
         <div class="content">
             {% if page.image %}
-                <img src="{{ page.image }}" />    
+            <div class="img-holder">
+                <img src="{{ page.image }}" alt="{{ page.alt_text }}" />
+                {% if page.image_source %}
+                    <a href="{{ page.image_source }}" target="_blank">Source</a>
+                {% endif %}
+            </div>   
             {% endif %}
             <section>
                 {{ content }}

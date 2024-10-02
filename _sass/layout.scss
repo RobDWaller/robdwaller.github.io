@@ -105,12 +105,28 @@ header {
     flex-direction: column;
     background: white;
 
-    img {
+    .img-holder {
         width: 900px;
         height: 394px;
         display: block;
         margin-top: 48px;
-        object-fit: cover;
+        position: relative;
+
+        img {
+            width: 900px;
+            height: 394px;
+            display: block;
+            object-fit: cover;
+        }
+
+        a {
+            display: block;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 0.75em;
+            text-decoration: none;
+        }
     }
 
     hr {

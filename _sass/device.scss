@@ -44,9 +44,14 @@
     .content {
         flex-direction: column;
 
-        img {
+        .img-holder {
             width: 100%;
             height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 
