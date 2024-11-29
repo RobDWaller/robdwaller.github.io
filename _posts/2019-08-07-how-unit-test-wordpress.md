@@ -65,13 +65,31 @@ vendor/bin/phpunit
 
 For more information on [WP_Mock](https://packagist.org/packages/10up/wp_mock) please read their documentation. Also take a look at the code for [Atlantic City](https://github.com/RobDWaller/atlantic-city) as it offers some boilerplate to begin using WP_Mock.
 
-One final note, the Atlantic City plugin also shows you how to set up other useful code analysis tools such as CodeSniffer, [PHPMD](https://packagist.org/packages/phpmd/phpmd) and [PHPStan](https://packagist.org/packages/phpstan/phpstan). If you're familiar with PHPStan you may think it's impossible to run static analysis against WordPress code due to all the dodgy WordPress function calls. But PHPStan allows you to ignore errors, and if you ignore the function not found errors you can use PHPStan and gain all the other benefits of static analysis, such as type checks.
+One final note, the Atlantic City plugin also shows you how to set up other useful code analysis tools such as CodeSniffer, [PHPMD](https://packagist.org/packages/phpmd/phpmd) and [PHPStan](https://packagist.org/packages/phpstan/phpstan). If you're familiar with PHPStan you may think it's impossible to run static analysis against WordPress code due to all the dodgy WordPress function calls. But PHPStan has [an extension for WordPress](https://packagist.org/packages/szepeviktor/phpstan-wordpress), you will gain all the other benefits of static analysis, such as type checks or invalid function calls.
 
 ```yaml
 # phpstan.neon config file.
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
 parameters:
+    level: max
+    inferPrivatePropertyTypeFromConstructor: true
+    paths:
+        - %currentWorkingDirectory%/inc/
     ignoreErrors:
-        - '#Function [a-zA-Z0-9\\_]+ not found\.#'
+        # Uses func_get_args()
+        - '#^Function apply_filters(_ref_array)? invoked with [34567] parameters, 2 required\.$#'
+        - '#^Function do_action(_ref_array)? invoked with [3456] parameters, 1-2 required\.$#'
+        - '#^Function current_user_can invoked with 2 parameters, 1 required\.$#'
+        - '#^Function add_query_arg invoked with [123] parameters?, 0 required\.$#'
+        - '#^Function wp_sprintf invoked with [23456] parameters, 1 required\.$#'
+        - '#^Function add_post_type_support invoked with [345] parameters, 2 required\.$#'
+        - '#^Function ((get|add)_theme_support|current_theme_supports) invoked with [2345] parameters, 1 required\.$#'
+        # https://core.trac.wordpress.org/ticket/43304
+        - '/^Parameter #2 \$deprecated of function load_plugin_textdomain expects string, false given\.$/'
+        # WP-CLI accepts a class as callable
+        - '/^Parameter #2 \$callable of static method WP_CLI::add_command\(\) expects callable\(\): mixed, \S+ given\.$/'
 ```
 
 I hope all of this info helps you with your WordPress development. Good luck and If you have any questions drop me a message on Twitter [@RobDWaller](https://twitter.com/RobDWaller).
